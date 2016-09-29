@@ -1,6 +1,8 @@
-# Cayman theme (gem-version)
+### :construction:
+This gem version of the Cayman theme is still under construction.  
+Expect changes in directories, filenames, CSS styles, etc.
 
-**Warning:** This gem version of the Cayman theme is under construction. Directories, filenames, CSS styles, etc are all likely to change.
+# Cayman theme (gem-version)
 
 Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
 
