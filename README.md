@@ -6,9 +6,15 @@ Expect changes in directories, filenames, CSS styles, etc.
 
 Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com).
 
+You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
+
+![](http://cl.ly/image/1T3r3d18311V/content)
+
+# Usage
+
 This theme was ported from the GitHub Automatic Page Generator to a Jekyll theme gem. To use it on a Pages site, add `theme: jekyll-cayman` to your `_config.yml`.
 
-Markdown files should be prefixed with the following frontmatter to be rendered with the default layout from this theme.
+Markdown files should be prefixed with the following frontmatter.
 
 ```
 ---
@@ -16,10 +22,6 @@ layout: default
 ---
 
 ```
-
-You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
-
-![](http://cl.ly/image/1T3r3d18311V/content)
 
 # Customizations
 
