@@ -10,7 +10,7 @@ You can preview the theme at http://jasonlong.github.io/cayman-theme or with rea
 
 ![](http://cl.ly/image/1T3r3d18311V/content)
 
-# Usage
+### Usage
 
 This theme was ported from the GitHub Automatic Page Generator to a Jekyll theme gem. To use it on a Pages site, add `theme: jekyll-cayman` to your `_config.yml`.
 
@@ -23,7 +23,7 @@ layout: default
 
 ```
 
-# Customizations
+### Customizations
 
 To override the repository name or description from GitHub used in the header, add a `title` or `description` to your `_config.yml`. Set `show_downloads` to `true` to show the download buttons in the header.
 
@@ -74,6 +74,17 @@ $header-bg-color-secondary: #1F1C18;
 @import 'cayman';
 ```
 
-# License
+#### Syntax Highlighting
+
+[Rouge](http://rouge.jneen.net/) is the default highlighter in Jekyll 3. This theme includes the `github` stylesheet from Rouge. This can be replaced with a different stylesheet.
+
+For example, to switch syntax highlighting to `monokai`, install the `rouge` gem and run the following on the command line. Then replace `rouge-githum` with `rouge-monkai` in `/assets/cayman.scss`
+
+```
+mkdir _scss
+rougify style monokai > _scss/rouge-monokai.scss
+```
+
+### License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
