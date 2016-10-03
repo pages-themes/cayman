@@ -25,7 +25,7 @@ layout: default
 
 ### Customizations
 
-To override the repository name or description from GitHub used in the header, add a `title` or `description` to your `_config.yml`. Set `show_downloads` to `true` to show the download buttons in the header.
+To override the repository name or description from GitHub used in the header, add a `title` or `description` to your **`_config.yml`**.
 
 ```
 title: Custom title
@@ -34,6 +34,10 @@ show_downloads: false
 
 theme: jekyll-cayman
 ```
+
+Set `show_downloads` to `true` to show the download buttons in the header.
+
+#### CSS
 
 For CSS customization, create your own `/assets/cayman.scss` in your project to replace the one from this theme. For convenience, the variables from `_sass/variables.scss` can simply be uncommented and their values modified.
 
@@ -76,9 +80,9 @@ $header-bg-color-secondary: #1F1C18;
 
 #### Syntax Highlighting
 
-[Rouge](http://rouge.jneen.net/) is the default highlighter in Jekyll 3. This theme includes the `github` stylesheet from Rouge. This can be replaced with a different stylesheet.
+[Rouge](http://rouge.jneen.net/) is the default highlighter in Jekyll 3. This theme includes the `github` stylesheet from Rouge.
 
-For example, to switch syntax highlighting to `monokai`, install the `rouge` gem and run the following on the command line. Then replace `rouge-githum` with `rouge-monkai` in `/assets/cayman.scss`
+To switch syntax highlighting colors to say `monokai`, install the `rouge` gem and run the following on the command line. Then replace `rouge-githum` with `rouge-monkai` in `/assets/cayman.scss`
 
 ```
 mkdir _scss
