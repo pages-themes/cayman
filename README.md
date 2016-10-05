@@ -31,15 +31,16 @@ To override the repository name or description from GitHub used in the header, a
 title: Custom title
 description: Custom description.
 show_downloads: false
-
+google_analytics:
 theme: jekyll-cayman
 ```
 
-Set `show_downloads` to `true` to show the download buttons in the header.
+- Set `show_downloads` to `true` to show the download buttons in the header.
+- Set `google_analytics` to your tracking ID to enable pageview tracking. 
 
 #### CSS
 
-For CSS customization, create your own `/assets/cayman.scss` in your project to replace the one from this theme. For convenience, the variables from `_sass/variables.scss` can simply be uncommented and their values modified.
+For CSS customization, create your own `/assets/styles.scss` in your project to replace the one from this theme. For convenience, the variables from `_sass/variables.scss` can simply be uncommented and their values modified.
 
 A couple of nice sources for gradient colors are http://uigradients.com and http://jxnblk.com/shade/.
 
@@ -82,12 +83,17 @@ $header-bg-color-secondary: #1F1C18;
 
 [Rouge](http://rouge.jneen.net/) is the default highlighter in Jekyll 3. This theme includes the `github` stylesheet from Rouge.
 
-To switch syntax highlighting colors to say `monokai`, install the `rouge` gem and run the following on the command line. Then replace `rouge-githum` with `rouge-monkai` in `/assets/cayman.scss`
+To switch syntax highlighting colors to say `monokai`, install the `rouge` gem and run the following on the command line.
 
 ```
 mkdir _scss
 rougify style monokai > _scss/rouge-monokai.scss
 ```
+
+Then replace `rouge-github` with `rouge-monokai` in `/assets/styles.scss`
+
+Other pygments highlighter themes should work as well.
+
 
 ### License
 

@@ -3,4 +3,4 @@
 set -e
 
 bundle exec jekyll build
-bundle exec gem build jekyll-cayman.gemspec
+bundle exec gem build jekyll-apg-theme-cayman.gemspec

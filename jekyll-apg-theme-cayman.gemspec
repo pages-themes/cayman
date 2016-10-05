@@ -1,11 +1,11 @@
 # encoding: utf-8
 
 Gem::Specification.new do |s|
-  s.name          = "jekyll-cayman"
+  s.name          = "jekyll-apg-theme-cayman"
   s.version       = "0.0.1"
   s.authors       = ["Jason Long"]
   s.email         = ["support@github.com"]
-  s.homepage      = "https://github.com/pages-themes/cayman"
+  s.homepage      = "https://github.com/pages-themes/jekyll-apg-theme-cayman"
   s.summary       = "Cayman is a clean, responsive theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
