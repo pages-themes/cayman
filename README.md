@@ -12,7 +12,7 @@ You can preview the theme at http://jasonlong.github.io/cayman-theme or with rea
 
 ### Usage
 
-This theme was ported from the GitHub Automatic Page Generator to a Jekyll theme gem. To use it on a Pages site, add `theme: jekyll-cayman` to your `_config.yml`.
+This theme was ported from the GitHub Automatic Page Generator to a Jekyll theme gem. To use it on a Pages site, add `theme: jekyll-theme-cayman` to your `_config.yml`.
 
 Markdown files should be prefixed with the following frontmatter.
 
@@ -25,18 +25,18 @@ layout: default
 
 ### Customizations
 
-To override the repository name or description from GitHub used in the header, add a `title` or `description` to your **`_config.yml`**.
+```yaml
+theme: jekyll-theme-cayman
 
-```
 title: Custom title
 description: Custom description.
-show_downloads: false
+show_downloads: true
 google_analytics:
-theme: jekyll-cayman
 ```
 
+- Set a custom `title` or `description`.
 - Set `show_downloads` to `true` to show the download buttons in the header.
-- Set `google_analytics` to your tracking ID to enable pageview tracking. 
+- Set `google_analytics` to your tracking ID to enable pageview tracking.
 
 #### CSS
 
