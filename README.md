@@ -1,8 +1,4 @@
-### :construction:
-This gem version of the Cayman theme is still under construction.  
-Expect changes in directories, filenames, CSS styles, etc.
-
-# Cayman theme (gem-version)
+# Cayman theme `jekyll-theme-cayman` gem
 
 Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com).
 
@@ -16,7 +12,7 @@ This theme was ported from the GitHub Automatic Page Generator to a Jekyll theme
 
 Markdown files should be prefixed with the following frontmatter.
 
-```
+```md
 ---
 layout: default
 ---
@@ -40,7 +36,7 @@ google_analytics:
 
 #### CSS
 
-For CSS customization, create your own `/assets/styles.scss` in your project to replace the one from this theme. For convenience, the variables from `_sass/variables.scss` can simply be uncommented and their values modified.
+For CSS customization, create your own `/assets/css/styles.scss` in your project to replace the one from this theme. For convenience, the variables from `_sass/variables.scss` can simply be uncommented and their values modified.
 
 A couple of nice sources for gradient colors are http://uigradients.com and http://jxnblk.com/shade/.
 
@@ -90,7 +86,7 @@ mkdir _scss
 rougify style monokai > _scss/rouge-monokai.scss
 ```
 
-Then replace `rouge-github` with `rouge-monokai` in `/assets/styles.scss`
+Then replace `rouge-github` with `rouge-monokai` in `/assets/css/styles.scss`
 
 Other pygments highlighter themes should work as well.
 
