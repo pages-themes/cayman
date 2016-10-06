@@ -1,4 +1,4 @@
-# Cayman theme `jekyll-theme-cayman` gem
+# Cayman - `jekyll-theme-cayman` gem
 
 Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com).
 
