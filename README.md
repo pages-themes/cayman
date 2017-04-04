@@ -65,6 +65,16 @@ If you'd like to change the theme's HTML layout:
 3. Paste the default layout content copied in the first step
 4. Customize the layout as you'd like
 
+### Sass variables
+
+If you'd like to change the theme's [Sass variables](https://github.com/pages-themes/cayman/blob/master/_sass/variables.scss), set new values before the `@import` line in your stylesheet:
+
+```scss
+$section-headings-color: #0086b3;
+
+@import "{{ site.theme }}";
+```
+
 ## Roadmap
 
 See the [open issues](https://github.com/pages-themes/cayman/issues) for a list of proposed features (and known issues).
