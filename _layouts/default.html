@@ -13,17 +13,17 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
     </section>
 
     <section class="main-content">
+      <div class="fuze-iframe-container">
+        <iframe class="fuze-iframe"
+          border="0"
+	  frameBorder="0"
+	  scrolling="no"
+          src="https://secure.fuzefollowup.com/live_form/#form_key/3b86419691d16db4b46f020b89b9458effe53455"
+        />
+      </div>
       {{ content }}
 
       <footer class="site-footer">
