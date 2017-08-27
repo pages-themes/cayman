@@ -132,6 +132,9 @@ a {
 .test-header {
   text-align: center;
   background-color: $grey_4;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   @include large {
     padding: 3rem 6rem;
@@ -183,10 +186,6 @@ a {
 
 .main-content {
   word-wrap: break-word;
-
-  :first-child {
-    margin-top: 0;
-  }
 
   @include large {
     max-width: 64rem;
@@ -384,4 +383,18 @@ a {
 
 .site-footer-credits {
   color: $blockquote-text-color;
+}
+
+.test-content {
+  @include large {
+    margin-top: 14rem;
+  }
+
+  @include medium {
+    margin-top: 10rem;
+  }
+
+  @include small {
+    margin-top: 26rem;
+  }
 }
