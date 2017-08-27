@@ -1,6 +1,7 @@
 # Yentl
 
 [![Build Status](https://travis-ci.org/pages-themes/cayman.svg?branch=master)](https://travis-ci.org/pages-themes/cayman) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-cayman.svg)](https://badge.fury.io/rb/jekyll-theme-cayman)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fraceup%2Fyentl.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fraceup%2Fyentl?ref=badge_shield)
 
 > Yentl is a Jekyll-based web-app to test Race Up members before official FSAE tests. You can [have a go here](https://raceup.github.io/yentl/).
 
