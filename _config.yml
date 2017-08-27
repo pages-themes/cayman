@@ -2,3 +2,8 @@ title: Yentl | Race Up
 description: Run batch tests on humans before Formula Student entry tests.
 google_analytics:
 theme: jekyll-theme-cayman
+github:
+  repository_name: yentl
+  repository_url: https://github.com/raceup/yentl
+  owner_name: raceup
+  owner_url: https://github.com/raceup
