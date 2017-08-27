@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/pages-themes/cayman.svg?branch=master)](https://travis-ci.org/pages-themes/cayman) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-cayman.svg)](https://badge.fury.io/rb/jekyll-theme-cayman)
 
-> Yentl is a Jekyll-based web-app to test Race Up members before official FSAE tests. You can [have a go here](https://raceup.github.io/yentl/) and try to answer as many as possible answers.
+> Yentl is a Jekyll-based web-app to test Race Up members before official FSAE tests. You can [have a go here](https://raceup.github.io/yentl/).
 
 ## Table of content
 
