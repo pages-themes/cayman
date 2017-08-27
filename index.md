@@ -1,5 +1,6 @@
 ---
 layout: landingpage
+title: Yentl
 ---
 
 ## Table of content

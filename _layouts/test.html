@@ -3,7 +3,18 @@
   {% include head.html %}
   
   <body>
-    <section class="main-content">
+  	<section class="test-header">
+			<a id="attemptCounter" class="btn"># attempt / max attempt</a>
+			<a id="attemptTimer" class="btn">Attempt time</a>
+			<a id="totalTimer" class="btn">Total time</a>
+
+			<br>
+			<a href="" onclick="startPauseAttempt();"  id="startPauseAttemptButton"class="btn">Pause test</a>
+			<a href="" onclick="stopTest();" id="endAttemptButton" class="btn">End test</a>
+			<a href="/" onclick="stopTest();" id="resignButton" class="btn">Go back home</a>
+		</section>
+
+  	<section class="main-content">
       {{ content }}
     </section>
 

@@ -1,46 +1,28 @@
 ---
-layout: test
-title: Test
+layout: newtest
+title: New
 ---
 
-## This is a question
+## Table of content
 
-> This is a subtitle
+- [Questions file](#questions-file)
+- [Images folder (optional)](#images-folder-optional)
+- [Time](#time)
 
-```
-This is the question text
-... on multiple lines
-```
+# Questions file
 
-<br>
+# Images folder (optional)
 
-- Answer 0
-- Answer 1
-- Answer 2
+# Time
 
----
+### Time between attempts
 
+### Max time allowed
 
-## This is a question
+# Attempts
 
-> This is a subtitle
+### Show exactly which questions are incorrect?
 
-```
-This is the question text
-... on multiple lines
-... with a simple table:
-```
+### Show exact number of wrong questions?
 
-| m00 | m01 | m02 |
-|:----|:----|:----|
-| m10 | m11 | m12 |
-| m20 | m21 | m22 |
-| m30 | m31 | m32 |
-| m40 | m41 | m42 |
-
-<br>
-- Answer 0
-- Answer 1
-- Answer 2
-
----
+### Max attempts

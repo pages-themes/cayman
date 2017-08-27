@@ -86,6 +86,30 @@ a {
   }
 }
 
+#startPauseAttemptButton {
+  background-color: rgba(255, 122, 0, 0.5);
+
+  &:hover {
+    background-color: rgba(255, 122, 0, 0.75);
+  }
+}
+
+#endAttemptButton {
+  background-color: rgba(255, 0, 0, 0.5);
+
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.75);
+  }
+}
+
+#resignButton {
+  background-color: rgba(50, 50, 50, 0.5);
+
+  &:hover {
+    background-color: rgba(50, 50, 50, 0.75);
+  }
+}
+
 .page-header {
   color: $header-heading-color;
   text-align: center;
@@ -98,6 +122,23 @@ a {
 
   @include medium {
     padding: 3rem 4rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+  }
+}
+
+.test-header {
+  text-align: center;
+  background-color: $grey_4;
+
+  @include large {
+    padding: 3rem 6rem;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
   }
 
   @include small {

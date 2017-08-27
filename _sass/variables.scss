@@ -3,9 +3,6 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers
-// Race Up logo colors:
-// - red is RGB (176, 0, 41) or HEX (#B20029)
-// - blue is RGB (66, 90, 171) or HEX (#425AAB)
 $header-heading-color: #fff !default;
 $header-bg-color: #B20029 !default;
 $header-bg-color-secondary: #425AAB !default;
@@ -24,3 +21,16 @@ $code-text-color: #567482 !default;
 $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
+
+// 50 shades of grey
+$grey_0: #c7c7c7 !default;
+$grey_3: #6D6D6D !default;
+$grey_4: #615f5f !default;
+
+// Race Up colors:
+// logo:
+// - cd is RGB (176, 0, 41) or HEX (#B20029)
+// - ed is RGB (66, 90, 171) or HEX (#425AAB)
+// car livery:
+// - cd is HEX (#fb2323)
+// - ed is HEX (#0023ff)
