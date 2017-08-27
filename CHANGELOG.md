@@ -6,5 +6,9 @@ All notable changes to this project will be documented in this file.
 ### Added
 - changelog
 
+### Removed
+- download buttons
+
 ### Changed
 - readme
+- theme colors
