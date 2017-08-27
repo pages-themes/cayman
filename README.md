@@ -46,12 +46,12 @@ See the official [Cayman theme changelog here](https://github.com/pages-themes/c
 
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/raceup/yentl/issues) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/licenses/Apache-2.0)
 
-1. [Open an issue](https://github.com/raceup/yentl/issues/new)
-2. [fork](https://github.com/raceup/yentl/fork) this repository
-3. create your feature branch (`git checkout -b my-new-feature`)
-4. commit your changes (`git commit -am 'Added my new feature'`)
-5. publish the branch (`git push origin my-new-feature`)
-6. [open a PR](https://github.com/raceup/yentl/compare)
+0. [Open an issue](https://github.com/raceup/yentl/issues/new)
+0. [fork](https://github.com/raceup/yentl/fork) this repository
+0. create your feature branch (`git checkout -b my-new-feature`)
+0. commit your changes (`git commit -am 'Added my new feature'`)
+0. publish the branch (`git push origin my-new-feature`)
+0. [open a PR](https://github.com/raceup/yentl/compare)
 
 ## License
 
