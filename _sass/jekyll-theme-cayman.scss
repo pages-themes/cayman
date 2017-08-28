@@ -90,7 +90,9 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: url('../iv_bg.jpg');
+  background-size: cover;
+  background-position: 0% 38%;
 
   @include large {
     padding: 5rem 6rem;
@@ -315,6 +317,15 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+}
+
+.fuze-iframe-container {
+
+}
+
+.fuze-iframe {
+  height: 1705px;
+  width: 100%;
 }
 
 .site-footer {
