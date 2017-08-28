@@ -1,5 +1,10 @@
 title: Yentl | Race Up
 description: Run batch tests on humans for Formula Student entry tests.
+
+# url
+url: "raceup.github.io"  # the base hostname & protocol for your site
+baseurl: "/yentl"  # the subpath of your site, e.g. /blog/
+
 google_analytics:
 theme: jekyll-theme-cayman
 github:
