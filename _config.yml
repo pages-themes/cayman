@@ -1,5 +1,25 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-cayman
+# Setup
+title:        H+
+tagline:      Smart health monitoring
+baseurl:      ""
+paginate:     1
+
+
+# About/contact
+author:
+  name: ams_g204
+  url:  http://code.ua.pt/projects/ams2017-2018_g204
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+#Others
+markdown: kramdown
+excerpt_separator: ""
