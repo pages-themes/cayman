@@ -31,14 +31,40 @@ function showRawTest(data) {
     outHtml += "</ul>";
     document.getElementById("confirmQuestions").innerHTML = outHtml;
     document.getElementById("confirmTestForm").style.display = '';
+
+    var questions = getTest(data);
+    setLocalTest(questions);
 }
 
 
 function cancelNewTest() {
+    setStatusFinished();
+    purgeTest();
     document.location.href = "/";
 }
 
 
+function getTest(data) {
+    var numQuestions = data.length;
+    var questions = [];
+    for (var i = 0; i < numQuestions; i++) {
+        var question = data[i][0];
+        var correctAnswer = data[i][1];
+        var otherAnswers = [];
+        for (var j = 0; j < data[i].length - 2; j++) {
+            otherAnswers.push(data[i][j + 2]);
+        }
+        questions.push(
+            {
+                "q": question,
+                "a": correctAnswer,
+                "o": otherAnswers
+            }
+        )
+    }
+    return questions;
+}
+
 function createNewTest() {
-    console.log("creating test!");
+    //
 }

@@ -7,6 +7,20 @@ function getCurrentStatus() {
     return currentStatus;
 }
 
+function setLocalTest(test) {
+    localStorage.setItem("test", JSON.stringify(test));
+}
+
+
+function getLocalTest() {
+    return JSON.parse(localStorage.getItem("test"));
+}
+
+
+function purgeTest() {
+    localStorage.removeItem("test");
+}
+
 
 function setStatusNew() {
     localStorage.setItem("status", "new");
