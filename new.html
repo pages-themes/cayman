@@ -13,37 +13,53 @@
 
 <body>
 <section class="page-header">
-    <h1 class="project-name">Yentl | Race Up</h1>
-    <h2 class="project-tagline">Run batch tests on humans for Formula Student
-        entry tests.</h2>
+    <h1 class="project-name">New test</h1>
 </section>
 
 <section class="main-content">
-    <h2 id="table-of-content">Table of content</h2>
+    <h2 id="table-of-content">Please, choose the appropriate options below:</h2>
 
-    <ul>
-        <li><a href="#create-new-test">Create new test</a></li>
-        <li><a href="#take-it">Take it</a></li>
-        <li><a href="#see-results">See results</a></li>
-    </ul>
+    <form id="newTestForm" onclick="loadNewTest()">
+        <p>Questions file (.csv only)</p>
+        <input type="file" id="questionsFileInput" accept=".csv">
 
-    <h1 id="create-new-test">Create new test</h1>
-    <p>Head over <a href="new.html">this page</a> and edit the settings.</p>
+        <p>Seconds between 2 consecutive attempts</p>
+        <input type="number" id="timeBetweenAttempts" step="1" min="1"
+               value="10"/>
 
-    <h1 id="take-it">Take it</h1>
-    <p>Open your browser <a href="test.html">here</a> and follow the
-        instructions.</p>
-
-    <h1 id="see-results">See results</h1>
-    <p>See how you did <a href="finish.html">here</a>.</p>
-
-    <footer class="site-footer">
-        <span class="site-footer-owner"><a
-                href="https://github.com/raceup/yentl">yentl</a> is maintained by <a
-                href="https://github.com/raceup">raceup</a>.</span>
-    </footer>
+        <br>
+        <br>
+        <input type="button" value="Create new test">
+    </form>
 </section>
 
 
+<section class="main-content">
+    <div id="confirmQuestions">
+    </div>
+
+    <form id="confirmTestForm">
+        <input type="button" onclick="createNewTest()" value="Confirm">
+        <input type="button" onclick="cancelNewTest()" value="Cancel">
+    </form>
+</section>
+
+
+<footer class="site-footer">
+        <span class="site-footer-owner"><a
+                href="https://github.com/raceup/yentl">yentl</a> is maintained by <a
+                href="https://github.com/raceup">raceup</a>.</span>
+</footer>
 </body>
+
+<!-- loads these scripts when page has done loading -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/init.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/papaparse.js"></script>
+<script src="js/new_test.js"></script>
+
 </html>
