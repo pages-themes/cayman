@@ -6,13 +6,12 @@ function loadNewTest() {
 
     Papa.parse(questionsFileInput.files[0], {
         complete: function (results) {
-            showRawTest(results.data);
+            showRawTest(results.data, timeBetweenAttempts);
         }
     });
 }
 
-
-function showRawTest(data) {
+function showRawTest(data, timeAttempts) {
     var numQuestions = data.length;
     var outHtml = "Please, check the questions before confirming the test<ul>";
     for (var i = 0; i < numQuestions; i++) {
@@ -34,15 +33,14 @@ function showRawTest(data) {
 
     var questions = getTest(data);
     setLocalTest(questions);
+    setTestTimeout(timeAttempts);
 }
-
 
 function cancelNewTest() {
     setStatusFinished();
     purgeTest();
     document.location.href = "/";
 }
-
 
 function getTest(data) {
     var numQuestions = data.length;
