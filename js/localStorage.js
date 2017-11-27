@@ -38,31 +38,50 @@ function getTestQuestions() {
     for (var i = 0; i < test.length; i++) {
         var question = test[i]["q"];
         var answers = getQuestionAnswers(question);
+        var correctAnswer = test[i]["a"];
         questions.push({
             "q": question,
-            "a": answers
+            "a": answers,
+            "c": correctAnswer
         });
     }
     return shuffle(questions);
 }
 
+function getAnswer(question) {
+    var test = getLocalTest();
+    for (var i = 0; i < test.length; i++) {
+        if (test[i]["q"] === question) {
+            return test[i]["a"];
+        }
+    }
+
+    return "";  // null answer
+}
+
 function startNewTest() {
     localStorage.setItem("attemptNumber", "0");
     localStorage.setItem("totalTime", "0");
+    setStatusRunning();
+}
+
+function addTimeToTotal(seconds) {
+    var totalTime = getTestTotalTime();
+    totalTime += seconds;
+    localStorage.setItem("totalTime", totalTime);
 }
 
 function getTestAttemptNumber() {
-    return localStorage.getItem("attemptNumber");
+    return parseInt(localStorage.getItem("attemptNumber"));
 }
 
 function getTestTotalTime() {
-    return localStorage.getItem("totalTime");
+    return parseInt(localStorage.getItem("totalTime"));
 }
 
 function purgeTest() {
     localStorage.removeItem("test");  // test settings
     localStorage.removeItem("timeBetweenAttempts");
-
 
     localStorage.removeItem("attemptNumber");  // attempts stats
     localStorage.removeItem("totalTime");
@@ -74,6 +93,10 @@ function setStatusNew() {
     localStorage.setItem("status", "new");
 }
 
+function setStatusRunning() {
+    localStorage.setItem("status", "running");
+}
+
 function setStatusFinished() {
     localStorage.setItem("status", "finish");
 }
@@ -82,10 +105,17 @@ function isTestRunning() {
     return getCurrentStatus() === "running";
 }
 
-function setStatusRunning() {
-    localStorage.setItem("status", "running");
-}
-
 function isTestFinished() {
     return getCurrentStatus() === "finish";
+}
+
+function logAttempt() {
+    var attemptNumber = getTestAttemptNumber();
+    attemptNumber += 1;
+    localStorage.setItem("attemptNumber", attemptNumber);
+    console.log("Logging new attempt. New attempt # is " + attemptNumber);
+}
+
+function getTimeBetweenAttempts() {
+    return parseInt(localStorage.getItem("timeBetweenAttempts"));
 }

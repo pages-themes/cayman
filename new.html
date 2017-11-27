@@ -25,7 +25,7 @@
 
         <p>Seconds between 2 consecutive attempts</p>
         <input type="number" id="timeBetweenAttempts" step="1" min="1"
-               value="10"/>
+               value="10" title="time between attempts"/>
 
         <br>
         <br>
@@ -39,7 +39,7 @@
     </div>
 
     <form id="confirmTestForm">
-        <input type="button" onclick="startNewTest()" value="Start">
+        <input type="button" onclick="createTest()" value="Start">
         <input type="button" onclick="cancelNewTest()" value="Cancel">
     </form>
 </section>

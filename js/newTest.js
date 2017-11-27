@@ -63,8 +63,10 @@ function getTest(data) {
     return questions;
 }
 
-function createNewTest() {
-    setStatusRunning();
+function createTest() {
+    console.log("Starting new test. Time between attempts: " + getTimeBetweenAttempts());
+    startNewTest();
+    document.location.href = "test.html";  // go to test page
 }
 
 document.getElementById("confirmTestForm").style.display = 'none';
