@@ -30,7 +30,6 @@ function getTestCanvas() {
     return testCanvasHtml;
 }
 
-
 function populatePage() {
     document.getElementById("attemptCounter").innerHTML = getTestAttemptNumber();
     document.getElementById("totalTimer").innerHTML = getTestTotalTime();
@@ -45,5 +44,4 @@ function loadPage() {
     }
 }
 
-// loadPage();
-populatePage();
+loadPage();

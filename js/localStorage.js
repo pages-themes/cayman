@@ -55,7 +55,6 @@ function getTestAttemptNumber() {
     return localStorage.getItem("attemptNumber");
 }
 
-
 function getTestTotalTime() {
     return localStorage.getItem("totalTime");
 }
