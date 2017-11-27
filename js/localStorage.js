@@ -46,7 +46,7 @@ function getTestQuestions() {
     return shuffle(questions);
 }
 
-function createNewTest() {
+function startNewTest() {
     localStorage.setItem("attemptNumber", "0");
     localStorage.setItem("totalTime", "0");
 }
@@ -74,16 +74,8 @@ function setStatusNew() {
     localStorage.setItem("status", "new");
 }
 
-function setStatusPaused() {
-    localStorage.setItem("status", "pause");
-}
-
 function setStatusFinished() {
     localStorage.setItem("status", "finish");
-}
-
-function isTestNew() {
-    return getCurrentStatus() === "new";
 }
 
 function isTestRunning() {
@@ -92,10 +84,6 @@ function isTestRunning() {
 
 function setStatusRunning() {
     localStorage.setItem("status", "running");
-}
-
-function isTestPaused() {
-    return getCurrentStatus() === "pause";
 }
 
 function isTestFinished() {

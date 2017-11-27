@@ -1,3 +1,11 @@
+function abortTest() {
+    if (confirm("Are you sure you want to abort the test?")) {
+        setStatusFinished();
+        purgeTest();
+        document.location.href = "/";
+    }
+}
+
 function showErrorLoadingTest() {
     var out = "Sorry .. it seems that you've not created the test yet!";
     out += "\nPlease, head over <a href='new.html'>here</a> to create a new" +
