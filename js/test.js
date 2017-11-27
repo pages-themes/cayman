@@ -12,17 +12,19 @@ function abortTest() {
 }
 
 function displayTimer() {
-    attemptTime += 1;
-    document.getElementById("attemptTimer")
-        .innerHTML = getMMSSString(attemptTime);
+    if (!isTestSubmit()) {
+        attemptTime += 1;
+        document.getElementById("attemptTimer")
+            .innerHTML = getMMSSString(attemptTime);
 
-    document.getElementById("totalTimer")
-        .innerHTML = getMMSSString(totalTime + attemptTime);
+        document.getElementById("totalTimer")
+            .innerHTML = getMMSSString(totalTime + attemptTime);
+    }
 }
 
 function showErrorLoadingTest() {
     var out = "Sorry .. it seems that you've not created the test yet!";
-    out += "\nPlease, head over <a href='new.html'>here</a> to create a new" +
+    out += " Please, head over <a href='new.html'>here</a> to create a new" +
         " one!";
     document.getElementById("test-canvas").innerHTML = out;
 
@@ -58,8 +60,9 @@ function populatePage() {
 }
 
 function loadPage() {
-    if (isTestRunning()) {
+    if (isTestRunning() || isTestSubmit()) {
         populatePage();
+        setStatusRunning();
     } else {
         showErrorLoadingTest();
     }
@@ -85,23 +88,22 @@ function showTimeWait() {
     document.getElementById("test-canvas").innerHTML = "You made some" +
         " errors. Please, wait " + timeBeforeNextAttempt + " seconds" +
         " before next attempt.";
-
     setTimeout(function() {
         window.location.reload(true)
     }, 1000 * timeBeforeNextAttempt);
 }
 
 function endTest() {
+    setStatusFinished();
     document.getElementById("test-canvas").innerHTML = "Simply wonderful!" +
         " You made it! Please, wait a few moments ...";
-
     setTimeout(function() {
         window.location.href = "finish.html"
     }, 1000 * 3);  // 3 seconds
 }
 
 function submitTestAttempt() {
-    isTestRunning = false;  // stop test
+    setStatusSubmit();
     addTimeToTotal(attemptTime);  // log attempt time
     logAttempt();
 

@@ -48,17 +48,6 @@ function getTestQuestions() {
     return shuffle(questions);
 }
 
-function getAnswer(question) {
-    var test = getLocalTest();
-    for (var i = 0; i < test.length; i++) {
-        if (test[i]["q"] === question) {
-            return test[i]["a"];
-        }
-    }
-
-    return "";  // null answer
-}
-
 function startNewTest() {
     localStorage.setItem("attemptNumber", "0");
     localStorage.setItem("totalTime", "0");
@@ -97,12 +86,20 @@ function setStatusRunning() {
     localStorage.setItem("status", "running");
 }
 
+function setStatusSubmit() {
+    localStorage.setItem("status", "submit");
+}
+
 function setStatusFinished() {
     localStorage.setItem("status", "finish");
 }
 
 function isTestRunning() {
     return getCurrentStatus() === "running";
+}
+
+function isTestSubmit() {
+    return getCurrentStatus() === "submit";
 }
 
 function isTestFinished() {
