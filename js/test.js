@@ -12,12 +12,29 @@ function showErrorLoadingTest() {
     $(".main-content").removeClass("test-content");
 }
 
+function getTestCanvas() {
+    var testCanvasHtml = "<form>";  // start form
+    var questions = getTestQuestions();
+    for (var i = 0; i < questions.length; i++) {
+        testCanvasHtml += "<h2>Question #" + (i + 1) + "</h2>";
+        testCanvasHtml += "<h3>" + questions[i]["q"] + "</h3>";
+        var answers = questions[i]["a"];
+        for (var j = 0; j < answers.length; j++) {
+            testCanvasHtml += "<input type='radio' name='group" + i + "' value=' + " + j + "'>  " + answers[j] + "<br>";
+        }
+
+        testCanvasHtml += "<br>";
+        testCanvasHtml += "<br>";
+    }
+    testCanvasHtml += "</form>";  // close form TODO: add submit button
+    return testCanvasHtml;
+}
+
 
 function populatePage() {
     document.getElementById("attemptCounter").innerHTML = getTestAttemptNumber();
     document.getElementById("totalTimer").innerHTML = getTestTotalTime();
-    console.log("populating page...");
-    console.log(getTest());
+    document.getElementById("test-canvas").innerHTML = getTestCanvas();
 }
 
 function loadPage() {
@@ -28,4 +45,5 @@ function loadPage() {
     }
 }
 
-loadPage();
+// loadPage();
+populatePage();

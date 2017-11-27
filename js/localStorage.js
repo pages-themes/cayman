@@ -19,6 +19,33 @@ function getLocalTest() {
     return JSON.parse(localStorage.getItem("test"));
 }
 
+function getQuestionAnswers(question) {
+    var test = getLocalTest();
+    for (var i = 0; i < test.length; i++) {
+        if (test[i]["q"] === question) {
+            var answers = test[i]["o"];  // answers
+            answers.push(test[i]["a"]);  // add right answer
+            return shuffle(answers);  // shuffle
+        }
+    }
+
+    return [];
+}
+
+function getTestQuestions() {
+    var test = getLocalTest();
+    var questions = [];
+    for (var i = 0; i < test.length; i++) {
+        var question = test[i]["q"];
+        var answers = getQuestionAnswers(question);
+        questions.push({
+            "q": question,
+            "a": answers
+        });
+    }
+    return shuffle(questions);
+}
+
 function createNewTest() {
     localStorage.setItem("attemptNumber", "0");
     localStorage.setItem("totalTime", "0");
