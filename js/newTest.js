@@ -64,7 +64,7 @@ function getTest(data) {
 }
 
 function createNewTest() {
-    //
+    setStatusRunning();
 }
 
 document.getElementById("confirmTestForm").style.display = 'none';

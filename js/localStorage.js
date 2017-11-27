@@ -12,16 +12,36 @@ function setLocalTest(test) {
 }
 
 function setTestTimeout(timeBetweenAttempts) {
-    localStorage.setItem("testStopwatch", timeBetweenAttempts);
+    localStorage.setItem("timeBetweenAttempts", timeBetweenAttempts);
 }
 
 function getLocalTest() {
     return JSON.parse(localStorage.getItem("test"));
 }
 
+function createNewTest() {
+    localStorage.setItem("attemptNumber", "0");
+    localStorage.setItem("totalTime", "0");
+}
+
+function getTestAttemptNumber() {
+    return localStorage.getItem("attemptNumber");
+}
+
+
+function getTestTotalTime() {
+    return localStorage.getItem("totalTime");
+}
+
 function purgeTest() {
-    localStorage.removeItem("test");
-    localStorage.removeItem("testStopwatch");
+    localStorage.removeItem("test");  // test settings
+    localStorage.removeItem("timeBetweenAttempts");
+
+
+    localStorage.removeItem("attemptNumber");  // attempts stats
+    localStorage.removeItem("totalTime");
+
+    setStatusFinished();
 }
 
 function setStatusNew() {
@@ -38,6 +58,14 @@ function setStatusFinished() {
 
 function isTestNew() {
     return getCurrentStatus() === "new";
+}
+
+function isTestRunning() {
+    return getCurrentStatus() === "running";
+}
+
+function setStatusRunning() {
+    localStorage.setItem("status", "running");
 }
 
 function isTestPaused() {

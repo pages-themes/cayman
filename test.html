@@ -12,20 +12,22 @@
 </head>
 
 <body>
-<section class="test-header">
-    <a id="attemptCounter" class="btn"># attempt</a>
-    <a id="attemptTimer" class="btn">attempt time</a>
-    <a id="totalTimer" class="btn">total time</a>
+<div id="testHeader">
+    <section class="test-header">
+        <a id="attemptCounter" class="btn"># attempt</a>
+        <a id="attemptTimer" class="btn">attempt time</a>
+        <a id="totalTimer" class="btn">total time</a>
 
-    <br>
+        <br>
 
-    <a href="" onclick="startPauseAttempt();" id="startPauseAttemptButton"
-       class="btn">Pause test</a>
-    <a href="" onclick="stopTest();" id="endAttemptButton" class="btn">End
-        test</a>
-</section>
+        <a href="" onclick="startPauseAttempt();" id="startPauseAttemptButton"
+           class="btn">Pause test</a>
+        <a href="" onclick="stopTest();" id="endAttemptButton" class="btn">End
+            test</a>
+    </section>
+</div>
 
-<section class="main-content test-content">
+<section class="main-content test-content" id="test-canvas">
 </section>
 
 <footer class="site-footer">
@@ -35,4 +37,13 @@
 </footer>
 
 </body>
+
+<!-- loads these scripts when page has done loading -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- page specific scripts -->
+<script src="js/localStorage.js"></script>
+<script src="js/test.js"></script>
+
+
 </html>
