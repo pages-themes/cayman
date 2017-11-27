@@ -12,14 +12,12 @@ function abortTest() {
 }
 
 function displayTimer() {
-    if (!isTestSubmit()) {
-        attemptTime += 1;
-        document.getElementById("attemptTimer")
-            .innerHTML = getMMSSString(attemptTime);
+    attemptTime += 1;
+    document.getElementById("attemptTimer")
+        .innerHTML = getMMSSString(attemptTime);
 
-        document.getElementById("totalTimer")
-            .innerHTML = getMMSSString(totalTime + attemptTime);
-    }
+    document.getElementById("totalTimer")
+        .innerHTML = getMMSSString(totalTime + attemptTime);
 }
 
 function showErrorLoadingTest() {
@@ -69,24 +67,26 @@ function loadPage() {
 }
 
 function checkAnswers() {
+    var numWrongAnswers = 0;
+
     for (var i = 0; i < questions.length; i++) {
         for (var j = 0; j < questions[i]["a"].length; j++) {
             var selectedAnswer = document.getElementById("a_" + i + "_" + j);
             if (
                 selectedAnswer.value === questions[i]["c"] && !selectedAnswer.checked  // right answer not checked
             ) {
-                return false;
+                numWrongAnswers += 1;
             }
         }
     }
 
-    return true;
+    return numWrongAnswers;
 }
 
-function showTimeWait() {
+function showTimeWait(numWrongAnswers) {
     var timeBeforeNextAttempt = getTimeBetweenAttempts();
-    document.getElementById("test-canvas").innerHTML = "You made some" +
-        " errors. Please, wait " + timeBeforeNextAttempt + " seconds" +
+    document.getElementById("test-canvas").innerHTML = "There" +
+        " are " + numWrongAnswers + " errors. Please, wait " + timeBeforeNextAttempt + " seconds" +
         " before next attempt.";
     setTimeout(function() {
         window.location.reload(true)
@@ -104,13 +104,14 @@ function endTest() {
 
 function submitTestAttempt() {
     setStatusSubmit();
-    addTimeToTotal(attemptTime);  // log attempt time
+    addTimeToTotal(attemptTime + getTimeBetweenAttempts());  // log attempt time
     logAttempt();
 
-    if (checkAnswers()) {
+    var numWrongAnswers = checkAnswers();
+    if (numWrongAnswers === 0) {
         endTest();
     } else {
-        showTimeWait();
+        showTimeWait(numWrongAnswers);
     }
 }
 
