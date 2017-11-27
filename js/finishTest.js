@@ -7,10 +7,8 @@ function getTitle() {
 
 function getPageContent() {
     if (!isTestFinished()) {
-        var out = "Sorry .. it seems that you've not created the test yet!";
-        out += " Please, head over <a href='new.html'>here</a> to create a" +
-            " new one!";
-        return out;
+        return "Please, head over <a href='new.html'>here</a> to create a" +
+            " new test!";
     }
 
     var test = getLocalTest();

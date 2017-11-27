@@ -72,4 +72,4 @@ FIRST_FAQ_ANSWER-->
 
 ## You may also like...
 
-- [fsae-tester](https://github.com/raceup/fsae-tester) - A desktop Java app that does the same job
+- [JYentl](https://github.com/raceup/jyentl) - A desktop Java app that does the same job
