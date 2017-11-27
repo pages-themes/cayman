@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Run batch tests on humans for Formula Student entry tests."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css?">
+    <link rel="icon" type="image/png" href="logo_small.png">
+</head>
+
+<body>
+<div id="testHeader">
+    <section class="test-header">
+        <a id="attemptCounter" class="btn"># attempt</a>
+        <a id="attemptTimer" class="btn">attempt time</a>
+        <a id="totalTimer" class="btn">total time</a>
+
+        <br>
+
+        <a href="" onclick="startPauseAttempt();" id="startPauseAttemptButton"
+           class="btn">Pause test</a>
+        <a href="" onclick="stopTest();" id="endAttemptButton" class="btn">End
+            test</a>
+    </section>
+</div>
+
+<section class="main-content test-content" id="test-canvas">
+</section>
+
+<footer class="site-footer">
+        <span class="site-footer-owner"><a
+                href="https://github.com/raceup/yentl">yentl</a> is maintained by <a
+                href="https://github.com/raceup">raceup</a>.</span>
+</footer>
+
+</body>
+
+<!-- loads these scripts when page has done loading -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- page specific scripts -->
+<script src="js/utils.js"></script>
+<script src="js/localStorage.js"></script>
+<script src="js/test.js"></script>
+
+
+</html>
