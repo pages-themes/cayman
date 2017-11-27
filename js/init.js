@@ -1,1 +1,0 @@
-document.getElementById("confirmTestForm").style.display = 'none';

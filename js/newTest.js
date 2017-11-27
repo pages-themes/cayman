@@ -66,3 +66,5 @@ function getTest(data) {
 function createNewTest() {
     //
 }
+
+document.getElementById("confirmTestForm").style.display = 'none';
