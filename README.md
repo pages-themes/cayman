@@ -13,11 +13,14 @@
 - [Links](#links)
 - [You may also like...](#you-may-also-like)
 
-## Building
+## Usage
 
 ```shell
 $ git clone https://github.com/raceup/yentl.git
 $ cd yentl
+```
+then *double click* on `index.html` or
+```shell
 $ xdg-open index.html
 ```
 
