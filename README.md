@@ -6,37 +6,20 @@
 
 ## Table of content
 
-- [Key Features](#key-features)
 - [Building](#building)
-- [Examples](#examples)
 - [Changelog](#changelog)
 - [Contribute](#contribute)
 - [License](#license)
-- [FAQ](#faq)
 - [Links](#links)
 - [You may also like...](#you-may-also-like)
-
-## Key Features
-
-<!--* KEY_FEATURE_0
-    - KEY_SUBFEATURE_0-->
-*Coming soon!*
 
 ## Building
 
 ```shell
 $ git clone https://github.com/raceup/yentl.git
 $ cd yentl
-$ cd script
-$ chmod +x bootstrap
-$ ./bootsrap
-$ bash run.sh
+$ xdg-open index.html
 ```
-then open a browser [here](http://127.0.0.1:4000/)
-
-## Examples
-
-*Coming soon!*
 
 ## Changelog
 See the official [Cayman theme changelog here](https://github.com/pages-themes/cayman/commits/master); see [this one](https://github.com/raceup/yentl/blob/master/CHANGELOG.md) for project-related changes.
@@ -57,11 +40,6 @@ See the official [Cayman theme changelog here](https://github.com/pages-themes/c
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fraceup%2Fyentl.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fraceup%2Fyentl?ref=badge_shield) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 [Apache License](http://www.apache.org/licenses/LICENSE-2.0) Version 2.0, January 2004
-
-## FAQ
-<!--### FIRST_FAQ_QUESTION
-FIRST_FAQ_ANSWER-->
-*Coming soon!*
 
 ## Links
 
