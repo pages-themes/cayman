@@ -42,7 +42,10 @@ function getTestCanvas() {
         testCanvasHtml += "<h3 id='q_" + i + "'>" + questions[i]["q"] + "</h3>";
         var answers = questions[i]["a"];
         for (var j = 0; j < answers.length; j++) {
-            testCanvasHtml += "<input type='radio' id='a_" + i + "_" + j + "' name='group" + i + "' value='" + answers[j] + "'>  " + answers[j] + "<br>";
+            if (answers[j].length > 0) {
+                var answerHtml = "<input type='radio' id='a_" + i + "_" + j + "' name='group" + i + "' value='" + answers[j] + "'>  " + answers[j] + "<br>";
+                testCanvasHtml += answerHtml;
+            }
         }
 
         testCanvasHtml += "<br>";
