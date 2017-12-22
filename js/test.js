@@ -120,3 +120,23 @@ function submitTestAttempt() {
 
 loadPage();
 setInterval(displayTimer, 1000);  // repeat this function each second
+
+
+function displayImageFromStorage() {
+    var image = document.getElementById("imagePreviewAfter");
+    var imageData = localStorage.getItem("imgData");
+    image.src = atob(imageData);
+}
+
+function loadImage(e) {
+    var URL = window.URL;
+    var url = URL.createObjectURL(e.target.files[0]);
+    var img = new Image();
+    img.src = url;
+    img.onload = function () {
+        img_width = img.width;
+        img_height = img.height;
+        context.drawImage(img, 0, 0, img_width, img_height);
+    };
+    console.log(e);
+}

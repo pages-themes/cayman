@@ -1,16 +1,22 @@
-function getBase64Image(img) {
-    var canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
+function loadNewTest() {
+    setStatusNew();
 
-    var ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 10, 10);
+    var questionsFileInput = document.getElementById("questionsFileInput");
+    var timeBetweenAttempts = document.getElementById("timeBetweenAttempts").value;
 
-    return canvas.toDataURL();
+    Papa.parse(questionsFileInput.files[0], {
+        complete: function (results) {
+            showRawTest(results.data, timeBetweenAttempts);
+        }
+    });
 }
 
-function readURL(input) {
-    var img = document.getElementById("imagePreview");
+function readImage(input, id) {
+    var imgPreviewId = "imagePreview" + id;
+    var storageItem = "imageData" + id;
+    var img = document.getElementById(imgPreviewId);
+    console.log("reading img", imgPreviewId, storageItem, "into", img);
+    console.log(input);
 
     if (input.files && input.files[0]) {
         var reader = new FileReader();
@@ -18,42 +24,11 @@ function readURL(input) {
         reader.onload = function (e) {
             img.src = reader.result;
             var binaryString = e.target.result;
-            localStorage.setItem("imgData", btoa(binaryString));
+            localStorage.setItem(storageItem, btoa(binaryString));
         };
 
         reader.readAsDataURL(input.files[0]);
     }
-
-    displayImageFromStorage();
-}
-
-$("#imageInput").change(function () {
-    readURL(this);
-});
-
-function displayImageFromStorage() {
-    var image = document.getElementById("imagePreviewAfter");
-    var imageData = localStorage.getItem("imgData");
-    image.src = atob(imageData);
-}
-
-function setQuestionImage(question) {
-    var imageInput = document.getElementById("imageInput" + question);
-    var imgData = getBase64Image(imageInput);
-    saveQuestionImage(question, imgData);
-}
-
-function loadImage(e) {
-    var URL = window.URL;
-    var url = URL.createObjectURL(e.target.files[0]);
-    var img = new Image();
-    img.src = url;
-    img.onload = function () {
-        img_width = img.width;
-        img_height = img.height;
-        context.drawImage(img, 0, 0, img_width, img_height);
-    };
-    console.log(e);
 }
 
 function showRawTest(data, timeAttempts) {
@@ -71,14 +46,15 @@ function showRawTest(data, timeAttempts) {
         }
 
         outHtml += "</ul></li>";
-        outHtml += "<br><form id=\"imageForm" + i + "\"" +
-            " onclick=\"setQuestionImage(" + i + ")\">\n" +
-            "<p>Browse image (optional)</p>\n" +
-            "<input type=\"file\" id=\"imageInput" + i + "\"" +
-            " accept=\"image/x-png,image/gif,image/jpeg\">\n" +
-            "</form>";
+        outHtml += "<br></br_><form>" +
+            "        <p>Browse image (optional)</p>" +
+            "        <input type='file' id='imageInput" + i + "'\n" +
+            "               accept='image/x-png,image/gif,image/jpeg'" +
+            "               onchange='readImage(this, " + i + ")'/>" +
+            "        <img id='imagePreview" + i + "' src=''/>\n" +
+            "    </form>";
     }
-    outHtml += "</ul>";
+    outHtml += "</ul><br>";
     document.getElementById("confirmQuestions").innerHTML = outHtml;
     document.getElementById("confirmTestForm").style.display = '';
 
