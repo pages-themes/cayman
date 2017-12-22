@@ -2,26 +2,40 @@ function getBase64Image(img) {
     var canvas = document.createElement("canvas");
     canvas.width = img.width;
     canvas.height = img.height;
-    var dataURL = canvas.toDataURL("image/png");
-    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 10, 10);
+
+    return canvas.toDataURL();
 }
 
 function readURL(input) {
+    var img = document.getElementById("imagePreview");
+
     if (input.files && input.files[0]) {
         var reader = new FileReader();
 
         reader.onload = function (e) {
-            $('#imagePreview').attr('src', e.target.result);
+            img.src = reader.result;
+            var binaryString = e.target.result;
+            localStorage.setItem("imgData", btoa(binaryString));
         };
 
         reader.readAsDataURL(input.files[0]);
     }
+
+    displayImageFromStorage();
 }
 
 $("#imageInput").change(function () {
     readURL(this);
-    console.loge("reading url!");
 });
+
+function displayImageFromStorage() {
+    var image = document.getElementById("imagePreviewAfter");
+    var imageData = localStorage.getItem("imgData");
+    image.src = atob(imageData);
+}
 
 function setQuestionImage(question) {
     var imageInput = document.getElementById("imageInput" + question);
