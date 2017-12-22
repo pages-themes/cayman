@@ -116,3 +116,9 @@ function logAttempt() {
 function getTimeBetweenAttempts() {
     return parseInt(localStorage.getItem("timeBetweenAttempts"));
 }
+
+function saveQuestionImage(question, image) {
+    var test = getLocalTest();
+    test[question]["image"] = image;
+    setLocalTest(test);
+}

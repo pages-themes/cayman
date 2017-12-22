@@ -1,14 +1,45 @@
-function loadNewTest() {
-    setStatusNew();
+function getBase64Image(img) {
+    var canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+    var dataURL = canvas.toDataURL("image/png");
+    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+}
 
-    var questionsFileInput = document.getElementById("questionsFileInput");
-    var timeBetweenAttempts = document.getElementById("timeBetweenAttempts").value;
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
 
-    Papa.parse(questionsFileInput.files[0], {
-        complete: function (results) {
-            showRawTest(results.data, timeBetweenAttempts);
-        }
-    });
+        reader.onload = function (e) {
+            $('#imagePreview').attr('src', e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imageInput").change(function () {
+    readURL(this);
+    console.loge("reading url!");
+});
+
+function setQuestionImage(question) {
+    var imageInput = document.getElementById("imageInput" + question);
+    var imgData = getBase64Image(imageInput);
+    saveQuestionImage(question, imgData);
+}
+
+function loadImage(e) {
+    var URL = window.URL;
+    var url = URL.createObjectURL(e.target.files[0]);
+    var img = new Image();
+    img.src = url;
+    img.onload = function () {
+        img_width = img.width;
+        img_height = img.height;
+        context.drawImage(img, 0, 0, img_width, img_height);
+    };
+    console.log(e);
 }
 
 function showRawTest(data, timeAttempts) {
@@ -26,6 +57,12 @@ function showRawTest(data, timeAttempts) {
         }
 
         outHtml += "</ul></li>";
+        outHtml += "<br><form id=\"imageForm" + i + "\"" +
+            " onclick=\"setQuestionImage(" + i + ")\">\n" +
+            "<p>Browse image (optional)</p>\n" +
+            "<input type=\"file\" id=\"imageInput" + i + "\"" +
+            " accept=\"image/x-png,image/gif,image/jpeg\">\n" +
+            "</form>";
     }
     outHtml += "</ul>";
     document.getElementById("confirmQuestions").innerHTML = outHtml;
