@@ -25,7 +25,7 @@ function getQuestionAnswers(question) {
         if (test[i]["q"] === question) {
             var answers = test[i]["o"];  // answers
             answers.push(test[i]["a"]);  // add right answer
-            return shuffle(answers);  // shuffle
+            return answers;  // shuffle
         }
     }
 
@@ -45,7 +45,7 @@ function getTestQuestions() {
             "c": correctAnswer
         });
     }
-    return shuffle(questions);
+    return questions;
 }
 
 function startNewTest() {
@@ -69,6 +69,11 @@ function getTestTotalTime() {
 }
 
 function purgeTest() {
+    var test = getLocalTest();
+    for (var i = 0; i < test.length; i++) {
+        localStorage.removeItem("imageData" + i);  // remove images
+    }
+
     localStorage.removeItem("test");  // test settings
     localStorage.removeItem("timeBetweenAttempts");
 

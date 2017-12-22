@@ -39,6 +39,7 @@ function getTestCanvas() {
     var testCanvasHtml = "<form>";  // start form
     for (var i = 0; i < questions.length; i++) {
         testCanvasHtml += "<h2>Question #" + (i + 1) + "</h2>";
+        testCanvasHtml += "<img id='image" + i + "' src=''>";
         testCanvasHtml += "<h3 id='q_" + i + "'>" + questions[i]["q"] + "</h3>";
         var answers = questions[i]["a"];
         for (var j = 0; j < answers.length; j++) {
@@ -47,7 +48,6 @@ function getTestCanvas() {
                 testCanvasHtml += answerHtml;
             }
         }
-
         testCanvasHtml += "<br>";
         testCanvasHtml += "<br>";
     }
@@ -58,6 +58,11 @@ function getTestCanvas() {
 function populatePage() {
     document.getElementById("attemptCounter").innerHTML = attemptNumber;
     document.getElementById("test-canvas").innerHTML = getTestCanvas();
+
+    questions = getTestQuestions();
+    for (var i = 0; i < questions.length; i++) {
+        displayImageFromStorage("image" + i, "imageData" + i);
+    }
 }
 
 function loadPage() {
@@ -121,11 +126,13 @@ function submitTestAttempt() {
 loadPage();
 setInterval(displayTimer, 1000);  // repeat this function each second
 
+function displayImageFromStorage(imageId, storageId) {
+    var image = document.getElementById(imageId);
+    var imageData = localStorage.getItem(storageId);
+    if (imageData != null) {
+        image.src = atob(imageData);
+    }
 
-function displayImageFromStorage() {
-    var image = document.getElementById("imagePreviewAfter");
-    var imageData = localStorage.getItem("imgData");
-    image.src = atob(imageData);
 }
 
 function loadImage(e) {
