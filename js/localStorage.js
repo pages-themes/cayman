@@ -112,3 +112,11 @@ function logAttempt() {
     localStorage.setItem("attemptNumber", attemptNumber);
     console.log("Logging new attempt. New attempt # is " + attemptNumber);
 }
+
+function logAnswers(answers) {
+    localStorage.setItem("answers", JSON.stringify(answers));
+}
+
+function getUserAnswers() {
+    return JSON.parse(localStorage.getItem("answers"));
+}

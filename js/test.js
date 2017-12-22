@@ -136,9 +136,11 @@ function endTest(numWrongAnswers) {
 }
 
 function submitTestAttempt() {
+    saveAnswer();
     setStatusSubmit();
     addTimeToTotal(attemptTime);  // log attempt time
     logAttempt();
+    logAnswers(answers);
     endTest(checkAnswers());
 }
 

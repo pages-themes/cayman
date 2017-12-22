@@ -6,6 +6,7 @@ function getTitle() {
 }
 
 function getPageContent() {
+    var answers = getUserAnswers();
     if (!isTestFinished()) {
         return "Please, head over <a href='new.html'>here</a> to create a" +
             " new test!";
@@ -18,6 +19,7 @@ function getPageContent() {
             "<li><h2>Question #" + (i + 1) + "</h2>\n" +
             "<p><b>Question: </b>" + test[i]["q"] + "</p>\n" +
             "<p><b>Correct answer: </b>" + test[i]["a"] + "</p>\n" +
+            "<p><b>Your answer: </b>" + answers[i] + "</p>\n" +
             "<b>Other answers: </b><ul>";
 
         for (var j = 0; j < test[i]["o"].length; j++) {
