@@ -11,10 +11,6 @@ function setLocalTest(test) {
     localStorage.setItem("test", JSON.stringify(test));
 }
 
-function setTestTimeout(timeBetweenAttempts) {
-    localStorage.setItem("timeBetweenAttempts", timeBetweenAttempts);
-}
-
 function getLocalTest() {
     return JSON.parse(localStorage.getItem("test"));
 }
@@ -75,7 +71,6 @@ function purgeTest() {
     }
 
     localStorage.removeItem("test");  // test settings
-    localStorage.removeItem("timeBetweenAttempts");
 
     localStorage.removeItem("attemptNumber");  // attempts stats
     localStorage.removeItem("totalTime");
@@ -116,14 +111,4 @@ function logAttempt() {
     attemptNumber += 1;
     localStorage.setItem("attemptNumber", attemptNumber);
     console.log("Logging new attempt. New attempt # is " + attemptNumber);
-}
-
-function getTimeBetweenAttempts() {
-    return parseInt(localStorage.getItem("timeBetweenAttempts"));
-}
-
-function saveQuestionImage(question, image) {
-    var test = getLocalTest();
-    test[question]["image"] = image;
-    setLocalTest(test);
 }

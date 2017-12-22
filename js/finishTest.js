@@ -33,7 +33,6 @@ function getPageContent() {
 
     outHtml += "<li># attempts: " + numAttempts + "</li>";
     outHtml += "<li>total time: " + getMMSSString(totalTimeAttempts) + "</li>";
-    outHtml += "<li>average time per attempt: " + getMMSSString(averageTimeAttempts) + "</li>";
     outHtml += "</ul><br>Head over <a href='new.html'>here</a> to create a" +
         " new test!";
     return outHtml;

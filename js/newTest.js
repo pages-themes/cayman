@@ -2,11 +2,10 @@ function loadNewTest() {
     setStatusNew();
 
     var questionsFileInput = document.getElementById("questionsFileInput");
-    var timeBetweenAttempts = document.getElementById("timeBetweenAttempts").value;
 
     Papa.parse(questionsFileInput.files[0], {
         complete: function (results) {
-            showRawTest(results.data, timeBetweenAttempts);
+            showRawTest(results.data);
         }
     });
 }
@@ -31,7 +30,7 @@ function readImage(input, id) {
     }
 }
 
-function showRawTest(data, timeAttempts) {
+function showRawTest(data) {
     var numQuestions = data.length;
     var outHtml = "Please, check the questions before confirming the test<ul>";
     for (var i = 0; i < numQuestions; i++) {
@@ -60,7 +59,6 @@ function showRawTest(data, timeAttempts) {
 
     var questions = getTest(data);
     setLocalTest(questions);
-    setTestTimeout(timeAttempts);
 }
 
 function cancelNewTest() {
@@ -91,7 +89,7 @@ function getTest(data) {
 }
 
 function createTest() {
-    console.log("Starting new test. Time between attempts: " + getTimeBetweenAttempts());
+    console.log("Starting new test.");
     startNewTest();
     document.location.href = "test.html";  // go to test page
 }

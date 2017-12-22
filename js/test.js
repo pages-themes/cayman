@@ -3,6 +3,8 @@ var attemptTime = 0;  // seconds elapsed during attempt
 var totalTime = getTestTotalTime();  // seconds elapsed during all test
 var attemptNumber = getTestAttemptNumber() + 1;
 var questions = null;
+var currentQuestionIndex = -1;
+var answers = [];
 
 function abortTest() {
     if (confirm("Are you sure you want to abort the test?")) {
@@ -13,9 +15,6 @@ function abortTest() {
 
 function displayTimer() {
     attemptTime += 1;
-    document.getElementById("attemptTimer")
-        .innerHTML = getMMSSString(attemptTime);
-
     document.getElementById("totalTimer")
         .innerHTML = getMMSSString(totalTime + attemptTime);
 }
@@ -35,38 +34,73 @@ function showErrorLoadingTest() {
 }
 
 function getTestCanvas() {
-    questions = getTestQuestions();
     var testCanvasHtml = "<form>";  // start form
-    for (var i = 0; i < questions.length; i++) {
-        testCanvasHtml += "<h2>Question #" + (i + 1) + "</h2>";
-        testCanvasHtml += "<img id='image" + i + "' src=''>";
-        testCanvasHtml += "<h3 id='q_" + i + "'>" + questions[i]["q"] + "</h3>";
-        var answers = questions[i]["a"];
-        for (var j = 0; j < answers.length; j++) {
-            if (answers[j].length > 0) {
-                var answerHtml = "<input type='radio' id='a_" + i + "_" + j + "' name='group" + i + "' value='" + answers[j] + "'>  " + answers[j] + "<br>";
-                testCanvasHtml += answerHtml;
-            }
+    testCanvasHtml += "<h2>Question #" + (currentQuestionIndex + 1) + "</h2>";
+    testCanvasHtml += "<img id='image" + currentQuestionIndex + "' src=''>";
+    testCanvasHtml += "<h3>" + questions[currentQuestionIndex]["q"] + "</h3>";
+    var answers = questions[currentQuestionIndex]["a"];
+    for (var j = 0; j < answers.length; j++) {
+        if (answers[j].length > 0) {
+            testCanvasHtml += "<input type='radio' id='questionsForm'" +
+                " name='group" + currentQuestionIndex + "' value='" + answers[j] + "'>  " + answers[j] + "<br>";
         }
-        testCanvasHtml += "<br>";
-        testCanvasHtml += "<br>";
     }
-    testCanvasHtml += "<br><br><input type='button' value='Submit' onclick='submitTestAttempt()'></form>";
+
+    // next, prev buttons
+    testCanvasHtml += "<input style='margin-top: 8em;' type='button'" +
+        " value='Submit'" +
+        " onclick='submitTestAttempt()'></form>";
+    testCanvasHtml += "<br><br>" +
+        "<div style='margin-top: -8em;'>\n" +
+        "        <button style=\"float: left;\"" +
+        " onclick=\"goToPrevQuestion()\">Previous\n" +
+        "        </button>\n" +
+        "        <button style=\"float: right;\" onclick=\"goToNextQuestion()\">Next</button>\n" +
+        "    </div><br><br>";
+
     return testCanvasHtml;
 }
 
-function populatePage() {
-    document.getElementById("attemptCounter").innerHTML = attemptNumber;
-    document.getElementById("test-canvas").innerHTML = getTestCanvas();
-
+function setupTest() {
     questions = getTestQuestions();
+    currentQuestionIndex = 0;
     for (var i = 0; i < questions.length; i++) {
-        displayImageFromStorage("image" + i, "imageData" + i);
+        answers.push("not right");
+    }
+}
+
+function populatePage() {
+    document.getElementById("test-canvas").innerHTML = getTestCanvas();
+    displayImageFromStorage("image" + currentQuestionIndex, "imageData" + currentQuestionIndex);
+}
+
+function saveAnswer() {
+    try {
+        answers[currentQuestionIndex] = document.querySelector('input[id="questionsForm"]:checked').value;
+    } catch (err) {
+        console.log("Question", currentQuestionIndex, "with no answer.")
+    }
+}
+
+function goToPrevQuestion() {
+    if (currentQuestionIndex > 0) {
+        saveAnswer();
+        currentQuestionIndex -= 1;
+        populatePage();
+    }
+}
+
+function goToNextQuestion() {
+    if (currentQuestionIndex < questions.length - 1) {
+        saveAnswer();
+        currentQuestionIndex += 1;
+        populatePage();
     }
 }
 
 function loadPage() {
     if (isTestRunning() || isTestSubmit()) {
+        setupTest();
         populatePage();
         setStatusRunning();
     } else {
@@ -78,33 +112,24 @@ function checkAnswers() {
     var numWrongAnswers = 0;
 
     for (var i = 0; i < questions.length; i++) {
-        for (var j = 0; j < questions[i]["a"].length; j++) {
-            var selectedAnswer = document.getElementById("a_" + i + "_" + j);
-            if (
-                selectedAnswer.value === questions[i]["c"] && !selectedAnswer.checked  // right answer not checked
-            ) {
-                numWrongAnswers += 1;
-            }
+        if (!(answers[i] == questions[i]["c"])) {
+            numWrongAnswers += 1;
         }
     }
 
     return numWrongAnswers;
 }
 
-function showTimeWait(numWrongAnswers) {
-    var timeBeforeNextAttempt = getTimeBetweenAttempts();
-    document.getElementById("test-canvas").innerHTML = "There" +
-        " are " + numWrongAnswers + " errors. Please, wait " + timeBeforeNextAttempt + " seconds" +
-        " before next attempt.";
-    setTimeout(function() {
-        window.location.reload(true)
-    }, 1000 * timeBeforeNextAttempt);
-}
-
-function endTest() {
+function endTest(numWrongAnswers) {
     setStatusFinished();
-    document.getElementById("test-canvas").innerHTML = "Simply wonderful!" +
-        " You made it! Please, wait a few moments ...";
+    if (numWrongAnswers === 0) {
+        document.getElementById("test-canvas").innerHTML = "Simply wonderful!" +
+            " You made it! Please, wait a few moments ...";
+    } else {
+        document.getElementById("test-canvas").innerHTML = "Ooops!" +
+            " You made " + numWrongAnswers + " errors! -.-";
+    }
+
     setTimeout(function() {
         window.location.href = "finish.html"
     }, 1000 * 3);  // 3 seconds
@@ -112,15 +137,9 @@ function endTest() {
 
 function submitTestAttempt() {
     setStatusSubmit();
-    addTimeToTotal(attemptTime + getTimeBetweenAttempts());  // log attempt time
+    addTimeToTotal(attemptTime);  // log attempt time
     logAttempt();
-
-    var numWrongAnswers = checkAnswers();
-    if (numWrongAnswers === 0) {
-        endTest();
-    } else {
-        showTimeWait(numWrongAnswers);
-    }
+    endTest(checkAnswers());
 }
 
 loadPage();
@@ -133,17 +152,4 @@ function displayImageFromStorage(imageId, storageId) {
         image.src = atob(imageData);
     }
 
-}
-
-function loadImage(e) {
-    var URL = window.URL;
-    var url = URL.createObjectURL(e.target.files[0]);
-    var img = new Image();
-    img.src = url;
-    img.onload = function () {
-        img_width = img.width;
-        img_height = img.height;
-        context.drawImage(img, 0, 0, img_width, img_height);
-    };
-    console.log(e);
 }
