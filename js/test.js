@@ -34,14 +34,14 @@ function showErrorLoadingTest() {
 }
 
 function getTestCanvas() {
-    var testCanvasHtml = "<form>";  // start form
+    var testCanvasHtml = "<form id='questionsForm'>";  // start form
     testCanvasHtml += "<h2>Question #" + (currentQuestionIndex + 1) + "</h2>";
     testCanvasHtml += "<img id='image" + currentQuestionIndex + "' src=''>";
     testCanvasHtml += "<h3>" + questions[currentQuestionIndex]["q"] + "</h3>";
     var answers = questions[currentQuestionIndex]["a"];
     for (var j = 0; j < answers.length; j++) {
         if (answers[j].length > 0) {
-            testCanvasHtml += "<input type='radio' id='questionsForm'" +
+            testCanvasHtml += "<input type='radio'" +
                 " name='group" + currentQuestionIndex + "' value='" + answers[j] + "'>  " + answers[j] + "<br>";
         }
     }
@@ -72,13 +72,32 @@ function setupTest() {
 function populatePage() {
     document.getElementById("test-canvas").innerHTML = getTestCanvas();
     displayImageFromStorage("image" + currentQuestionIndex, "imageData" + currentQuestionIndex);
+    loadAnswer();
 }
 
 function saveAnswer() {
-    try {
-        answers[currentQuestionIndex] = document.querySelector('input[id="questionsForm"]:checked').value;
-    } catch (err) {
-        console.log("Question", currentQuestionIndex, "with no answer.")
+    var formOptions = $("#questionsForm").find("input");
+    for (var i = 0; i < formOptions.length; i++) {
+        if (formOptions[i].checked) {
+            answers[currentQuestionIndex] = formOptions[i].value;
+        }
+    }
+}
+
+function loadAnswer() {
+    var formOptions = $("#questionsForm").find("input");
+    var hasAlreadyAnswered = false;
+    for (var i = 0; i < formOptions.length; i++) {
+        if (formOptions[i].value === answers[currentQuestionIndex]) {
+            formOptions[i].checked = true;
+            hasAlreadyAnswered = true;
+        }
+    }
+
+    if (hasAlreadyAnswered) {
+        for (var i = 0; i < formOptions.length; i++) {
+            formOptions[i].disabled = "disabled";
+        }
     }
 }
 
