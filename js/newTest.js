@@ -20,8 +20,6 @@ function readImage(input, id) {
 	let imgPreviewId = "imagePreview" + id;
 	let storageItem = "imageData" + id;
 	let img = document.getElementById(imgPreviewId);
-	console.log("reading img", imgPreviewId, storageItem, "into", img);
-	console.log(input);
 
 	if (input.files && input.files[0]) {
 		let reader = new FileReader();
@@ -66,8 +64,6 @@ function showRawTest(data) {
 	document.getElementById("confirmQuestions").innerHTML = outHtml;
 	document.getElementById("confirmTestForm").style.display = '';
 
-	console.log('Parsed test:');
-	console.log(test);
 	setLocalTest(test);
 }
 
@@ -127,7 +123,6 @@ function parseRawTest(data) {
 }
 
 function createTest() {
-	console.log("Starting new test.");
 	startNewTest();
 	document.location.href = "test.html"; // go to test page
 }

@@ -1,10 +1,12 @@
 // global vars
 let attemptTime = 0; // seconds elapsed during attempt
+let questionTime = 0; // seconds elapsed during this question
 let totalTime = getTestTotalTime(); // seconds elapsed during all test
 let attemptNumber = getTestAttemptNumber() + 1;
 let questions = null;
 let currentQuestionIndex = -1;
 let answers = {};
+let times = {}; // time spent for each question
 
 function abortTest() {
 	if (confirm("Are you sure you want to abort the test?")) {
@@ -14,9 +16,10 @@ function abortTest() {
 }
 
 function displayTimer() {
+	questionTime += 1; // increase by 1 second ...
 	attemptTime += 1;
 	document.getElementById("totalTimer")
-		.innerHTML = getMMSSString(totalTime + attemptTime);
+		.innerHTML = getMMSSString(totalTime + attemptTime); // ... and display
 }
 
 function showErrorLoadingTest() {
@@ -85,9 +88,6 @@ function saveAnswer() {
 	}
 
 	answers[currentQuestionIndex] = answered;
-
-	console.log(answered);
-	console.log(answers);
 }
 
 function loadAnswer() {
@@ -108,6 +108,13 @@ function loadAnswer() {
 }
 
 function goToNextQuestion() {
+	const previousTime = times[currentQuestionIndex];
+	if (previousTime === undefined) {
+		times[currentQuestionIndex] = questionTime;
+	} else {
+		times[currentQuestionIndex] += questionTime;
+	}
+
 	if (currentQuestionIndex < questions.length - 1) {
 		saveAnswer();
 		currentQuestionIndex += 1;
@@ -178,7 +185,8 @@ function submitTestAttempt() {
 	setStatusSubmit();
 	addTimeToTotal(attemptTime); // log attempt time
 	logAttempt();
-	logAnswers(answers);
+	saveAnswers(answers);
+	setTimes(times);
 
 	const nWrongAnswers = checkAnswers();
 	endTest(nWrongAnswers);
@@ -193,5 +201,4 @@ function displayImageFromStorage(imageId, storageId) {
 	if (imageData !== null) {
 		image.src = atob(imageData);
 	}
-
 }

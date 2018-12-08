@@ -8,6 +8,7 @@ function getTitle() {
 function getPageContent() {
 	let answers = getUserAnswers();
 	let results = getResults();
+	let times = getTimes();
 
 	if (!isTestFinished()) {
 		return "Please, head over <a href='new.html'>here</a> to create a" +
@@ -24,6 +25,7 @@ function getPageContent() {
 		}
 
 		outHtml += "<h2 style='margin-bottom: 32px;'>Question #" + (i + 1) + "</h2>\n" +
+			"<p><b>Time spent: </b>" + getMMSSString(times[i]) + "</p>\n" +
 			"<p><b>Question: </b>" + test[i]["question"] + "</p>\n" +
 			"<p><b>Correct answer: </b>" + test[i]["correctAnswer"] + "</p>\n" +
 			"<p><b>Your answer: </b>" + Array.from(answers[i]).join(' e ') + "</p>\n" +
