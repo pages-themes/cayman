@@ -7,6 +7,7 @@ function loadNewTest() {
 		$("#createNewTest").hide(); // hide upload button
 		readXlsxFile(input.files[0]).then(function (data) {
 			data.shift(); // remove header
+			data = shuffle(data);
 			showRawTest(data);
 		}, (error) => {
 			console.error(error);
