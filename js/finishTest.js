@@ -17,13 +17,13 @@ function getPageContent() {
 	for (let i = 0; i < test.length; i++) {
 		outHtml +=
 			"<li><h2>Question #" + (i + 1) + "</h2>\n" +
-			"<p><b>Question: </b>" + test[i]["q"] + "</p>\n" +
-			"<p><b>Correct answer: </b>" + test[i]["a"] + "</p>\n" +
-			"<p><b>Your answer: </b>" + answers[i] + "</p>\n" +
+			"<p><b>Question: </b>" + test[i]["question"] + "</p>\n" +
+			"<p><b>Correct answer: </b>" + test[i]["correctAnswer"] + "</p>\n" +
+			"<p><b>Your answer: </b>" + Array.from(answers[i]).join(' e ') + "</p>\n" +
 			"<b>Other answers: </b><ul>";
 
-		for (let j = 0; j < test[i]["o"].length; j++) {
-			outHtml += "<li>" + test[i]["o"][j] + "</li>";
+		for (let j = 0; j < test[i]["wrongAnswers"].length; j++) {
+			outHtml += "<li>" + test[i]["wrongAnswers"][j] + "</li>";
 		}
 
 		outHtml += "</ul></li>";

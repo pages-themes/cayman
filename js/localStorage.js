@@ -8,20 +8,35 @@ function getCurrentStatus() {
 }
 
 function setLocalTest(test) {
-	localStorage.setItem("test", JSON.stringify(test));
+	for (let i = 0; i < test.length; i++) {
+		test[i]['correctAnswers'] = Array.from(test[i]['correctAnswers']);
+	} // set -> list to stringify
+
+	const json = JSON.stringify(test);
+	localStorage.setItem("test", json);
+
+	console.log('Saved test:');
+	console.log('test -> \n', json);
 }
 
 function getLocalTest() {
-	return JSON.parse(localStorage.getItem("test"));
+	let test = JSON.parse(localStorage.getItem("test"));
+
+	for (let i = 0; i < test.length; i++) {
+		test[i]['correctAnswers'] = new Set(test[i]['correctAnswers']);
+	} // list -> set from stringify
+
+	return test;
 }
 
 function getQuestionAnswers(question) {
 	let test = getLocalTest();
 	for (let i = 0; i < test.length; i++) {
-		if (test[i]["q"] === question) {
-			let answers = test[i]["o"]; // answers
-			answers.push(test[i]["a"]); // add right answer
-			return answers; // shuffle
+		if (test[i]["question"] === question) {
+			let answers = test[i]["wrongAnswers"]; // answers
+			answers = answers.concat(Array.from(test[i]["correctAnswers"])); // add right answers
+
+			return shuffle(answers);
 		}
 	}
 
@@ -32,13 +47,14 @@ function getTestQuestions() {
 	let test = getLocalTest();
 	let questions = [];
 	for (let i = 0; i < test.length; i++) {
-		let question = test[i]["q"];
+		let question = test[i]["question"];
 		let answers = getQuestionAnswers(question);
-		let correctAnswer = test[i]["a"];
+		let correctAnswer = test[i]["correctAnswers"];
+
 		questions.push({
-			"q": question,
-			"a": answers,
-			"c": new Set(correctAnswer)
+			"question": question,
+			"allAnswers": answers, // all answers
+			"correctAnswers": new Set(correctAnswer)
 		});
 	}
 	return questions;
@@ -71,7 +87,6 @@ function purgeTest() {
 	}
 
 	localStorage.removeItem("test"); // test settings
-
 	localStorage.removeItem("attemptNumber"); // attempts stats
 	localStorage.removeItem("totalTime");
 
@@ -114,9 +129,24 @@ function logAttempt() {
 }
 
 function logAnswers(answers) {
-	localStorage.setItem("answers", JSON.stringify(answers));
+	const jsonAnswers = {};
+	Object.keys(answers).forEach(function (key) {
+		jsonAnswers[key] = Array.from(answers[key]); // set -> list to stringify
+	});
+
+	answers = JSON.stringify(jsonAnswers);
+
+	console.log('saving', answers);
+	localStorage.setItem("answers", answers);
 }
 
 function getUserAnswers() {
-	return JSON.parse(localStorage.getItem("answers"));
+	const answers = JSON.parse(localStorage.getItem("answers"));
+	const parsed = {};
+
+	Object.keys(answers).forEach(function (key) {
+		parsed[key] = new Set(answers[key]); // list -> set from stringify
+	});
+
+	return parsed;
 }

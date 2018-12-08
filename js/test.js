@@ -4,7 +4,7 @@ let totalTime = getTestTotalTime(); // seconds elapsed during all test
 let attemptNumber = getTestAttemptNumber() + 1;
 let questions = null;
 let currentQuestionIndex = -1;
-let answers = [];
+let answers = {};
 
 function abortTest() {
 	if (confirm("Are you sure you want to abort the test?")) {
@@ -37,8 +37,8 @@ function getTestCanvas() {
 	let testCanvasHtml = "<form id='questionsForm'>"; // start form
 	testCanvasHtml += "<h2>Question #" + (currentQuestionIndex + 1) + "</h2>";
 	testCanvasHtml += "<img id='image" + currentQuestionIndex + "' src=''>";
-	testCanvasHtml += "<h3>" + questions[currentQuestionIndex]["q"] + "</h3>";
-	let answers = questions[currentQuestionIndex]["a"];
+	testCanvasHtml += "<h3>" + questions[currentQuestionIndex]["question"] + "</h3>";
+	let answers = questions[currentQuestionIndex]["allAnswers"];
 	for (let j = 0; j < answers.length; j++) {
 		if (answers[j].length > 0) {
 			testCanvasHtml += "<input type='checkbox'" +
@@ -67,9 +67,6 @@ function getTestCanvas() {
 function setupTest() {
 	questions = getTestQuestions();
 	currentQuestionIndex = 0;
-	for (let i = 0; i < questions.length; i++) {
-		answers.push("not right");
-	}
 }
 
 function populatePage() {
@@ -86,7 +83,11 @@ function saveAnswer() {
 			answered.add(formOptions[i].value);
 		}
 	}
+
 	answers[currentQuestionIndex] = answered;
+
+	console.log(answered);
+	console.log(answers);
 }
 
 function loadAnswer() {
@@ -144,7 +145,7 @@ function checkAnswers() {
 	let numWrongAnswers = 0;
 
 	for (let i = 0; i < questions.length; i++) {
-		if (!containSameStuff(answers[i], questions[i]["c"])) {
+		if (!containSameStuff(answers[i], questions[i]["correctAnswers"])) {
 			numWrongAnswers += 1;
 		}
 	}

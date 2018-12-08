@@ -4,6 +4,7 @@ function loadNewTest() {
 	const input = document.getElementById('questionsFileInput');
 
 	input.addEventListener('change', function () {
+		$("#createNewTest").hide(); // hide upload button
 		readXlsxFile(input.files[0]).then(function (data) {
 			data.shift(); // remove header
 			showRawTest(data);
@@ -40,13 +41,11 @@ function showRawTest(data) {
 	let outHtml = "Please, check the questions before confirming the test<ul>";
 	for (let i = 0; i < test.length; i++) {
 		const question = test[i];
-		console.log(question);
-		const correctAnswers = Array.from(question['correctAnswers']);
 
 		outHtml +=
 			"<li><h2>Question #" + (i + 1) + "</h2>\n" +
 			"<p><b>Question: </b>" + question['question'] + "</p>\n" +
-			"<p><b>Correct answer: </b>" + correctAnswers.join(" e ") + "</p>\n" +
+			"<p><b>Correct answer: </b>" + question['correctAnswer'] + "</p>\n" +
 			"<b>Other answers: </b><ul>";
 
 		for (let j = 0; j < question['wrongAnswers'].length; j++) {
@@ -66,6 +65,8 @@ function showRawTest(data) {
 	document.getElementById("confirmQuestions").innerHTML = outHtml;
 	document.getElementById("confirmTestForm").style.display = '';
 
+	console.log('Parsed test:');
+	console.log(test);
 	setLocalTest(test);
 }
 
@@ -114,13 +115,13 @@ function parseRawTest(data) {
 		questions.push(
 			{
 				"question": question,
-				"correctAnswers": new Set(correctAnswers),
+				"correctAnswers": new Set(correctAnswers), // set ...
+				"correctAnswer": correctAnswers.join(" e "), // ... string
 				"wrongAnswers": otherAnswers
 			}
 		)
 	}
 
-	console.log(questions);
 	return questions;
 }
 
