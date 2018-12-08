@@ -27,12 +27,12 @@
 
     <h3>As to how to prepare the input files ...</h3>
     <ol>
-        <li>Prepare a <code>.csv</code> file like the <a
-                href="https://raw.githubusercontent.com/raceup/yentl/master/extra/questions.csv">example</a>.
+        <li>Prepare a <code>.xlsx</code> file like the <a
+                href="https://raw.githubusercontent.com/raceup/yentl/master/extra/questions.xslx">example</a>.
         </li>
         <li>The table should have this form (obviously there can be many options
-            per <br>
-            question, not just 4)
+            per question, not just 4). <strong>Important</strong>: you must
+            include a header with labels.
         </li>
     </ol>
     <table>
@@ -40,6 +40,7 @@
         <tr>
             <th>question</th>
             <th>right answer</th>
+            <th>other possible right answer (leave blank if there isn't)</th>
             <th>wrong answer</th>
             <th>wrong answer</th>
         </tr>
@@ -48,12 +49,14 @@
         <tr>
             <td>What’s 1 + 1?</td>
             <td>2</td>
+            <td></td>
             <td>I don’t know</td>
             <td>4</td>
         </tr>
         <tr>
             <td>How you like Race Up?</td>
             <td>I <strong>do</strong> like it!</td>
+            <td>Very much</td>
             <td>No</td>
             <td>F*** you!</td>
         </tr>

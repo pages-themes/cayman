@@ -1096,12 +1096,17 @@ a:hover {
     }
 }
 
-.wrong {
-    background: red;
+.questionSummary {
+    border-radius: 20px;
+    padding: 16px;
+    margin: 32px;
     color: black;
 }
 
+.wrong {
+    background: #d14;
+}
+
 .right {
-    background: green;
-    color: black;
+    background: #009926;
 }

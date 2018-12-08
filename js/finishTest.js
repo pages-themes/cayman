@@ -18,12 +18,12 @@ function getPageContent() {
 	let outHtml = "<h2>Summary of questions:</h2><ul>";
 	for (let i = 0; i < test.length; i++) {
 		if (results[i]) {
-			outHtml += "<li class='right'>";
+			outHtml += "<li class='questionSummary right'>";
 		} else {
-			outHtml += "<li class='wrong'>";
+			outHtml += "<li class='questionSummary wrong'>";
 		}
 
-		outHtml += "<h2>Question #" + (i + 1) + "</h2>\n" +
+		outHtml += "<h2 style='margin-bottom: 32px;'>Question #" + (i + 1) + "</h2>\n" +
 			"<p><b>Question: </b>" + test[i]["question"] + "</p>\n" +
 			"<p><b>Correct answer: </b>" + test[i]["correctAnswer"] + "</p>\n" +
 			"<p><b>Your answer: </b>" + Array.from(answers[i]).join(' e ') + "</p>\n" +
