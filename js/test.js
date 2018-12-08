@@ -142,14 +142,19 @@ function containSameStuff(as, bs) {
 }
 
 function checkAnswers() {
+	let results = [];
 	let numWrongAnswers = 0;
 
 	for (let i = 0; i < questions.length; i++) {
 		if (!containSameStuff(answers[i], questions[i]["correctAnswers"])) {
 			numWrongAnswers += 1;
+			results.push(false);
+		} else {
+			results.push(true);
 		}
 	}
 
+	setResults(results);
 	return numWrongAnswers;
 }
 
@@ -174,7 +179,9 @@ function submitTestAttempt() {
 	addTimeToTotal(attemptTime); // log attempt time
 	logAttempt();
 	logAnswers(answers);
-	endTest(checkAnswers());
+
+	const nWrongAnswers = checkAnswers();
+	endTest(nWrongAnswers);
 }
 
 loadPage();

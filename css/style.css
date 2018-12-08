@@ -1095,3 +1095,13 @@ a:hover {
         margin-top: 26rem;
     }
 }
+
+.wrong {
+    background: red;
+    color: black;
+}
+
+.right {
+    background: green;
+    color: black;
+}

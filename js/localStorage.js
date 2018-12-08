@@ -150,3 +150,12 @@ function getUserAnswers() {
 
 	return parsed;
 }
+
+function setResults(results) {
+	localStorage.setItem("results", JSON.stringify(results));
+}
+
+function getResults() {
+	const results = localStorage.getItem("results");
+	return JSON.parse(results);
+}

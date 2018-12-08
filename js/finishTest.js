@@ -7,6 +7,8 @@ function getTitle() {
 
 function getPageContent() {
 	let answers = getUserAnswers();
+	let results = getResults();
+
 	if (!isTestFinished()) {
 		return "Please, head over <a href='new.html'>here</a> to create a" +
 			" new test!";
@@ -15,8 +17,13 @@ function getPageContent() {
 	let test = getLocalTest();
 	let outHtml = "<h2>Summary of questions:</h2><ul>";
 	for (let i = 0; i < test.length; i++) {
-		outHtml +=
-			"<li><h2>Question #" + (i + 1) + "</h2>\n" +
+		if (results[i]) {
+			outHtml += "<li class='right'>";
+		} else {
+			outHtml += "<li class='wrong'>";
+		}
+
+		outHtml += "<h2>Question #" + (i + 1) + "</h2>\n" +
 			"<p><b>Question: </b>" + test[i]["question"] + "</p>\n" +
 			"<p><b>Correct answer: </b>" + test[i]["correctAnswer"] + "</p>\n" +
 			"<p><b>Your answer: </b>" + Array.from(answers[i]).join(' e ') + "</p>\n" +
