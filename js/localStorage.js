@@ -1,5 +1,5 @@
 function getCurrentStatus() {
-	var currentStatus = null;
+	let currentStatus = null;
 	if (localStorage.status) {
 		currentStatus = localStorage.getItem("status");
 	}
@@ -16,12 +16,12 @@ function getLocalTest() {
 }
 
 function getQuestionAnswers(question) {
-	var test = getLocalTest();
-	for (var i = 0; i < test.length; i++) {
+	let test = getLocalTest();
+	for (let i = 0; i < test.length; i++) {
 		if (test[i]["q"] === question) {
-			var answers = test[i]["o"];  // answers
-			answers.push(test[i]["a"]);  // add right answer
-			return answers;  // shuffle
+			let answers = test[i]["o"]; // answers
+			answers.push(test[i]["a"]); // add right answer
+			return answers; // shuffle
 		}
 	}
 
@@ -29,16 +29,16 @@ function getQuestionAnswers(question) {
 }
 
 function getTestQuestions() {
-	var test = getLocalTest();
-	var questions = [];
-	for (var i = 0; i < test.length; i++) {
-		var question = test[i]["q"];
-		var answers = getQuestionAnswers(question);
-		var correctAnswer = test[i]["a"];
+	let test = getLocalTest();
+	let questions = [];
+	for (let i = 0; i < test.length; i++) {
+		let question = test[i]["q"];
+		let answers = getQuestionAnswers(question);
+		let correctAnswer = test[i]["a"];
 		questions.push({
 			"q": question,
 			"a": answers,
-			"c": correctAnswer
+			"c": new Set(correctAnswer)
 		});
 	}
 	return questions;
@@ -51,7 +51,7 @@ function startNewTest() {
 }
 
 function addTimeToTotal(seconds) {
-	var totalTime = getTestTotalTime();
+	let totalTime = getTestTotalTime();
 	totalTime += seconds;
 	localStorage.setItem("totalTime", totalTime);
 }
@@ -65,14 +65,14 @@ function getTestTotalTime() {
 }
 
 function purgeTest() {
-	var test = getLocalTest();
-	for (var i = 0; i < test.length; i++) {
-		localStorage.removeItem("imageData" + i);  // remove images
+	let test = getLocalTest();
+	for (let i = 0; i < test.length; i++) {
+		localStorage.removeItem("imageData" + i); // remove images
 	}
 
-	localStorage.removeItem("test");  // test settings
+	localStorage.removeItem("test"); // test settings
 
-	localStorage.removeItem("attemptNumber");  // attempts stats
+	localStorage.removeItem("attemptNumber"); // attempts stats
 	localStorage.removeItem("totalTime");
 
 	setStatusFinished();
@@ -107,7 +107,7 @@ function isTestFinished() {
 }
 
 function logAttempt() {
-	var attemptNumber = getTestAttemptNumber();
+	let attemptNumber = getTestAttemptNumber();
 	attemptNumber += 1;
 	localStorage.setItem("attemptNumber", attemptNumber);
 	console.log("Logging new attempt. New attempt # is " + attemptNumber);

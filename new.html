@@ -13,7 +13,8 @@
 
 <body>
 <section class="page-header">
-    <h1 class="project-name" align="center">Yentl | New test</h1>
+    <h1 class="project-name" align="center">
+        Yentl | New test</h1>
 </section>
 
 <section class="main-content">
@@ -21,7 +22,7 @@
 
     <form id="newTestForm" onclick="loadNewTest()">
         <p>Questions file (.csv only)</p>
-        <input type="file" id="questionsFileInput" accept=".csv">
+        <input type="file" id="questionsFileInput" accept=".xlsx">
         <input type="button" value="Create new test">
     </form>
 </section>
@@ -50,7 +51,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- page specific scripts -->
 <script src="js/localStorage.js"></script>
-<script src="js/papaparse.js"></script>
+<script src="js/read-excel-file.min.js"></script>
 <script src="js/newTest.js"></script>
 
 </html>

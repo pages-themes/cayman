@@ -31,7 +31,6 @@ function getPageContent() {
 	outHtml += "</ul><br><h2>Summary of attempts:</h2><br><ul>";
 	let numAttempts = getTestAttemptNumber();
 	let totalTimeAttempts = getTestTotalTime();
-	let averageTimeAttempts = Math.round(totalTimeAttempts / numAttempts);
 
 	outHtml += "<li># attempts: " + numAttempts + "</li>";
 	outHtml += "<li>total time: " + getMMSSString(totalTimeAttempts) + "</li>";

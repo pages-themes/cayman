@@ -1,12 +1,16 @@
 function loadNewTest() {
 	setStatusNew();
 
-	let questionsFileInput = document.getElementById("questionsFileInput");
+	const input = document.getElementById('questionsFileInput');
 
-	Papa.parse(questionsFileInput.files[0], {
-		complete: function (results) {
-			showRawTest(results.data);
-		}
+	input.addEventListener('change', function () {
+		readXlsxFile(input.files[0]).then(function (data) {
+			data.shift(); // remove header
+			showRawTest(data);
+		}, (error) => {
+			console.error(error);
+			alert("Error while parsing Excel file. See console output for the error stack trace.")
+		})
 	});
 }
 
@@ -31,17 +35,22 @@ function readImage(input, id) {
 }
 
 function showRawTest(data) {
-	let numQuestions = data.length;
+	let test = parseRawTest(data);
+
 	let outHtml = "Please, check the questions before confirming the test<ul>";
-	for (let i = 0; i < numQuestions; i++) {
+	for (let i = 0; i < test.length; i++) {
+		const question = test[i];
+		console.log(question);
+		const correctAnswers = Array.from(question['correctAnswers']);
+
 		outHtml +=
 			"<li><h2>Question #" + (i + 1) + "</h2>\n" +
-			"<p><b>Question: </b>" + data[i][0] + "</p>\n" +
-			"<p><b>Correct answer: </b>" + data[i][1] + "</p>\n" +
+			"<p><b>Question: </b>" + question['question'] + "</p>\n" +
+			"<p><b>Correct answer: </b>" + correctAnswers.join(" e ") + "</p>\n" +
 			"<b>Other answers: </b><ul>";
 
-		for (let j = 0; j < data[i].length - 2; j++) {
-			outHtml += "<li>" + data[i][j + 2] + "</li>";
+		for (let j = 0; j < question['wrongAnswers'].length; j++) {
+			outHtml += "<li>" + question['wrongAnswers'][j] + "</li>";
 		}
 
 		outHtml += "</ul></li>";
@@ -57,8 +66,7 @@ function showRawTest(data) {
 	document.getElementById("confirmQuestions").innerHTML = outHtml;
 	document.getElementById("confirmTestForm").style.display = '';
 
-	let questions = getTest(data);
-	setLocalTest(questions);
+	setLocalTest(test);
 }
 
 function cancelNewTest() {
@@ -67,31 +75,59 @@ function cancelNewTest() {
 	document.location.href = "/";
 }
 
-function getTest(data) {
-	let numQuestions = data.length;
-	let questions = [];
-	for (let i = 0; i < numQuestions; i++) {
-		let question = data[i][0];
-		let correctAnswer = data[i][1];
-		let otherAnswers = [];
-		for (let j = 0; j < data[i].length - 2; j++) {
-			otherAnswers.push(data[i][j + 2]);
+function preProcessRawData(data) {
+	for (let i = 0; i < data.length; i++) {
+		for (let j = 0; j < data[i].length; j++) {
+			if (data[i][j] === null || data[i][j] === undefined) {
+				data[i][j] = ''
+			} else {
+				data[i][j] = data[i][j].toString().trim() || '';
+			}
 		}
+	}
+
+	return data;
+}
+
+function parseRawTest(data) {
+	data = preProcessRawData(data);
+
+	let questions = [];
+
+	for (let i = 0; i < data.length; i++) {
+		let question = data[i][0];
+
+		let correctAnswers = [];
+		for (let k = 1; k <= 2; k++) {
+			if (data[i][k].length > 0) { // if there is an answer
+				correctAnswers.push(data[i][k])
+			}
+		}
+
+		let otherAnswers = [];
+		for (let j = 3; j < data[i].length - 1; j++) {
+			if (data[i][j].length > 0) { // if there is an answer
+				otherAnswers.push(data[i][j]);
+			}
+		}
+
 		questions.push(
 			{
-				"q": question,
-				"a": correctAnswer,
-				"o": otherAnswers
+				"question": question,
+				"correctAnswers": new Set(correctAnswers),
+				"wrongAnswers": otherAnswers
 			}
 		)
 	}
+
+	console.log(questions);
 	return questions;
 }
 
 function createTest() {
 	console.log("Starting new test.");
 	startNewTest();
-	document.location.href = "test.html";  // go to test page
+	document.location.href = "test.html"; // go to test page
 }
 
 document.getElementById("confirmTestForm").style.display = 'none';

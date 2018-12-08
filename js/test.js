@@ -1,6 +1,6 @@
 // global vars
-let attemptTime = 0;  // seconds elapsed during attempt
-let totalTime = getTestTotalTime();  // seconds elapsed during all test
+let attemptTime = 0; // seconds elapsed during attempt
+let totalTime = getTestTotalTime(); // seconds elapsed during all test
 let attemptNumber = getTestAttemptNumber() + 1;
 let questions = null;
 let currentQuestionIndex = -1;
@@ -34,7 +34,7 @@ function showErrorLoadingTest() {
 }
 
 function getTestCanvas() {
-	let testCanvasHtml = "<form id='questionsForm'>";  // start form
+	let testCanvasHtml = "<form id='questionsForm'>"; // start form
 	testCanvasHtml += "<h2>Question #" + (currentQuestionIndex + 1) + "</h2>";
 	testCanvasHtml += "<img id='image" + currentQuestionIndex + "' src=''>";
 	testCanvasHtml += "<h3>" + questions[currentQuestionIndex]["q"] + "</h3>";
@@ -80,10 +80,10 @@ function populatePage() {
 
 function saveAnswer() {
 	let formOptions = $("#questionsForm").find("input");
-	let answered = [];
+	let answered = new Set();
 	for (let i = 0; i < formOptions.length; i++) {
 		if (formOptions[i].checked) {
-			answered.push(formOptions[i].value);
+			answered.add(formOptions[i].value);
 		}
 	}
 	answers[currentQuestionIndex] = answered;
@@ -124,11 +124,27 @@ function loadPage() {
 	}
 }
 
+function containSameStuff(as, bs) {
+	for (let a of as) {
+		if (!bs.has(a)) {
+			return false;
+		}
+	}
+
+	for (let b of as) {
+		if (!as.has(b)) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
 function checkAnswers() {
 	let numWrongAnswers = 0;
 
 	for (let i = 0; i < questions.length; i++) {
-		if (!(answers[i] === questions[i]["c"])) {
+		if (!containSameStuff(answers[i], questions[i]["c"])) {
 			numWrongAnswers += 1;
 		}
 	}
@@ -148,20 +164,20 @@ function endTest(numWrongAnswers) {
 
 	setTimeout(function () {
 		window.location.href = "finish.html"
-	}, 1000 * 3);  // 3 seconds
+	}, 1000 * 3); // 3 seconds
 }
 
 function submitTestAttempt() {
 	saveAnswer();
 	setStatusSubmit();
-	addTimeToTotal(attemptTime);  // log attempt time
+	addTimeToTotal(attemptTime); // log attempt time
 	logAttempt();
 	logAnswers(answers);
 	endTest(checkAnswers());
 }
 
 loadPage();
-setInterval(displayTimer, 1000);  // repeat this function each second
+setInterval(displayTimer, 1000); // repeat this function each second
 
 function displayImageFromStorage(imageId, storageId) {
 	let image = document.getElementById(imageId);
