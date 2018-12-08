@@ -1,0 +1,24 @@
+{
+  "name": "yentl",
+  "version": "1.0.2",
+  "description": "Run batch tests on humans for Formula Student entry tests",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raceup/yentl.git"
+  },
+  "keywords": [
+    "quiz",
+    "fsae",
+    "raceup"
+  ],
+  "author": "Race UP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raceup/yentl/issues"
+  },
+  "homepage": "https://github.com/raceup/yentl#readme",
+  "dependencies": {
+    "uglify-js": "^3.4.9"
+  }
+}

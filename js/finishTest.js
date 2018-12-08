@@ -1,53 +1,53 @@
 function getTitle() {
-    if (isTestFinished()) {
-        return "Test completed!"
-    }
-    return "Sorry .. you've not completed the test yet!"
+	if (isTestFinished()) {
+		return "Test completed!"
+	}
+	return "Sorry .. you've not completed the test yet!"
 }
 
 function getPageContent() {
-    var answers = getUserAnswers();
-    if (!isTestFinished()) {
-        return "Please, head over <a href='new.html'>here</a> to create a" +
-            " new test!";
-    }
+	let answers = getUserAnswers();
+	if (!isTestFinished()) {
+		return "Please, head over <a href='new.html'>here</a> to create a" +
+			" new test!";
+	}
 
-    var test = getLocalTest();
-    var outHtml = "<h2>Summary of questions:</h2><ul>";
-    for (var i = 0; i < test.length; i++) {
-        outHtml +=
-            "<li><h2>Question #" + (i + 1) + "</h2>\n" +
-            "<p><b>Question: </b>" + test[i]["q"] + "</p>\n" +
-            "<p><b>Correct answer: </b>" + test[i]["a"] + "</p>\n" +
-            "<p><b>Your answer: </b>" + answers[i] + "</p>\n" +
-            "<b>Other answers: </b><ul>";
+	let test = getLocalTest();
+	let outHtml = "<h2>Summary of questions:</h2><ul>";
+	for (let i = 0; i < test.length; i++) {
+		outHtml +=
+			"<li><h2>Question #" + (i + 1) + "</h2>\n" +
+			"<p><b>Question: </b>" + test[i]["q"] + "</p>\n" +
+			"<p><b>Correct answer: </b>" + test[i]["a"] + "</p>\n" +
+			"<p><b>Your answer: </b>" + answers[i] + "</p>\n" +
+			"<b>Other answers: </b><ul>";
 
-        for (var j = 0; j < test[i]["o"].length; j++) {
-            outHtml += "<li>" + test[i]["o"][j] + "</li>";
-        }
+		for (let j = 0; j < test[i]["o"].length; j++) {
+			outHtml += "<li>" + test[i]["o"][j] + "</li>";
+		}
 
-        outHtml += "</ul></li>";
-    }
-    outHtml += "</ul><br><h2>Summary of attempts:</h2><br><ul>";
-    var numAttempts = getTestAttemptNumber();
-    var totalTimeAttempts = getTestTotalTime();
-    var averageTimeAttempts = Math.round(totalTimeAttempts / numAttempts);
+		outHtml += "</ul></li>";
+	}
+	outHtml += "</ul><br><h2>Summary of attempts:</h2><br><ul>";
+	let numAttempts = getTestAttemptNumber();
+	let totalTimeAttempts = getTestTotalTime();
+	let averageTimeAttempts = Math.round(totalTimeAttempts / numAttempts);
 
-    outHtml += "<li># attempts: " + numAttempts + "</li>";
-    outHtml += "<li>total time: " + getMMSSString(totalTimeAttempts) + "</li>";
-    outHtml += "</ul><br>Head over <a href='new.html'>here</a> to create a" +
-        " new test!";
-    return outHtml;
+	outHtml += "<li># attempts: " + numAttempts + "</li>";
+	outHtml += "<li>total time: " + getMMSSString(totalTimeAttempts) + "</li>";
+	outHtml += "</ul><br>Head over <a href='new.html'>here</a> to create a" +
+		" new test!";
+	return outHtml;
 }
 
 function setPageTitle() {
-    document.getElementById("create-new-test").innerHTML = getTitle();
+	document.getElementById("create-new-test").innerHTML = getTitle();
 }
 
 function populatePage() {
-    setPageTitle();
+	setPageTitle();
 
-    document.getElementById("test-summary").innerHTML = getPageContent();
+	document.getElementById("test-summary").innerHTML = getPageContent();
 }
 
 populatePage();
