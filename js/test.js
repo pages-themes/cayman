@@ -1,4 +1,3 @@
-// global vars
 let attemptTime = 0; // seconds elapsed during attempt
 let questionTime = 0; // seconds elapsed during this question
 let totalTime = getTestTotalTime(); // seconds elapsed during all test
@@ -18,8 +17,11 @@ function abortTest() {
 function displayTimer() {
 	questionTime += 1; // increase by 1 second ...
 	attemptTime += 1;
+
+	document.getElementById("questionTimer")
+		.innerHTML = getMMSSString(questionTime); // ... and display
 	document.getElementById("totalTimer")
-		.innerHTML = getMMSSString(totalTime + attemptTime); // ... and display
+		.innerHTML = getMMSSString(totalTime + attemptTime);
 }
 
 function showErrorLoadingTest() {
@@ -27,7 +29,6 @@ function showErrorLoadingTest() {
 	out += " Please, head over <a href='new.html'>here</a> to create a new" +
 		" one!";
 	document.getElementById("test-canvas").innerHTML = out;
-
 
 	document.getElementById("testHeader").innerHTML = "<section class=\"page-header\">\n" +
 		"<h1 class=\"project-name\" align=\"center\">Ooops! Test not found!</h1>\n" +
@@ -88,9 +89,17 @@ function saveAnswer() {
 	}
 
 	answers[currentQuestionIndex] = answered;
+	times[currentQuestionIndex] = questionTime;
 }
 
 function loadAnswer() {
+	let previousTime = times[currentQuestionIndex];
+	if (previousTime === undefined) {
+		previousTime = 0;
+	}
+
+	questionTime = previousTime; // reset question timer
+
 	let formOptions = $("#questionsForm").find("input");
 	let hasAlreadyAnswered = false;
 	for (let i = 0; i < formOptions.length; i++) {
@@ -108,13 +117,6 @@ function loadAnswer() {
 }
 
 function goToNextQuestion() {
-	const previousTime = times[currentQuestionIndex];
-	if (previousTime === undefined) {
-		times[currentQuestionIndex] = questionTime;
-	} else {
-		times[currentQuestionIndex] += questionTime;
-	}
-
 	if (currentQuestionIndex < questions.length - 1) {
 		saveAnswer();
 		currentQuestionIndex += 1;
@@ -133,6 +135,13 @@ function loadPage() {
 }
 
 function containSameStuff(as, bs) {
+	console.log(as);
+	console.log(bs);
+
+	if (as.size !== bs.size) {
+		return false;
+	}
+
 	for (let a of as) {
 		if (!bs.has(a)) {
 			return false;
@@ -192,13 +201,28 @@ function submitTestAttempt() {
 	endTest(nWrongAnswers);
 }
 
-loadPage();
-setInterval(displayTimer, 1000); // repeat this function each second
-
 function displayImageFromStorage(imageId, storageId) {
 	let image = document.getElementById(imageId);
 	let imageData = localStorage.getItem(storageId);
 	if (imageData !== null) {
 		image.src = atob(imageData);
 	}
+}
+
+loadPage();
+let timer = setInterval(displayTimer, 1000); // repeat this function each second
+
+
+function pauseTest() {
+	clearInterval(timer);  // stop updating time
+
+	const doc = document.getElementById('resumePauseCell');
+	doc.innerHTML = '<a onclick="resumeTest();" id="resumeAttemptButton" class="btn">Resume</a>';
+}
+
+function resumeTest() {
+	timer = setInterval(displayTimer, 1000);
+
+	const doc = document.getElementById('resumePauseCell');
+	doc.innerHTML = '<a onclick="pauseTest();" id="startPauseAttemptButton" class="btn">Pause</a>';
 }

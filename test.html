@@ -15,12 +15,21 @@
 <body>
 <div id="testHeader">
     <section class="test-header">
-        <a id="totalTimer" class="btn">total time</a>
-
-        <br>
-
-        <a href="" onclick="abortTest();" id="endAttemptButton"
-           class="btn">Abort</a>
+        <table style="width:40%" align="center">
+            <tr>
+                <th id="resumePauseCell"><a onclick="pauseTest();"
+                                            id="startPauseAttemptButton"
+                                            class="btn">Pause</a></th>
+                <th><a class="btn">Total</a></th>
+                <th><a class="btn">Question</a></th>
+            </tr>
+            <tr>
+                <td><a onclick="abortTest();" id="endAttemptButton"
+                       class="btn">Abort</a></td>
+                <td><a id="totalTimer" class="btn">00:00</a></td>
+                <td><a id="questionTimer" class="btn">00:00</a></td>
+            </tr>
+        </table>
     </section>
 </div>
 

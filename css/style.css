@@ -750,6 +750,14 @@ a:hover {
     background-color: rgba(255, 122, 0, 0.75);
 }
 
+#resumeAttemptButton {
+    background-color: #009926;
+}
+
+#resumeAttemptButton:hover {
+    background-color: #00aa26;
+}
+
 #endAttemptButton {
     background-color: rgba(255, 0, 0, 0.5);
 }
