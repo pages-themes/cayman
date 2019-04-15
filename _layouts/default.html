@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
-    {% if site.google_analytics %}
+    {% if site.analytics_id %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
@@ -12,8 +12,7 @@
       </script>
     {% endif %}
     <meta charset="UTF-8">
-
-{% seo %}
+    {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -35,7 +34,9 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <article role="article">
+        {{ content }}
+      </article>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
