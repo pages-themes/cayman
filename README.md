@@ -45,7 +45,7 @@ google_analytics: [Your Google Analytics tracking ID]
 If you'd like to add your own custom styles:
 
 1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
+2. Add the following content to the top of the file, **exactly** as shown:
     ```scss
     ---
     ---
@@ -54,7 +54,7 @@ If you'd like to add your own custom styles:
     ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+*Note: If you'd like to change the theme's Sass variables which can be found in [`_sass/variables.scss`](https://github.com/pages-themes/cayman/blob/master/_sass/variables.scss), you must set new values between the 2 lines of hyphens and the `@import` line in your stylesheet.*
 
 ### Layouts
 
