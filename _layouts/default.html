@@ -1,7 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" prefix="og: http://ogp.me/ns#">
   <head>
-
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:site_name" content="{{ site.title | default: site.github.repository_name }}" />
+   {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}" />
+   {% else %}
+    <meta property="og:description" content="{{ site.description | default: site.github.project_tagline }}" />
+   {% endif %}
+   {% if page.preview %}
+    <meta property="og:image" content="{{ page.preview }}" />
+   {% else %}
+    <meta property="og:image" content="https://github.githubassets.com/images/modules/logos_page/Octocat.png" />
+   {% endif %}
+   
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
