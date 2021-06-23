@@ -3,7 +3,9 @@ layout: default
 ---
 
 
-# Course overview
+# QLSC 612 - Foundations of Neuro Data Science
+
+## Course overview:
 
 Neuroscientists increasingly rely on openly-accessible data and on advanced methodological procedures for their investigations. Data science offers a key set of tools and methods to efficiently analyse, visualize, and interpret neuroscience data. Concurrently, there is a growing concern in the life sciences that many results produced are difficult or even impossible to reproduce, commonly referred to as the “reproducibility crisis.”
 
