@@ -2,8 +2,9 @@
 layout: default
 ---
 
-
 # QLSC 612 - Foundations of Neuro Data Science
+
+<img src="logo_horizontal__for_light_background.png" alt="drawing" width="800" class="center">
 
 ## Course overview:
 
@@ -37,3 +38,5 @@ In terms of requirements, students will be expected to have basic programming sk
 ## Approach to teaching
 
 This year, we will be using an "inverted classroom" approach. Students will be able to pick 7 of the modules from the list above, and will be able to access pre-recorded lecture material to learn the contents of the modules. There will be quizzes and live tutorials to answer questions and go through exercises in order to help prepare the students for their assessment.
+
+
