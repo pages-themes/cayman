@@ -2,122 +2,36 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+# Course overview
 
-There should be whitespace between paragraphs.
+Neuroscientists increasingly rely on openly-accessible data and on advanced methodological procedures for their investigations. Data science offers a key set of tools and methods to efficiently analyse, visualize, and interpret neuroscience data. Concurrently, there is a growing concern in the life sciences that many results produced are difficult or even impossible to reproduce, commonly referred to as the “reproducibility crisis.”
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+This course — QLSC 612, Foundations of Neuro Data Science — brings together software and analytical tools and methods in order to teach students how to best use the fundamentals of data science in their daily work to produce reproducible results. We will take examples in neuroimaging and see how to use computational tools, statistical and machine learning techniques, and collaborative, open science methodologies to generate results that are statistically robust and computationally reproducible.
 
-# Header 1
+## Objective, scope, and intended audience
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+QLSC 612 is intended for researchers in the life sciences (neurologists, psychiatrists, pyschologists, neuroscientists) who wish to improve their research practices, or other researchers who want an introduction to data science with examples in neuroscience and neuroimaging. At the end of the course students will be able to analyze neuroscience and neuroimaging data in a reproducible and collaborative manner using the Python software stack (a popular and rapidly growing contender in the landscape of neuroscience data analysis).
 
-## Header 2
+Amongst the topics, we will cover both the fundamentals of tools (bash, git, github, jupyter, docker, visualization) and analysis methods (hypothesis testing, machine learning) at the conceptual and practical levels.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+In terms of requirements, students will be expected to have basic programming skills (such as minimal experience in a scripting language).
 
-### Header 3
+## Course modules:
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+1. Reproducibility in Life Science
+2. Introduction to the Terminal and Bash
+3. Introduction to Git and GitHub
+4. Introduction to Python
+5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
+6. Containerization with Docker and Singularity
+7. Tools for project management and organization
+8. High Performance Computing (HPC)
+9. Introduction to Data Visualization
+10. Classical statistics: Statistical modeling, common pitfalls, and remedies.
+11. Introduction to Machine Learning with Scikit-learn
+12. Advanced Machine Learning with Neuroimaging and Nilearn
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## Approach to teaching
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+This year, we will be using an "inverted classroom" approach. Students will be able to pick 7 of the modules from the list above, and will be able to access pre-recorded lecture material to learn the contents of the modules. There will be quizzes and live tutorials to answer questions and go through exercises in order to help prepare the students for their assessment.
