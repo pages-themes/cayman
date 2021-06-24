@@ -5,7 +5,7 @@ layout: default
 
 # QLSC 612 - Fundamentals for Neuro Data Science
 
-<img src="logo_horizontal__for_light_background.png" alt="drawing" width="400" class="center">
+<img src="logo_horizontal__for_light_background.png" alt="drawing" width="250" class="center">
 
 ## Course overview:
 
