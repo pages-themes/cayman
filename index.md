@@ -7,6 +7,8 @@ layout: default
 
 <img src="logo_horizontal__for_light_background.png" alt="drawing" width="800" class="center">
 
+* [Link to the pre-recorded lectures and class material](./lectures-materials.html).
+
 ## Course overview:
 
 Neuroscientists increasingly rely on openly-accessible data and on advanced methodological procedures for their investigations. Data science offers a key set of tools and methods to efficiently analyse, visualize, and interpret neuroscience data. Concurrently, there is a growing concern in the life sciences that many results produced are difficult or even impossible to reproduce, commonly referred to as the “reproducibility crisis.”
