@@ -7,7 +7,10 @@ layout: default
 
 <img src="logo_horizontal__for_light_background.png" alt="drawing" width="250" class="center">
 
-* [Link to the pre-recorded lectures and class material](./lectures-materials.html).
+* [Link to the pre-recorded lectures and class material.](./lectures-materials.html).
+* Link to the live tutorial schedule (coming soon).
+* Link to the setup instructions (coming soon).
+* Link to the code of conduct (coming soon).
 
 ## Course overview:
 
@@ -37,6 +40,8 @@ In terms of requirements, students will be expected to have basic programming sk
 10. Classical statistics: Statistical modeling, common pitfalls, and remedies.
 11. Introduction to Machine Learning with Scikit-learn
 12. Advanced Machine Learning with Neuroimaging and Nilearn
+
+[Link to the pre-recorded lectures and class material.](./lectures-materials.html)
 
 ## Approach to teaching
 

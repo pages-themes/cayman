@@ -6,7 +6,6 @@ description: Links to the pre-recorded lectures and material
 
 #  Lectures and Class Material
 
-Note that
 
 ## 1. Reproducibility in Life Science
 
