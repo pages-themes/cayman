@@ -5,7 +5,7 @@ layout: default
 
 # QLSC 612 - Fundamentals for Neuro Data Science
 
-<img src="logo_horizontal__for_light_background.png" alt="drawing" width="800" class="center">
+<img src="logo_horizontal__for_light_background.png" alt="drawing" width="250" class="center">
 
 * [Link to the pre-recorded lectures and class material](./lectures-materials.html).
 
@@ -13,7 +13,7 @@ layout: default
 
 Neuroscientists increasingly rely on openly-accessible data and on advanced methodological procedures for their investigations. Data science offers a key set of tools and methods to efficiently analyse, visualize, and interpret neuroscience data. Concurrently, there is a growing concern in the life sciences that many results produced are difficult or even impossible to reproduce, commonly referred to as the “reproducibility crisis.”
 
-This course — QLSC-612, [Fundamentals for Neuro Data Science](https://www.mcgill.ca/study/2019-2020/courses/qlsc-612) — brings together software and analytical tools and methods in order to teach students how to best use the fundamentals of data science in their daily work to produce reproducible results. We will take examples in neuroimaging and see how to use computational tools, statistical and machine learning techniques, and collaborative, open science methodologies to generate results that are statistically robust and computationally reproducible. The course also serves as the first week of the [Montreal BrainHack School](https://school.brainhackmtl.org/) organized across Université de Montréal, McGill, Concordia and Polytechnique.
+This course — QLSC-612, [Fundamentals for Neuro Data Science](https://www.mcgill.ca/study/2019-2020/courses/qlsc-612) — brings together software and analytical tools and methods in order to teach students how to best use the fundamentals of data science in their daily work to produce reproducible results. We will take examples in neuroimaging and see how to use computational tools, statistical and machine learning techniques, and collaborative, open science methodologies to generate results that are statistically robust and computationally reproducible. The course also serves as the first week of the [Montreal BrainHack School](https://school.brainhackmtl.org/) organized across Université de Montréal, McGill, Concordia and Polytechnique. The course builds on the [ReproNim](https://www.repronim.org/) materials for reproducible neuroimaging research.
 
 ## Objective, scope, and intended audience
 
@@ -30,7 +30,7 @@ In terms of requirements, students will be expected to have basic programming sk
 3. Introduction to Git and GitHub
 4. Introduction to Python
 5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
-6. Containerization with Docker and Singularity
+6. Introduction to virtual environments and containers
 7. Tools for project management and organization
 8. High Performance Computing (HPC)
 9. Introduction to Data Visualization
