@@ -94,3 +94,5 @@ conda install -y flake8 ipython jupyter jupyterlab matplotlib nibabel nilearn nu
 
 (The above step-by-step Docker instructions are distilled from [here](https://docs.docker.com/docker-for-mac/install/).
 If you have questions during the installation procedure please check that link for potential answers!)
+
+[back](./setup.html)

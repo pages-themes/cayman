@@ -187,3 +187,5 @@ If you are having problems running `docker` commands in the terminal, try re-ope
 
 (The above step-by-step instructions are distilled from [here](https://docs.docker.com/toolbox/toolbox_install_windows/) and [here](https://medium.com/@joaoh82/setting-up-docker-toolbox-for-windows-home-10-and-wsl-to-work-perfectly-2fd34ed41d51).
 If you have questions during the installation procedure please check those links for potential answers!)
+
+[back](./setup.html)

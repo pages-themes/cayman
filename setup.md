@@ -63,3 +63,5 @@ Go to https://zoom.us/download and download and install the Zoom client.
 ### Modern web browser
 
 Install Firefox, Chrome, or Safari.
+
+[back](./)

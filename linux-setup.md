@@ -81,3 +81,5 @@ conda install -y flake8 ipython jupyter jupyterlab matplotlib nibabel nilearn nu
    You only need to do the “Manage Docker as a non-root user” and “Configure Docker to start on boot” steps.
 1. Open a new terminal and type `docker run hello-world`.
    A brief introductory message should be printed to the screen.
+
+[back](./setup.html)
