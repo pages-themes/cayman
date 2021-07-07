@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lectures and Class Material
+title: Live Tutorial Schedule
 description: Links to the pre-recorded lectures and material
 ---
 
