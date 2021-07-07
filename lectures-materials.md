@@ -6,7 +6,7 @@ description: Links to the pre-recorded lectures and material
 
 #  Lectures and Class Material
 
-**Lecture material: ** Link coming soon.
+**Lecture material:** Link coming soon.
 This link will point to the GitHub repository featuring all of the class material such as Jupyter Notebooks, scripts, excercises, slides, etc. 
 
 ## 1. Reproducibility in Life Science
