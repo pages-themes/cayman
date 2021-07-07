@@ -9,7 +9,7 @@ layout: default
 
 * [Link to the pre-recorded lectures and class material.](./lectures-materials.html)
 * [Link to the live tutorial schedule.](./tut-schedule.html)
-* Link to the setup instructions (coming soon).
+* [Link to setup instructions](./setup.html).
 * [Link to the code of conduct.](./coc.html)
 
 ## Course overview:
