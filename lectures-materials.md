@@ -6,6 +6,8 @@ description: Links to the pre-recorded lectures and material
 
 #  Lectures and Class Material
 
+**Lecture material: ** Link coming soon.
+This link will point to the GitHub repository featuring all of the class material such as Jupyter Notebooks, scripts, excercises, slides, etc. 
 
 ## 1. Reproducibility in Life Science
 
@@ -16,7 +18,7 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
+
 
 ## 2. Introduction to the Terminal and Bash
 **Instructor:** Sebastian Urchs
@@ -26,7 +28,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 3. Introduction to Git and GitHub
 **Instructor:** Kendra Oudyk
@@ -36,7 +37,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 4. Introduction to Python
 **Instructor:** Jacob Sanz-Robinson 
@@ -46,7 +46,6 @@ description: Links to the pre-recorded lectures and material
 * Topics include: Running your code, commenting, variables, arithmetic, logic, strings, lists, tuples, dictionaries, functions, libraries, if statements, loops, and exceptions.
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
 **Instructor:** Tristan Glatard
@@ -56,7 +55,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 6. Containerization with Docker and Singularity
 **Instructor:** Peer Herholz
@@ -66,7 +64,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 7. Tools for project management and organization
 **Instructor:** Elizabeth DuPre
@@ -76,7 +73,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 8. High Performance Computing (HPC)
 **Instructor:** Bryan Caron & Darcy Quesnel
@@ -86,7 +82,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 9. Introduction to Data Visualization in Python
 **Instructor:** Jacob Sanz-Robinson
@@ -96,7 +91,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 10. Classical statistics: Statistical modeling, common pitfalls, and remedies.
 **Instructor:** JB Poline
@@ -106,7 +100,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 11. Introduction to Machine Learning with Scikit-learn
 **Instructor:** Nikhil Bhagwat
@@ -116,7 +109,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
 
 ## 12. Advanced Machine Learning with Neuroimaging and Nilearn
 **Instructor:** Jérôme Dockès
@@ -126,18 +118,6 @@ description: Links to the pre-recorded lectures and material
 * 
 
 **Pre-recorded lecture video:** 
-**Lecture material:** 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
