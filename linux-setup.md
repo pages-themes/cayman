@@ -1,3 +1,9 @@
+---
+layout: default
+title: Linux Setup
+description: Instructions for setting up on Linux
+---
+
 ### Bash shell
 
 You already have it!

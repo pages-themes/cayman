@@ -1,3 +1,9 @@
+---
+layout: default
+title: Mac Setup
+description: Instructions for setting up on Mac
+---
+
 ### Bash shell
 
 You already have it!

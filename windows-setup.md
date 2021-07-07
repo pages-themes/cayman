@@ -1,3 +1,9 @@
+---
+layout: default
+title: Windows Setup
+description: Instructions for setting up on Windows
+---
+
 ### Windows Subsystem for Linux (WSL)
 
 1. Search for `Windows Powershell` in your applications; right click and select `Run as administrator`.
