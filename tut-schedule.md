@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Live Tutorial Schedule
-description: Links to the pre-recorded lectures and material
+description: The schedule and Zoom link for the live tutorial sessions
 ---
 
 # Live Tutorial Schedule
@@ -25,3 +25,5 @@ description: Links to the pre-recorded lectures and material
 | Friday 30th of July     | 09:00-11:00       | Advanced Machine Learning with Neuroimaging and Nilearn   |
 |    | 13:00-15:00       | General Q&A      |
 |    | 15:30-17:30       | Quiz #2  |
+
+[back](./)

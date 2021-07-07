@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Code of Conduct
-description: Links to the pre-recorded lectures and material
+description: Read below for the code of conduct for QLSC 612
 ---
 
 #  Code of Conduct
@@ -44,3 +44,5 @@ We expect participants to follow these rules at all event venues and event-relat
 If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to the events organizers or [jean-baptiste.poline@.mcgill.ca](mailto:jean-baptiste.poline@.mcgill.ca)
 Harassment and other code of conduct violations reduce the value of our event for everyone. We want you to be happy at our event. People like you make our event a better place.
 You can make a report either with your personal email or using an anonymous email.
+
+[back](./)
