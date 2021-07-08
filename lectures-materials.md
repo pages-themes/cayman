@@ -16,7 +16,7 @@ This link will point to the GitHub repository featuring all of the class materia
 With this lecture, you will get a general introduction to reproducible - or irreproducible - life sciences. Specifically, you will
 * learn what is meant by reproducibility of research results in the life sciences
 * undertand the main causes for irreproducible results
-* learn the possible collective and individual actions for curbing irreproducibility  
+* learn the possible collective and individual actions for curbing irreproducibility
 
 **Material** 
 * 
@@ -93,9 +93,9 @@ With this lecture, you will get a general introduction to reproducible - or irre
 ## 9. Introduction to Data Visualization in Python
 **Instructor:** Jacob Sanz-Robinson
 
-* 
-* 
-* 
+* This module will teach students the basics of data visualization in Python, with the goal of understanding their data, and creating publication-quality graphics.
+* It will guide students through the process of familiarizing themselves with the data, and choosing plots that display the information accurately and clearly.
+* It will provide the students with instructions and examples on how to use multiple widely-used plotting libraries in Python (Matplotlib, Seaborn, Plot.ly, Bokeh).
 
 **Pre-recorded lecture video:** 
 
