@@ -10,9 +10,13 @@ description: Links to the pre-recorded lectures and material
 This link will point to the GitHub repository featuring all of the class material such as Jupyter Notebooks, scripts, excercises, slides, etc. 
 
 ## 1. Reproducibility in Life Science
-
 **Instructor:** JB Poline
 
+**Objectives**
+* Learn about the reproducibility of research results in the life sciences
+* Undertand the main causes for irreproducible results
+* Learn the possible collective and individual actions for curbing irreproducibility  
+**Material** 
 * 
 * 
 * 
