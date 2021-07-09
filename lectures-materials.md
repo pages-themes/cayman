@@ -68,12 +68,12 @@ You will learn how to:
 
 **Pre-recorded lecture video:** 
 
-## 6. Containerization with Docker and Singularity
+## 6. Virtualization of computing environments
 **Instructor:** Peer Herholz
 
-* 
-* 
-* 
+* Learn about different virtualization technologies, what they entail and how they work.
+* Get first experience with basic utilization.
+* Evaluate if, when and how to integrate virtualization into the lifecycle of a project.
 
 **Pre-recorded lecture video:** 
 
