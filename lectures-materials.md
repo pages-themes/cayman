@@ -29,11 +29,16 @@ With this lecture, you will get a general introduction to reproducible - or irre
 ## 2. Introduction to the Terminal and Bash
 **Instructor:** Sebastian Urchs
 
-* 
-* 
-* 
+**Objectives** To follow most of the other modules you will have to have some basic understanding of the command line.
+In this module we'll take a look at the the BourneAgainSHell (BASH), 
+the default command line in most Linux systems. 
+You will learn how to:
 
-**Pre-recorded lecture video:** 
+* move around on your computer with the command line, create and open directories and files
+* find things with the command line (files and programs, PATH variables)
+* run useful command line programs and find help (find, grep, ls, and man / documentation)
+
+**Pre-recorded lecture video:** coming soon
 
 ## 3. Introduction to Git and GitHub
 **Instructor:** Kendra Oudyk
