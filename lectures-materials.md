@@ -113,9 +113,9 @@ Most of published results still rely on some statistical inference. With this le
 ## 11. Introduction to Machine Learning with Scikit-learn
 **Instructor:** Nikhil Bhagwat
 
-* 
-* 
-* 
+* Understand basic concepts in supervised machine-learning
+* Implement a typical model validation pipeline with Scikit-learn
+* Learn about various model performance scores and their use-cases
 
 **Pre-recorded lecture video:** 
 
