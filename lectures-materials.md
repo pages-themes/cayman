@@ -80,11 +80,16 @@ You will learn how to:
 ## 7. Tools for project management and organization
 **Instructor:** Elizabeth DuPre
 
-* 
-* 
-* 
+Project management and data standards are a vital, if underappreciated, point in any data science workflow.
+In this lecture, students will learn common project management and data standards for neuroscience,
+as well as how they can incorporate these standards into their own research workflows.
+Students will leave with:
 
-**Pre-recorded lecture video:** 
+* An understanding of the importance of standards in creating reproducible results
+* An overview of common data standards for neuroscience and tools to interface with them
+* Best practice recommendations for incorporating standards into existing workflows
+
+**Pre-recorded lecture video:** https://youtu.be/aBMc8bgSK6o
 
 ## 8. High Performance Computing (HPC)
 **Instructor:** Bryan Caron & Darcy Quesnel
