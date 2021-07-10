@@ -127,9 +127,9 @@ Most of published results still rely on some statistical inference. With this le
 ## 12. Advanced Machine Learning with Neuroimaging and Nilearn
 **Instructor:** Jérôme Dockès
 
-* 
-* 
-* 
+* Understand the challenges of learning from high-dimensional data
+* Learn about tools to mitigate the issue: feature selection and dimensionality reduction
+* Train a machine-learning pipeline on fMRI data and evaluate its prediction performance
 
 **Pre-recorded lecture video:** 
 
