@@ -39,8 +39,8 @@ In terms of requirements, students will be expected to have basic programming sk
 8. High Performance Computing (HPC)
 9. Introduction to Data Visualization
 10. Classical statistics: Statistical modeling, common pitfalls, and remedies.
-11. Introduction to Machine Learning with Scikit-learn
-12. Advanced Machine Learning with Neuroimaging and Nilearn
+11. Introduction to Machine Learning part 1: supervised learning
+12. Introduction to Machine Learning part 2: dimensionality reduction techniques
 
 [Link to the pre-recorded lectures and class material.](./lectures-materials.html)
 

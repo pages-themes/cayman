@@ -42,7 +42,8 @@ You will learn how to:
 
 ## 3. Introduction to Git and GitHub
 **Instructor:** Kendra Oudyk
-Git and GitHub are key tools for doing version control in both academia and industry. These tools can help students do more effient, open, and reproducible research. Further, knowing these tools can help prepare students for careers in academia and industry. In this lecture, students will learn
+
+**Objectives** Git and GitHub are key tools for doing version control in both academia and industry. These tools can help students do more effient, open, and reproducible research. Further, knowing these tools can help prepare students for careers in academia and industry. In this lecture, students will learn
 
 * What is version control and why has it become so important in science and industry;
 * How to track and share their own work using Git and GitHub; and
@@ -104,7 +105,7 @@ Students will leave with:
 ## 9. Introduction to Data Visualization in Python
 **Instructor:** Jacob Sanz-Robinson
 
-* This module will teach students the basics of data visualization in Python, with the goal of understanding their data, and creating publication-quality graphics.
+* This module will teach students the basics of data visualization in Python, with the goal of using it as a tool to understand data, and create publication-quality graphics.
 * It will guide students through the process of familiarizing themselves with the data, and choosing plots that display the information accurately and clearly.
 * It will provide the students with instructions and examples on how to use multiple widely-used plotting libraries in Python (Matplotlib, Seaborn, Plot.ly, Bokeh).
 
@@ -115,13 +116,13 @@ Students will leave with:
 
 **Objectives**
 Most of published results still rely on some statistical inference. With this lecture, you will 
-* get a reminder of the classical statistical framework and learn about the issues brought by the use of statistical inference  
+* get a reminder of the classical statistical framework and learn about the issues brought by the use of statistical inference
 * learn (or be reminded of) the notion of effect size, power, positive predictive values and the consequences of low powered studies 
-* understand the file drawer effect, p-hacking, and know about some solutions
+* understand the file drawer effect, p-hacking, and know about some solutions.
 
 **Pre-recorded lecture video:** 
 
-## 11. Introduction to Machine Learning with Scikit-learn
+## 11. Introduction to Machine Learning part 1: supervised learning
 **Instructor:** Nikhil Bhagwat
 
 * Understand basic concepts in supervised machine-learning
@@ -130,7 +131,7 @@ Most of published results still rely on some statistical inference. With this le
 
 **Pre-recorded lecture video:** 
 
-## 12. Advanced Machine Learning with Neuroimaging and Nilearn
+## 12. Introduction to Machine Learning part 2: dimensionality reduction techniques
 **Instructor:** Jérôme Dockès
 
 * Understand the challenges of learning from high-dimensional data
