@@ -22,7 +22,8 @@ This course — QLSC-612, [Fundamentals for Neuro Data Science](https://www.mcgi
 
 QLSC-612 is intended for researchers in the life sciences (neurologists, psychiatrists, pyschologists, neuroscientists) who wish to improve their research practices, or other researchers who want an introduction to data science with examples in neuroscience and neuroimaging. At the end of the course students will be able to analyze neuroscience and neuroimaging data in a reproducible and collaborative manner using the Python software stack (a popular and rapidly growing contender in the landscape of neuroscience data analysis).
 
-Amongst the topics, we will cover both the fundamentals of tools (bash, git, github, jupyter, docker, visualization) and analysis methods (hypothesis testing, machine learning) at the conceptual and practical levels.
+Amongst the topics, we will cover both the fundamentals of tools (bash, git, github, jupyter, docker, visualization) and analysis methods (hypothesis testing, machine learning) at the conceptual and practical levels. See objectives of each module [here.](./lectures-materials.html)
+.
 
 In terms of requirements, students will be expected to have basic programming skills (such as minimal experience in a scripting language).
 
@@ -45,6 +46,6 @@ In terms of requirements, students will be expected to have basic programming sk
 
 ## Approach to teaching
 
-This year, we will be using an "inverted classroom" approach. Students will be able to pick 8 of the modules from the list above, and will be able to access pre-recorded lecture or online material to learn the contents of the modules. There will be quizzes and online live tutorials to answer questions and go through exercises in order to solidify the knowledge and help prepare the students for their assessment.
+This year, we will be using an "inverted classroom" approach. Students will be able to pick 8 of the modules from the list above, and will be able to access pre-recorded lecture or online material to learn the contents of the modules. There will be quizzes and online **live tutorials** to answer questions and go through exercises in order to solidify the knowledge and help prepare the students for their assessment. 
 
-
+<ins>If you take the course for credit</ins>: assessment will be done online with quizzes. While 12 modules (comprising of a lecture or material available online before the course, some live session with exercises) you only need to take 8 modules to pass. If you take more than 8 modules, only your 8 best quizzes will be used to compute your final grade.
