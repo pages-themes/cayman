@@ -42,10 +42,11 @@ You will learn how to:
 
 ## 3. Introduction to Git and GitHub
 **Instructor:** Kendra Oudyk
+Git and GitHub are key tools for doing version control in both academia and industry. These tools can help students do more effient, open, and reproducible research. Further, knowing these tools can help prepare students for careers in academia and industry. In this lecture, students will learn
 
-* 
-* 
-* 
+* What is version control and why has it become so important in science and industry;
+* How to track and share their own work using Git and GitHub; and
+* How to collaborate and contribute to open projects using Git and GitHub.
 
 **Pre-recorded lecture video:** 
 
