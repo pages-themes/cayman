@@ -48,7 +48,7 @@ In terms of requirements, students will be expected to have basic programming sk
 
 This year, we will be using an "inverted classroom" approach. Students will be able to pick 8 of the modules from the list above, and will be able to access pre-recorded lecture or online material to learn the contents of the modules. There will be quizzes and online **live tutorials** to answer questions and go through exercises in order to solidify the knowledge and help prepare the students for their assessment. 
 
-<ins>If you take the course for credit</ins>: assessment will be done online with quizzes. While 12 modules (comprising of a lecture or material available online before the course, some live session with exercises) you only need to take 8 modules to pass. If you take more than 8 modules, only your 8 best quizzes will be used to compute your final grade.
+<ins>If you take the course for credit</ins>: assessment will be done online with quizzes. While 12 modules (comprising of a lecture or material available online before the course, some live session with exercises) are [listed](./lectures-materials.html), you only need to take 8 modules to pass. If you take more than 8 modules, only your 8 best quizzes will be used to compute your final grade.
 
 ## Acknowledgements and funders
 We are grateful for support from HBHL NeuroHub and the NIH funded ReproNim centre.  
