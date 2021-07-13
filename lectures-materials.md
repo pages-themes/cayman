@@ -64,9 +64,12 @@ You will learn how to:
 ## 5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
 **Instructor:** Tristan Glatard
 
-* 
-* 
-* 
+**Objectives** This lecture will introduce NumPy, Pandas, and SciPy, three of the main libraries in the scientific Python ecosystem.
+At the end of the lecture, participants will be able to:
+
+* Manipulate arrays of numbers with NumPy
+* Manipulate data frames with Pandas
+* Apply numerical methods from the scientific Python ecosystem
 
 **Pre-recorded lecture video:** 
 
