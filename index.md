@@ -38,7 +38,7 @@ In terms of requirements, students will be expected to have basic programming sk
 7. Tools for project management and organization
 8. High Performance Computing (HPC)
 9. Introduction to Data Visualization
-10. Common pitfalls in classical statistics and remedies.
+10. Classical statistics pitfalls and remedies.
 11. Introduction to Machine Learning part 1: supervised learning
 12. Introduction to Machine Learning part 2: dimensionality reduction techniques
 
