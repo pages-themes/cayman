@@ -36,6 +36,12 @@ You will learn how to:
 * find things with the command line (files and programs, PATH variables)
 * run useful command line programs and find help (find, grep, ls, and man / documentation)
 
+**Materials**: 
+- you can find [the PDF of the slides here](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/03-intro-to-shell/introduction-to-shell.pdf)
+- please download and extract into your home directory [these example files](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/03-intro-to-shell/shell-course.zip)
+
+**Pre-recorded lecture video**: Is [available on Youtube](https://youtu.be/Sd10Wo5LQls).
+
 **Pre-recorded lecture video:** coming soon
 
 ## 3. Introduction to Git and GitHub
