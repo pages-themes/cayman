@@ -119,7 +119,7 @@ Students will leave with:
 
 **Pre-recorded lecture video:** 
 
-## 10. Classical statistics: Statistical modeling, common pitfalls, and remedies.
+## 10. Classical statistics pitfalls and remedies.
 **Instructor:** [JB Poline](mailto:jean-baptiste.poline@mcgill.ca)
 
 **Objectives**
