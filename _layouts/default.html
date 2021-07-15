@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-
+    {% if site.google_adsense %}
+      <script data-ad-client="{{ site.google_adsense }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"</script>
+    {% endif %}
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
