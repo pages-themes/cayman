@@ -10,7 +10,7 @@ description: Links to the pre-recorded lectures and material
 This link will point to the GitHub repository featuring all of the class material such as Jupyter Notebooks, scripts, excercises, slides, etc. 
 
 ## 1. Reproducibility in Life Science
-**Instructor:** JB Poline
+**Instructor:** [JB Poline](jean-baptiste.poline@mcgill.ca)
 
 **Objectives**
 With this lecture, you will get a general introduction to reproducible - or irreproducible - life sciences. Specifically, you will
@@ -19,9 +19,7 @@ With this lecture, you will get a general introduction to reproducible - or irre
 * learn the possible collective and individual actions for curbing irreproducibility
 
 **Material** 
-* 
-* 
-* 
+
 
 **Pre-recorded lecture video:** 
 
@@ -106,9 +104,9 @@ Students will leave with:
 ## 8. High Performance Computing (HPC)
 **Instructor:** Bryan Caron & Darcy Quesnel
 
-* 
-* 
-* 
+* Learn the key facts aspects High Performance Computing (HPC) and Cloud computing
+* Understand the advantages and the constraints of HPC
+* Learn the key concepts and practical bash commands to get started on the Compute Canada HPC
 
 **Pre-recorded lecture video:** 
 
