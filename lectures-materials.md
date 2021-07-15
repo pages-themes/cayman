@@ -10,7 +10,7 @@ description: Links to the pre-recorded lectures and material
 This link will point to the GitHub repository featuring all of the class material such as Jupyter Notebooks, scripts, excercises, slides, etc. 
 
 ## 1. Reproducibility in Life Science
-**Instructor:** [JB Poline](jean-baptiste.poline@mcgill.ca)
+**Instructor:** [JB Poline](mailto:jean-baptiste.poline@mcgill.ca)
 
 **Objectives**
 With this lecture, you will get a general introduction to reproducible - or irreproducible - life sciences. Specifically, you will
@@ -120,7 +120,7 @@ Students will leave with:
 **Pre-recorded lecture video:** 
 
 ## 10. Classical statistics: Statistical modeling, common pitfalls, and remedies.
-**Instructor:** JB Poline
+**Instructor:** [JB Poline](mailto:jean-baptiste.poline@mcgill.ca)
 
 **Objectives**
 Most of published results still rely on some statistical inference. With this lecture, you will 
