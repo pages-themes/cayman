@@ -42,8 +42,6 @@ You will learn how to:
 
 **Pre-recorded lecture video**: Is [available on Youtube](https://youtu.be/Sd10Wo5LQls).
 
-**Pre-recorded lecture video:** coming soon
-
 ## 3. Introduction to Git and GitHub
 **Instructor:** Kendra Oudyk
 
