@@ -21,7 +21,6 @@ With this lecture, you will get a general introduction to reproducible - or irre
 
 **Material:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/26-July/01-reproducibility-in-life-sciences)
 
-
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=US80s7W4s6o)
 
 
@@ -65,6 +64,7 @@ You will learn how to:
 * Topics include: Running your code, commenting, variables, arithmetic, logic, strings, lists, tuples, dictionaries, functions, libraries, if statements, loops, and exceptions.
 
 **Material:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/01-intro-to-python)
+
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=ml6VkmtLXpA)
 
 ## 5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
@@ -97,6 +97,7 @@ At the end of the lecture, participants will be able to:
 * Evaluate if, when and how to integrate virtualization into the lifecycle of a project.
 
 **Materials:** Coming soon.
+
 **Pre-recorded lecture video:** Coming soon.
 
 ## 7. Tools for project management and organization
@@ -111,7 +112,8 @@ Students will leave with:
 * An overview of common data standards for neuroscience and tools to interface with them
 * Best practice recommendations for incorporating standards into existing workflows
 
-**Materials:** Coming soon.
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/01-standards-for-project-management)
+
 **Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o)
 
 ## 8. High Performance Computing (HPC)
@@ -122,6 +124,7 @@ Students will leave with:
 * Learn the key concepts and practical bash commands to get started on the Compute Canada HPC
 
 **Materials:** Coming soon.
+
 **Pre-recorded lecture video:** Coming soon.
 
 ## 9. Introduction to Data Visualization in Python
@@ -132,6 +135,7 @@ Students will leave with:
 * It will provide the students with instructions and examples on how to use multiple widely-used plotting libraries in Python (Matplotlib, Seaborn, Plot.ly, Bokeh).
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/01-data-visualization)
+
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=1kmTpm9W22I&)
 
 ## 10. Classical statistics pitfalls and remedies.
@@ -146,6 +150,7 @@ Most of published results still rely on some statistical inference. With this le
 * understand the file drawer effect, p-hacking, and know about some solutions.
 
 **Materials:** Coming soon.
+
 **Pre-recorded lecture video:** Coming soon. 
 
 ## 11. Introduction to Machine Learning part 1: supervised learning
@@ -156,6 +161,7 @@ Most of published results still rely on some statistical inference. With this le
 * Learn about various model performance scores and their use-cases
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/03-intro-to-machine-learning)
+
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=vsp7c-f3cvg)
 
 ## 12. Introduction to Machine Learning part 2: dimensionality reduction techniques
@@ -166,6 +172,7 @@ Most of published results still rely on some statistical inference. With this le
 * Train a machine-learning pipeline on fMRI data and evaluate its prediction performance
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/30-July/02-machine-learning-part-2)
+
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc)
 
 
