@@ -173,7 +173,7 @@ Most of published results still rely on some statistical inference. With this le
 * learn (or be reminded of) the notion of effect size, power, positive predictive values and the consequences of low powered studies 
 * understand the file drawer effect, p-hacking, and know about some solutions.
 
-**Materials:** Coming soon.
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/02-Classical-statistics-pitfalls-and-remedies)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ)
 
