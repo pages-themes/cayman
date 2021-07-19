@@ -28,6 +28,19 @@ With this lecture, you will get a general introduction to reproducible - or irre
 ## 2. Introduction to the Terminal and Bash
 **Instructor:** Sebastian Urchs
 
+**Self-assessment questions**
+
+This module is a requirement for many of the other modules so you should take it. 
+If you are looking for answers to some of the following questions, 
+then this course will be useful to you:
+
+- What is a command line shell
+- How would you copy thousands of files with file names starting with `"my_good_file..."` to a different directory on your computer?
+- Among thousands of files and directories you know there is one where you wrote down `"location of my thesis backup"`. 
+  How do you find this file?
+- What is an environment variable and how can you change it?
+
+
 **Objectives** 
 
 To follow most of the other modules you will have to have some basic understanding of the command line.
@@ -99,8 +112,6 @@ At the end of the lecture, participants will be able to:
 * [Scipy introduction](https://docs.scipy.org/doc/scipy/tutorial/general.html)
 * [Scipy IO tutorial](https://docs.scipy.org/doc/scipy/tutorial/io.html)
 
-**Pre-recorded lecture video:** Coming soon.
-
 ## 6. Virtualization of computing environments
 **Instructor:** Peer Herholz
 
@@ -112,9 +123,9 @@ At the end of the lecture, participants will be able to:
 * Get first experience with basic utilization.
 * Evaluate if, when and how to integrate virtualization into the lifecycle of a project.
 
-**Materials:** Coming soon.
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-intro-to-containerization)
 
-**Pre-recorded lecture video:** Coming soon.
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=Kzyev8m-Vcg)
 
 ## 7. Tools for project management and organization
 **Instructor:** Elizabeth DuPre
@@ -147,9 +158,9 @@ Students will leave with:
 * Understand the advantages and the constraints of HPC
 * Learn the key concepts and practical bash commands to get started on the Compute Canada HPC
 
-**Materials:** Coming soon.
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/03-high-performance-computing)
 
-**Pre-recorded lecture video:** Coming soon.
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=5iTgIt_ZSyk)
 
 ## 9. Introduction to Data Visualization in Python
 **Instructor:** Jacob Sanz-Robinson
@@ -177,9 +188,9 @@ Most of published results still rely on some statistical inference. With this le
 * learn (or be reminded of) the notion of effect size, power, positive predictive values and the consequences of low powered studies 
 * understand the file drawer effect, p-hacking, and know about some solutions.
 
-**Materials:** Coming soon.
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/02-Classical-statistics-pitfalls-and-remedies)
 
-**Pre-recorded lecture video:** Coming soon. 
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ)
 
 ## 11. Introduction to Machine Learning part 1: supervised learning
 **Instructor:** Nikhil Bhagwat
