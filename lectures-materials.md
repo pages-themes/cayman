@@ -143,9 +143,9 @@ Students will leave with:
 * Understand the advantages and the constraints of HPC
 * Learn the key concepts and practical bash commands to get started on the Compute Canada HPC
 
-**Materials:** Coming soon.
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/03-high-performance-computing)
 
-**Pre-recorded lecture video:** Coming soon.
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=5iTgIt_ZSyk)
 
 ## 9. Introduction to Data Visualization in Python
 **Instructor:** Jacob Sanz-Robinson
