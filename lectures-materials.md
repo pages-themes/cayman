@@ -97,8 +97,6 @@ At the end of the lecture, participants will be able to:
 * [Scipy introduction](https://docs.scipy.org/doc/scipy/tutorial/general.html)
 * [Scipy IO tutorial](https://docs.scipy.org/doc/scipy/tutorial/io.html)
 
-**Pre-recorded lecture video:** Coming soon.
-
 ## 6. Virtualization of computing environments
 **Instructor:** Peer Herholz
 
@@ -110,9 +108,9 @@ At the end of the lecture, participants will be able to:
 * Get first experience with basic utilization.
 * Evaluate if, when and how to integrate virtualization into the lifecycle of a project.
 
-**Materials:** Coming soon.
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-intro-to-containerization)
 
-**Pre-recorded lecture video:** Coming soon.
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=Kzyev8m-Vcg)
 
 ## 7. Tools for project management and organization
 **Instructor:** Elizabeth DuPre
@@ -177,7 +175,7 @@ Most of published results still rely on some statistical inference. With this le
 
 **Materials:** Coming soon.
 
-**Pre-recorded lecture video:** Coming soon. 
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ)
 
 ## 11. Introduction to Machine Learning part 1: supervised learning
 **Instructor:** Nikhil Bhagwat
