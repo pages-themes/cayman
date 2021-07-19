@@ -28,6 +28,19 @@ With this lecture, you will get a general introduction to reproducible - or irre
 ## 2. Introduction to the Terminal and Bash
 **Instructor:** Sebastian Urchs
 
+**Self-assessment questions**
+
+This module is a requirement for many of the other modules so you should take it. 
+If you are looking for answers to some of the following questions, 
+then this course will be useful to you:
+
+- What is a command line shell
+- How would you copy thousands of files with file names starting with `"my_good_file..."` to a different directory on your computer?
+- Among thousands of files and directories you know there is one where you wrote down `"location of my thesis backup"`. 
+  How do you find this file?
+- What is an environment variable and how can you change it?
+
+
 **Objectives** 
 
 To follow most of the other modules you will have to have some basic understanding of the command line.
