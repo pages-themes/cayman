@@ -6,7 +6,7 @@ description: The schedule and Zoom link for the live tutorial sessions
 
 # Live Tutorial Schedule
 
-**Tutorial Zoom Meeting ID:** (Coming soon)
+**Tutorial Zoom Meeting ID:** Check the course Slack channel for this link!
 
 | Date     | Time | Event     |
 | :---        |    :----:   |          ---: |
