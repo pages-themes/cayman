@@ -73,7 +73,7 @@ Git and GitHub are key tools for doing version control in both academia and indu
 
 **Materials**: [GitHub repo](https://github.com/koudyk/intro_git_github)
 
-**Pre-recorded lecture:** [YouTube video](https://www.youtube.com/watch?v=ZE1jn8Rh0O8), [slides](https://github.com/koudyk/intro_git_github/blob/main/pre-recorded_lecture_slides.pdf)
+**Pre-recorded lecture:** [YouTube video](https://youtu.be/b0ETTTKfu2Y), [slides](https://github.com/koudyk/intro_git_github/blob/main/pre-recorded_lecture_slides.pdf)
 
 **In-class tutorial:** [installation instructions](https://github.com/koudyk/intro_git_github/blob/main/installation_instructions.md), (content coming soon)
 
