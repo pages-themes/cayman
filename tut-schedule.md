@@ -21,8 +21,8 @@ description: The schedule and Zoom link for the live tutorial sessions
 |    | 15:30-17:30        | High Performance Computing (HPC)   |
 | Thursday 29th of July     | 09:00-11:00       | Introduction to Data Visualization   |
 |    | 13:00-15:00       | Classical statistics: Statistical modeling, common pitfalls, and remedies      |
-|    | 15:30-17:30        | Introduction to Machine Learning with Scikit-learn |
-| Friday 30th of July     | 09:00-11:00       | Advanced Machine Learning with Neuroimaging and Nilearn   |
+|    | 15:30-17:30        | Introduction to Machine Learning part 1: supervised learning |
+| Friday 30th of July     | 09:00-11:00       | Introduction to Machine Learning part 2: dimensionality reduction techniques |
 |    | 13:00-15:00       | General Q&A      |
 |    | 15:30-17:30       | Quiz #2  |
 
