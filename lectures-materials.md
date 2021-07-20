@@ -112,6 +112,24 @@ At the end of the lecture, participants will be able to:
 * [Scipy introduction](https://docs.scipy.org/doc/scipy/tutorial/general.html)
 * [Scipy IO tutorial](https://docs.scipy.org/doc/scipy/tutorial/io.html)
 
+**Self-assessment quiz**
+
+1. NumPy's main data structure is a Python list
+
+- [] True
+- [] False
+
+2. Pandas's main data structure is a 2D table
+
+- [] True
+- [] False
+
+3. A Pandas Series is a one-dimensional array
+
+- [] True
+- [] False
+
+
 ## 6. Virtualization of computing environments
 **Instructor:** Peer Herholz
 
