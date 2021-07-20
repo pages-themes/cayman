@@ -71,9 +71,11 @@ Git and GitHub are key tools for doing version control in both academia and indu
 * How to track and share their own work using Git and GitHub; and
 * How to collaborate and contribute to open projects using Git and GitHub.
 
-**Material:** Coming soon.
+**Materials**: [GitHub repo](https://github.com/koudyk/intro_git_github)
 
-**Pre-recorded lecture video:** Coming soon.
+**Pre-recorded lecture:** [YouTube video](https://youtu.be/b0ETTTKfu2Y), [slides](https://github.com/koudyk/intro_git_github/blob/main/pre-recorded_lecture_slides.pdf)
+
+**In-class tutorial:** [installation instructions](https://github.com/koudyk/intro_git_github/blob/main/installation_instructions.md), (content coming soon)
 
 ## 4. Introduction to Python
 **Instructor:** Jacob Sanz-Robinson 
