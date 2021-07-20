@@ -236,7 +236,7 @@ Most of published results still rely on some statistical inference. With this le
 * Learn about tools to mitigate the issue: feature selection and dimensionality reduction
 * Train a machine-learning pipeline on fMRI data and evaluate its prediction performance
 
-**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/30-July/02-machine-learning-part-2)
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/30-July/12-intro-to-machine-learning-part-2/)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc)
 
