@@ -221,7 +221,7 @@ Most of published results still rely on some statistical inference. With this le
 * Implement a typical model validation pipeline with Scikit-learn
 * Learn about various model performance scores and their use-cases
 
-**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/03-intro-to-machine-learning)
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/11-intro-to-machine-learning-part-1)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=vsp7c-f3cvg)
 
