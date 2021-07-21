@@ -8,6 +8,10 @@ description: Links to the pre-recorded lectures and material
 
 **Lecture material:** [Link to the parent GitHub Repository](https://github.com/neurodatascience/course-materials-2021).
 
+**Back to home** [QLS612 website](https://neurodatascience.github.io/QLS612-Overview/)
+
+**Slack workspace** [QLS612 slack](https://qls612-bhs.slack.com)
+
 
 ## 1. Reproducibility in Life Science
 **Instructor:** [JB Poline](mailto:jean-baptiste.poline@mcgill.ca)
@@ -24,21 +28,15 @@ With this lecture, you will get a general introduction to reproducible - or irre
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=US80s7W4s6o)
 
+**Self-assessment quiz**
+
+See if you can easily answer this 
+- Is the term “replicability” generally applied to obtaining the same results with another (new) dataset ?
+- Is the root cause of irreproducibility the publication incentive ?
+- What is a similar result with the same methodology or pipeline but different data ?
 
 ## 2. Introduction to the Terminal and Bash
 **Instructor:** Sebastian Urchs
-
-**Self-assessment questions**
-
-This module is a requirement for many of the other modules so you should take it. 
-If you are looking for answers to some of the following questions, 
-then this course will be useful to you:
-
-- What is a command line shell
-- How would you copy thousands of files with file names starting with `"my_good_file..."` to a different directory on your computer?
-- Among thousands of files and directories you know there is one where you wrote down `"location of my thesis backup"`. 
-  How do you find this file?
-- What is an environment variable and how can you change it?
 
 
 **Objectives** 
@@ -57,6 +55,19 @@ You will learn how to:
 - please download and extract into your home directory [these example files](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/03-intro-to-shell/shell-course.zip)
 
 **Pre-recorded lecture video**: Is [available on YouTube](https://youtu.be/Sd10Wo5LQls).
+
+**Self-assessment quiz**
+
+This module is a requirement for many of the other modules so you should take it. 
+If you are looking for answers to some of the following questions, 
+then this course will be useful to you:
+
+- What is a command line shell
+- How would you copy thousands of files with file names starting with `"my_good_file..."` to a different directory on your computer?
+- Among thousands of files and directories you know there is one where you wrote down `"location of my thesis backup"`. 
+  How do you find this file?
+- What is an environment variable and how can you change it?
+
 
 ## 3. Introduction to Git and GitHub
 **Instructor:** Kendra Oudyk

@@ -7,10 +7,10 @@ layout: default
 
 <img src="logo_horizontal__for_light_background.png" alt="drawing" width="250" class="center">
 
-* [Link to the pre-recorded lectures and class material.](./lectures-materials.html)
-* [Link to the live tutorial schedule.](./tut-schedule.html)
-* [Link to setup instructions](./setup.html).
-* [Link to the code of conduct.](./coc.html)
+* [Link to the **pre-recorded lectures and class material**.](./lectures-materials.html)
+* [Link to the **live tutorial schedule**.](./tut-schedule.html)
+* [Link to **setup instructions**](./setup.html).
+* [Link to the **code of conduct**.](./coc.html)
 
 ## Course overview:
 
