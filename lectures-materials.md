@@ -144,6 +144,7 @@ my_function("111", "abc", "0100")
 * b) ‘0abc111111’
 * c) ‘111111bca0’
 * d) ‘1111111110’
+
 ___
 
 ## 5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
@@ -257,6 +258,29 @@ ___
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/01-data-visualization)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=1kmTpm9W22I&)
+
+**Self-assessment quiz**
+
+(1) If you wanted to create a figure that groups and categorizes the data based on relationships among the variables, which of the following plots would you use? 
+
+* a) Heatmap
+* b) Jointplot
+* c) Clustermap
+* d) Raincloud plot
+
+(2) What is a plausible reason to avoid using a hexplot?
+
+* a) You have a large sample size, so a scatter plot will give the viewer a better idea of the distribution.
+* b) They often require being paired with other graphs in jontplots to convey information about the data.
+* c) You have a small sample size, so the differences in datapoint density per hexagon are not well represented.
+* d) You have a small sample size, so a density plot will work better for the vast majority of bivariate data.
+
+(3) What is an advantage of Perceptually Uniform Colormaps over other colormaps? 
+
+* a) They hide points of high perceptual contrast, making for a better reading experience.
+* b) False features are not introduced into the data.
+* c) They give each colour equal representation in the colormap, making it more accurate.
+* d) They are accessible for people with colorblindness.
 
 ___
 
