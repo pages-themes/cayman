@@ -7,6 +7,8 @@ description: Links to the pre-recorded lectures and material
 #  Lectures and Class Material
 
 **Lecture material:** [Link to the parent GitHub Repository](https://github.com/neurodatascience/course-materials-2021).
+**Back to home** [QLS612 website](https://neurodatascience.github.io/QLS612-Overview/)
+**Slack workspace** [QLS612 slack](https://qls612-bhs.slack.com)
 
 
 ## 1. Reproducibility in Life Science
