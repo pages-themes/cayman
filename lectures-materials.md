@@ -164,7 +164,7 @@ Students will leave with:
 * An overview of common data standards for neuroscience and tools to interface with them
 * Best practice recommendations for incorporating standards into existing workflows
 
-**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/01-standards-for-project-management)
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-standards-for-project-management)
 
 **Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o)
 
@@ -184,6 +184,8 @@ At the end of the lecture, participants will be able to:
 * Manipulate data frames with Pandas
 * Apply numerical methods from the scientific Python ecosystem
 
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/01-numpy-scipy-pandas)
+
 **Assigned readings** 
 
 * [A Visual Intro to NumPy and Data Representation](http://jalammar.github.io/visual-numpy) by Jay Alammar, **up to "Transposing and Reshaping**.
@@ -196,18 +198,18 @@ At the end of the lecture, participants will be able to:
 
 (1) NumPy's main data structure is a Python list
 
-- [] True
-- [] False
+- [ ] True
+- [ ] False
 
 (2) Pandas's main data structure is a 2D table
 
-- [] True
-- [] False
+- [ ] True
+- [ ] False
 
 (3) A Pandas Series is a one-dimensional array
 
-- [] True
-- [] False
+- [ ] True
+- [ ] False
 
 ___
 
@@ -222,7 +224,7 @@ ___
 * Get first experience with basic utilization.
 * Evaluate if, when and how to integrate virtualization into the lifecycle of a project.
 
-**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-intro-to-containerization)
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/02-intro-to-containerization)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=Kzyev8m-Vcg)
 
