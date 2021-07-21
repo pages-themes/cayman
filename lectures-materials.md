@@ -147,7 +147,30 @@ my_function("111", "abc", "0100")
 
 ___
 
-## 5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
+
+## 5. Tools for project management and organization
+**Instructor:** Elizabeth DuPre
+
+**Pre-requisite modules:** (4) Intro to Python (optional)
+
+**Objectives**
+
+Project management and data standards are a vital, if underappreciated, point in any data science workflow.
+In this lecture, students will learn common project management and data standards for neuroscience,
+as well as how they can incorporate these standards into their own research workflows.
+Students will leave with:
+
+* An understanding of the importance of standards in creating reproducible results
+* An overview of common data standards for neuroscience and tools to interface with them
+* Best practice recommendations for incorporating standards into existing workflows
+
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/01-standards-for-project-management)
+
+**Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o)
+
+___
+
+## 6. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
 **Instructor:** [Tristan Glatard](mailto:tristan.glatard@concordia.ca)
 
 **Pre-requisite modules:** (4) Intro to Python.
@@ -188,7 +211,7 @@ At the end of the lecture, participants will be able to:
 
 ___
 
-## 6. Virtualization of computing environments
+## 7. Virtualization of computing environments
 **Instructor:** Peer Herholz
 
 **Pre-requisite modules:** (2) Intro to Terminal/Bash, (4) Intro to Python
@@ -202,28 +225,6 @@ ___
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-intro-to-containerization)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=Kzyev8m-Vcg)
-
-___
-
-## 7. Tools for project management and organization
-**Instructor:** Elizabeth DuPre
-
-**Pre-requisite modules:** (4) Intro to Python (optional)
-
-**Objectives**
-
-Project management and data standards are a vital, if underappreciated, point in any data science workflow.
-In this lecture, students will learn common project management and data standards for neuroscience,
-as well as how they can incorporate these standards into their own research workflows.
-Students will leave with:
-
-* An understanding of the importance of standards in creating reproducible results
-* An overview of common data standards for neuroscience and tools to interface with them
-* Best practice recommendations for incorporating standards into existing workflows
-
-**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/01-standards-for-project-management)
-
-**Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o)
 
 ___
 

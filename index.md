@@ -33,9 +33,9 @@ In terms of requirements, students will be expected to have basic programming sk
 2. Introduction to the Terminal and Bash
 3. Introduction to Git and GitHub
 4. Introduction to Python
-5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
-6. Introduction to virtual environments and containers
-7. Tools for project management and organization
+5. Tools for project management and organization
+6. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
+7. Introduction to virtual environments and containers
 8. High Performance Computing (HPC)
 9. Introduction to Data Visualization
 10. Classical statistics pitfalls and remedies.
