@@ -168,6 +168,11 @@ Students will leave with:
 
 **Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o)
 
+**Self-assessment quiz:**
+- What is the Brain Imaging Data Structure, and how is it used in neuroimaging research?
+- When should researchers think about project management in their overall experimental workflow?
+- What are the four components of FAIR research?
+
 ___
 
 ## 6. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
