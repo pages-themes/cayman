@@ -319,6 +319,14 @@ ___
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=vsp7c-f3cvg)
 
+**Self-assessment quiz**
+(See if you can easily explain these topics to others. If you can, then you probably don't need to take this module!)
+
+1. What is linear regression?
+2. Can you do multiclass prediction using logistic regression? 
+3. What is cross-validation? 
+4. Can you tell if the classifier performance is acceptable solely based on its prediction accuracy?
+
 ___
 
 ## 12. Introduction to Machine Learning part 2: dimensionality reduction techniques
