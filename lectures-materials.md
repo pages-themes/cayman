@@ -249,7 +249,27 @@ Most of published results still rely on some statistical inference. With this le
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/30-July/12-intro-to-machine-learning-part-2/)
 
-**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc)
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc**
+
+**Self-assessment quiz**
+
+- I am learning to classify patients who have a disease using 20,000 features
+  obtained from brain images. I have 1,000 participants in my dataset. Can I use
+  logistic regression without regularization?
+  - yes
+  - no
+- I decide to reduce the dimension of input features with Principal Component
+  Analysis. How can I choose the number of principal components of my design
+  matrix X to keep?
+  - by choosing the number of principal components that yields the lowest
+    reconstruction error of X
+  - by performing a grid search (nested cross-validation) to set this
+    hyperparameter of my learning pipeline
+- If I want to perform univariate feature selection to reduce the number of
+  input features, what criterion can I use to score individual features?
+  - correlation with the target variable
+  - ANOVA of the feature's values (comparing within-class variance to
+     across-class variance)
 
 
 
