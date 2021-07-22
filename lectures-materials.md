@@ -12,6 +12,7 @@ description: Links to the pre-recorded lectures and material
 
 **Slack workspace** [QLS612 slack](https://qls612-bhs.slack.com)
 
+___
 
 ## 1. Reproducibility in Life Science
 **Instructor:** [JB Poline](mailto:jean-baptiste.poline@mcgill.ca)
@@ -35,6 +36,8 @@ See if you can easily answer this
 - Is the root cause of irreproducibility the publication incentive ?
 - What is a similar result with the same methodology or pipeline but different data ?
 
+___
+
 ## 2. Introduction to the Terminal and Bash
 **Instructor:** Sebastian Urchs
 
@@ -51,8 +54,8 @@ You will learn how to:
 * run useful command line programs and find help (find, grep, ls, and man / documentation)
 
 **Materials**: 
-- you can find [the PDF of the slides here](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/03-intro-to-shell/introduction-to-shell.pdf)
-- please download and extract into your home directory [these example files](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/03-intro-to-shell/shell-course.zip)
+- you can find [the PDF of the slides here](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/shell-course.zip)
+- please download and extract into your home directory [these example files](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/introduction-to-shell.pdf)
 
 **Pre-recorded lecture video**: Is [available on YouTube](https://youtu.be/Sd10Wo5LQls).
 
@@ -68,6 +71,7 @@ then this course will be useful to you:
   How do you find this file?
 - What is an environment variable and how can you change it?
 
+___
 
 ## 3. Introduction to Git and GitHub
 **Instructor:** Kendra Oudyk
@@ -88,6 +92,8 @@ Git and GitHub are key tools for doing version control in both academia and indu
 
 **In-class tutorial:** [installation instructions](https://github.com/koudyk/intro_git_github/blob/main/installation_instructions.md), (content coming soon)
 
+___
+
 ## 4. Introduction to Python
 **Instructor:** Jacob Sanz-Robinson 
 
@@ -101,62 +107,48 @@ Git and GitHub are key tools for doing version control in both academia and indu
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=ml6VkmtLXpA)
 
-## 5. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
-**Instructor:** [Tristan Glatard](mailto:tristan.glatard@concordia.ca)
-
-**Pre-requisite modules:** (4) Intro to Python.
-
-**Objectives**
-
-This lecture will introduce NumPy, Pandas, and SciPy, three of the main libraries in the scientific Python ecosystem.
-At the end of the lecture, participants will be able to:
-
-* Manipulate arrays of numbers with NumPy
-* Manipulate data frames with Pandas
-* Apply numerical methods from the scientific Python ecosystem
-
-**Assigned readings** 
-
-* [A Visual Intro to NumPy and Data Representation](http://jalammar.github.io/visual-numpy) by Jay Alammar, **up to "Transposing and Reshaping**.
-* [Pandas DataFrame introduction](https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html)
-* [Pandas read-write tutorial](https://pandas.pydata.org/docs/getting_started/intro_tutorials/02_read_write.html)
-* [Scipy introduction](https://docs.scipy.org/doc/scipy/tutorial/general.html)
-* [Scipy IO tutorial](https://docs.scipy.org/doc/scipy/tutorial/io.html)
-
 **Self-assessment quiz**
 
-1. NumPy's main data structure is a Python list
+(1) How does the use of a ‘break’ statement alter the flow of a loop in Python?
 
-- [] True
-- [] False
+(2) What happens if you attempt to append new elements to a Tuple?
 
-2. Pandas's main data structure is a 2D table
+(3) Without running the code on your machine, what is the printed output when the following code is run?
 
-- [] True
-- [] False
+```python
+my_dictionary = {"a" : 1, "b" : {"c" : {"d" : [4,5,6,4]}}, "c" : [1,2,3]}
+x = my_dictionary["b"]["c"]["d"].append(my_dictionary["c"][-3])
+print(my_dictionary.values())
+```
 
-3. A Pandas Series is a one-dimensional array
+* a) [1, {'c': {'d': [4, 5, 6, 4}}, [1, 2, 3]]
+* b) [1, {'c': {'d': [4, 5, 6, 4, 1]}}, [1, 2, 3]]
+* c) [1, [4,5,6,4,1], [1,2,3]]
+* d) [1, [4,5,6,4], [1,2,3]]
 
-- [] True
-- [] False
+(4)  Without running the code on your machine, which string is returned by my_function when called with the specified parameters?
+
+```python
+def my_function(x, y, z):
+    result = ""
+    if len(z) <= 6 and len(z) > 2:
+        result = z[-2] + y
+    else:
+        result = x + y
+    return x + x + result
+
+my_function("111", "abc", "0100")
+```
+
+* a) ‘1111110abc’
+* b) ‘0abc111111’
+* c) ‘111111bca0’
+* d) ‘1111111110’
+
+___
 
 
-## 6. Virtualization of computing environments
-**Instructor:** Peer Herholz
-
-**Pre-requisite modules:** (2) Intro to Terminal/Bash, (4) Intro to Python
-
-**Objectives**
-
-* Learn about different virtualization technologies, what they entail and how they work.
-* Get first experience with basic utilization.
-* Evaluate if, when and how to integrate virtualization into the lifecycle of a project.
-
-**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-intro-to-containerization)
-
-**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=Kzyev8m-Vcg)
-
-## 7. Tools for project management and organization
+## 5. Tools for project management and organization
 **Instructor:** Elizabeth DuPre
 
 **Pre-requisite modules:** (4) Intro to Python (optional)
@@ -172,9 +164,71 @@ Students will leave with:
 * An overview of common data standards for neuroscience and tools to interface with them
 * Best practice recommendations for incorporating standards into existing workflows
 
-**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/01-standards-for-project-management)
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-standards-for-project-management)
 
 **Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o)
+
+___
+
+## 6. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
+**Instructor:** [Tristan Glatard](mailto:tristan.glatard@concordia.ca)
+
+**Pre-requisite modules:** (4) Intro to Python.
+
+**Objectives**
+
+This lecture will introduce NumPy, Pandas, and SciPy, three of the main libraries in the scientific Python ecosystem.
+At the end of the lecture, participants will be able to:
+
+* Manipulate arrays of numbers with NumPy
+* Manipulate data frames with Pandas
+* Apply numerical methods from the scientific Python ecosystem
+
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/01-numpy-scipy-pandas)
+
+**Assigned readings** 
+
+* [A Visual Intro to NumPy and Data Representation](http://jalammar.github.io/visual-numpy) by Jay Alammar, **up to "Transposing and Reshaping**.
+* [Pandas DataFrame introduction](https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html)
+* [Pandas read-write tutorial](https://pandas.pydata.org/docs/getting_started/intro_tutorials/02_read_write.html)
+* [Scipy introduction](https://docs.scipy.org/doc/scipy/tutorial/general.html)
+* [Scipy IO tutorial](https://docs.scipy.org/doc/scipy/tutorial/io.html)
+
+**Self-assessment quiz**
+
+(1) NumPy's main data structure is a Python list
+
+- [ ] True
+- [ ] False
+
+(2) Pandas's main data structure is a 2D table
+
+- [ ] True
+- [ ] False
+
+(3) A Pandas Series is a one-dimensional array
+
+- [ ] True
+- [ ] False
+
+___
+
+## 7. Virtualization of computing environments
+**Instructor:** Peer Herholz
+
+**Pre-requisite modules:** (2) Intro to Terminal/Bash, (4) Intro to Python
+
+**Objectives**
+
+* Learn about different virtualization technologies, what they entail and how they work.
+* Get first experience with basic utilization.
+* Evaluate if, when and how to integrate virtualization into the lifecycle of a project.
+
+**Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/28-July/02-intro-to-containerization)
+
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=Kzyev8m-Vcg)
+
+___
 
 ## 8. High Performance Computing (HPC)
 **Instructor:** Darcy Quesnel
@@ -191,6 +245,8 @@ Students will leave with:
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=5iTgIt_ZSyk)
 
+___
+
 ## 9. Introduction to Data Visualization in Python
 **Instructor:** Jacob Sanz-Robinson
 
@@ -205,6 +261,31 @@ Students will leave with:
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/01-data-visualization)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=1kmTpm9W22I&)
+
+**Self-assessment quiz**
+
+(1) If you wanted to create a figure that groups and categorizes the data based on relationships among the variables, which of the following plots would you use? 
+
+* a) Heatmap
+* b) Jointplot
+* c) Clustermap
+* d) Raincloud plot
+
+(2) What is a plausible reason to avoid using a hexplot?
+
+* a) You have a large sample size, so a scatter plot will give the viewer a better idea of the distribution.
+* b) They often require being paired with other graphs in jontplots to convey information about the data.
+* c) You have a small sample size, so the differences in datapoint density per hexagon are not well represented.
+* d) You have a small sample size, so a density plot will work better for the vast majority of bivariate data.
+
+(3) What is an advantage of Perceptually Uniform Colormaps over other colormaps? 
+
+* a) They hide points of high perceptual contrast, making for a better reading experience.
+* b) False features are not introduced into the data.
+* c) They give each colour equal representation in the colormap, making it more accurate.
+* d) They are accessible for people with colorblindness.
+
+___
 
 ## 10. Classical statistics pitfalls and remedies.
 **Instructor:** [JB Poline](mailto:jean-baptiste.poline@mcgill.ca)
@@ -221,6 +302,8 @@ Most of published results still rely on some statistical inference. With this le
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ)
 
+___
+
 ## 11. Introduction to Machine Learning part 1: supervised learning
 **Instructor:** Nikhil Bhagwat
 
@@ -235,6 +318,16 @@ Most of published results still rely on some statistical inference. With this le
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/11-intro-to-machine-learning-part-1)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=vsp7c-f3cvg)
+
+**Self-assessment quiz**
+(See if you can easily explain these topics to others. If you can, then you probably don't need to take this module!)
+
+1. What is linear regression?
+2. Can you do multiclass prediction using logistic regression? 
+3. What is cross-validation? 
+4. Can you tell if the classifier performance is acceptable solely based on its prediction accuracy?
+
+___
 
 ## 12. Introduction to Machine Learning part 2: dimensionality reduction techniques
 **Instructor:** Jérôme Dockès
@@ -271,7 +364,6 @@ Most of published results still rely on some statistical inference. With this le
   - ANOVA of the feature's values (comparing within-class variance to
      across-class variance)
 
-
-
+___
 
 [back](./)
