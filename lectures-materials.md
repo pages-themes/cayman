@@ -252,6 +252,29 @@ ___
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=Kzyev8m-Vcg)
 
+**Self-assessment questions:** 
+(to check your understanding of the pre-recorded materials)
+1.  What is virtualization?
+  - a) isolating, encapsulating and sharing computing environments
+  - b) sharing analysis code
+  - c) testing analysis code across different operating systems
+  - d) describing a computing environment within a publication
+2. What is the “hierarchy” of the 4 levels of virtualization discussed, from lowest (i.e., least like a full operating system) to highest (i.e., most like a full operating system)?
+  - a) pip virtualenv, conda, docker, virtual machine
+  - b) virtual machine, docker, conda, pip virtual env
+  - c) pip virtualenv, docker, conda, virtual machine
+  - d) virtual machine, conda, docker, pip virtualenv
+3. How can one evaluate the optimal virtualization technique given the project at hand?
+  - a) testing different options until it works
+  - b) outline required computing environment upon starting the project
+  - c) it doesn’t matter, just use the same every time
+  - d) start with the highest level and descend until things stop working
+4. How can one create computing environments dedicated to specific projects?
+  - a) it depends on the operating system 
+  - b) exclusively through cloud computing instances
+  - c) using the BIOS
+  - d) it depends on the virtualization technique
+
 ___
 
 ## 8. High Performance Computing (HPC)
