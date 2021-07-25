@@ -292,6 +292,24 @@ ___
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=5iTgIt_ZSyk)
 
+**Self-assessment questions:** 
+(to check your understanding of the pre-recorded materials)
+1.  Choose the area that Advanced Research Computing traditionally does **not** include
+  - a) HPC/Clusters
+  - b) Research Data Management	
+  - c) Cloud Computing
+  - d) Video Games
+2. Choose all components that are part of an HPC Compute Node
+  - a) Processor/Core
+  - b) Display/Monitor
+  - c) Memory
+  - d) Mouse
+  - e) Local Disk
+3. Choose all ways to access an HPC Cluster
+  - a) Secure shell to a Login Node
+  - b) Secure shell to a Compute Node
+  - c) Secure transfer to a Data Transfer Node
+  
 ___
 
 ## 9. Introduction to Data Visualization in Python
