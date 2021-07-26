@@ -41,7 +41,6 @@ ___
 ## 2. Introduction to the Terminal and Bash
 **Instructor:** Sebastian Urchs
 
-
 **Objectives** 
 
 To follow most of the other modules you will have to have some basic understanding of the command line.
@@ -54,8 +53,9 @@ You will learn how to:
 * run useful command line programs and find help (find, grep, ls, and man / documentation)
 
 **Materials**: 
-- you can find [the PDF of the slides here](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/shell-course.zip)
-- please download and extract into your home directory [these example files](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/introduction-to-shell.pdf)
+- you can find [the PDF of the slides here](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/introduction-to-shell.pdf)
+- you can find [the PDF slides of the in-class exercises here](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/introduction-to-shell-in-class-exercises.pdf) 
+- please download and extract into your home directory [these example files](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/shell-course.zip)
 
 **Pre-recorded lecture video**: Is [available on YouTube](https://youtu.be/Sd10Wo5LQls).
 
