@@ -33,23 +33,23 @@ If you have questions during the installation procedure those resources may have
 
 From this point on whenever the instructions specify to "open a terminal" please assume you are supposed to open the Ubuntu application.
 
-### Bash shell
+### Bash shell (in the WSL Ubuntu)
 
 You already have it, now that you’ve installed the WSL!
 
-### Git
+### Git (in the WSL Ubuntu)
 
 You already have it, now that you’ve installed the WSL!
 
-### VSCode
+### VSCode (on your windows)
 
 1. Go to https://code.visualstudio.com/ and click the download button, then run the `.exe` file.
 1. Leave all the defaults during the installation with the following exception:
       - Please make sure the box labelled "Register Code as an editor for supported file types" is selected
 
-#### VSCode extensions
+#### VSCode extensions (allows you to access the WSL Ubuntu)
 
-1. Open the Ubuntu application.
+1. Open the VSCode application, go to Extentions tab (on the left) and search for ```Remote - WSL``` or ```VSCode Terminal For Ubuntu```, install them; (Usually, VSCode can detect your WSL Ubuntu installation and remind you to install these related extentions).
 1. Type `code .` into the terminal and press `Enter`.
    You should see a message reading "Installing VS Code Server" and then a new windows will open up.
 1. Press `Ctrl+Shift+P` in the new window that opens and type "Extensions: Install extensions" into the search bar that appears at the top of the screen.
@@ -62,9 +62,9 @@ You already have it, now that you’ve installed the WSL!
       - Docker
       - Remote - WSL
 
-### Python
+### Python (in the WSL Ubuntu)
 
-1. Open a new terminal and type the following lines (separately) into the terminal, pressing `Enter` after each one:
+1. Open a new terminal (from VSCode menu on top, the terminal will open at the bottom of the VSCode main window, working with this terminal is equavalent to ssh to the WSL Ubuntu) and type the following lines (separately) into the terminal, pressing `Enter` after each one:
 
    ``` bash
    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -77,10 +77,10 @@ You already have it, now that you’ve installed the WSL!
 1. The installation script will inform you that it is going to install into a default directory (e.g., `/home/$USER/miniconda3`).
    Leave this default and press `Enter`.
 1. When you are asked "Do you wish the installer to initialize Miniconda3 by running conda init? [yes|no]," type `yes` and press `Enter`.
-   Exit the terminal once the installation has finished.
+   Exit (or re-open) the terminal once the installation has finished.
 1. Re-open the Ubuntu application.
    Type `which python` into the terminal and it should return a path (e.g., `/home/$USER/miniconda3/bin/python`).
-   - If you do not see a path like this then please try typing `conda init`, closing your terminal, and repeating this step.
+   - If you do not see a path like this then please try ```cd miniconda3/bin/``` then `./conda init`, close (or re-open) your terminal, and repeat this step.
      If your issue is still not resolved skip the following step and contact an instructor on the #help-installation channel on the BHS Slack.
 1. Type the following to remove the installation script that was downloaded:
 
@@ -88,7 +88,7 @@ You already have it, now that you’ve installed the WSL!
    rm ./Miniconda3-latest-Linux-x86_64.sh
    ```
 
-#### Python packages
+#### Python packages (in the WSL Ubuntu)
 
 Open a terminal and type the following commands:
 
@@ -97,7 +97,7 @@ conda config --append channels conda-forge
 conda config --set channel_priority strict
 conda install -y flake8 ipython jupyter jupyterlab matplotlib nibabel nilearn numpy pandas scipy seaborn
 ```
-
+**This installation step will take some time.**
 ### Docker
 
 Unfortunately, Docker for Windows is a bit of a mess.
