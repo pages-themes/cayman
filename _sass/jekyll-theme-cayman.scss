@@ -4,19 +4,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 @mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
+  @media screen and (min-width: var(--large-breakpoint)) {
     @content;
   }
 }
 
 @mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+  @media screen and (min-width: var(--medium-breakpoint) and (max-width: var(--large-breakpoint)) {
     @content;
   }
 }
 
 @mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
+  @media screen and (max-width: var(--medium-breakpoint)) {
     @content;
   }
 }
@@ -31,7 +31,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
+  color: var(--body-text-color);
 }
 
 #skip-to-content {
@@ -47,13 +47,13 @@ body {
     left: 10px;
     height: auto;
     width: auto;
-    background: invert($body-link-color);
-    outline: thick solid invert($body-link-color);
+    background: invert(var(--body-link-color));
+    outline: thick solid invert(var(--body-link-color));
   }
 }
 
 a {
-  color: $body-link-color;
+  color: var(--body-link-color);
   text-decoration: none;
 
   &:hover {
@@ -106,10 +106,10 @@ a {
 }
 
 .page-header {
-  color: $header-heading-color;
+  color: var(--header-heading-color);
   text-align: center;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-color: var(--header-bg-color);
+  background-image: linear-gradient(120deg, var(--header-bg-color-secondary), var(--header-bg-color));
 
   @include large {
     padding: 5rem 6rem;
@@ -210,7 +210,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $section-headings-color;
+    color: var(--section-headings-color);
   }
 
   p {
@@ -221,8 +221,8 @@ a {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: $code-text-color;
-    background-color: $code-bg-color;
+    color: var(--code-text-color);
+    background-color: var(--code-bg-color);
     border-radius: 0.3rem;
   }
 
@@ -231,17 +231,17 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
+    color: var(--code-text-color);
     word-wrap: normal;
-    background-color: $code-bg-color;
-    border: solid 1px $border-color;
+    background-color: var(--code-bg-color);
+    border: solid 1px var(--border-color);
     border-radius: 0.3rem;
 
     > code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: $code-text-color;
+      color: var(--code-text-color);
       word-break: normal;
       white-space: pre;
       background: transparent;
@@ -294,8 +294,8 @@ a {
   blockquote {
     padding: 0 1rem;
     margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    color: var(--blockquote-text-color);
+    border-left: 0.3rem solid var(--border-color);
 
     > :first-child {
       margin-top: 0;
@@ -321,7 +321,7 @@ a {
     th,
     td {
       padding: 0.5rem 1rem;
-      border: 1px solid $table-border-color;
+      border: 1px solid var(--table-border-color);
     }
   }
 
@@ -345,7 +345,7 @@ a {
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: $hr-border-color;
+    background-color: var(--hr-border-color);
     border: 0;
   }
 }
@@ -353,7 +353,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+  border-top: solid 1px var(--hr-border-color);
 
   @include large {
     font-size: 1rem;
@@ -374,5 +374,5 @@ a {
 }
 
 .site-footer-credits {
-  color: $blockquote-text-color;
+  color: var(--blockquote-text-color);
 }
