@@ -1,23 +1,46 @@
-// Breakpoints
-$large-breakpoint: 64em !default;
-$medium-breakpoint: 42em !default;
+// LIGHT
 
-// Headers
-$header-heading-color: #fff !default;
-$header-bg-color: #159957 !default;
-$header-bg-color-secondary: #155799 !default;
+body {
+  // Breakpoints
+  --large-breakpoint: 64em;
+  --medium-breakpoint: 42em;
 
-// Text
-$section-headings-color: #159957 !default;
-$body-text-color: #606c71 !default;
-$body-link-color: #1e6bb8 !default;
-$blockquote-text-color: #819198 !default;
+  // Headers
+  --header-heading-color: #fff;
+  --header-bg-color: #159957;
+  --header-bg-color-secondary: #155799;
 
-// Code
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
+  // Text
+  --section-headings-color: #159957;
+  --body-text-color: #606c71;
+  --body-link-color: #1e6bb8;
+  --blockquote-text-color: #819198;
 
-// Borders
-$border-color: #dce6f0 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
+  // Code
+  --code-bg-color: #f3f6fa;
+  --code-text-color: #567482;
+
+  // Borders
+  --border-color: #dce6f0;
+  --table-border-color: #e9ebec;
+  --hr-border-color: #eff0f1;
+}
+
+// DARK
+
+@media (prefers-color-scheme: light) {
+  // Text
+  --section-headings-color: #159957;
+  --body-text-color: #606c71;
+  --body-link-color: #1e6bb8;
+  --blockquote-text-color: #819198;
+
+  // Code
+  --code-bg-color: #f3f6fa;
+  --code-text-color: #567482;
+
+  // Borders
+  --border-color: #dce6f0;
+  --table-border-color: #e9ebec;
+  --hr-border-color: #eff0f1;
+}
