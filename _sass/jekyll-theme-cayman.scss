@@ -10,7 +10,7 @@
 }
 
 @mixin medium {
-  @media screen and (min-width: var(--medium-breakpoint) and (max-width: var(--large-breakpoint)) {
+  @media screen and (min-width: var(--medium-breakpoint)) and (max-width: var(--large-breakpoint)) {
     @content;
   }
 }
