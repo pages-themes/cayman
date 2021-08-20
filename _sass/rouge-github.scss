@@ -34,7 +34,7 @@
   font-style: italic;
 }
 .highlight .gr {
-  color: #aa0000;
+  color: var(--code-red-dark);
 }
 .highlight .gh {
   color: #999999;
@@ -53,80 +53,80 @@
   font-weight: bold;
 }
 .highlight .gu {
-  color: #aaaaaa;
+  color: var(--code-grey-light);
 }
 .highlight .gt {
-  color: #aa0000;
+  color: var(--code-red-dark);
 }
 .highlight .kc {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .kd {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .kn {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .kp {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .kr {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .kt {
-  color: #445588;
+  color: var(--code-purple);
   font-weight: bold;
 }
 .highlight .k, .highlight .kv {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .mf {
-  color: #009999;
+  color: var(--code-lightblue);
 }
 .highlight .mh {
-  color: #009999;
+  color: var(--code-lightblue);
 }
 .highlight .il {
-  color: #009999;
+  color: var(--code-lightblue);
 }
 .highlight .mi {
-  color: #009999;
+  color: var(--code-lightblue);
 }
 .highlight .mo {
-  color: #009999;
+  color: var(--code-lightblue);
 }
 .highlight .m, .highlight .mb, .highlight .mx {
-  color: #009999;
+  color: var(--code-lightblue);
 }
 .highlight .sb {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .sc {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .sd {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .s2 {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .se {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .sh {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .si {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .sx {
-  color: #d14;
+  color: var(--code-red);
 }
 .highlight .sr {
   color: #009926;
