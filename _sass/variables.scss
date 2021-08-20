@@ -18,12 +18,21 @@ $medium-breakpoint: 42em;
   --code-bg-color: #f3f6fa;
   --code-text-color: #567482;
   //colors
-  --code-red: #d14;
+  --code-d14: #d14;
+  --code-red-dark: #aa0000;
   --code-lightblue: #009999;
-  --code-green: #009926;
-  --code-pink: #990073;
-  --code-darker-lightblue: #008080;
-  --code-grey: #999999;
+  --code-009926: #009926;
+  --code-990073: #990073;
+  --code-008080: #008080;
+  --code-445588: #445588;
+  --code-grey-as: #aaaaaa;
+  --code-grey-9s: #999999;
+  --code-grey-8s: #888888;
+  --code-grey-5s: #555555;
+  --code-000080: #000080;
+  --code-990000: #990000;
+  --code-800080: #800080;
+  --code-3c5d5d: #3c5d5d;
 
   // Borders
   --border-color: #dce6f0;
@@ -46,15 +55,21 @@ $medium-breakpoint: 42em;
   --code-text-color: #dbdbdb;
   --code-bold-text-color: hsl(0, 0, 100%);
   //colors
-  --code-red: #d14;
+  --code-d14: #d14;
   --code-red-dark: #aa0000;
   --code-lightblue: #009999;
-  --code-green: #009926;
-  --code-pink: #990073;
-  --code-darker-lightblue: #008080;
-  --code-purple: #445588;
-  --code-grey: #999999;
-  --code-grey-light: #aaaaaa;
+  --code-009926: #009926;
+  --code-990073: #990073;
+  --code-008080: #008080;
+  --code-445588: #445588;
+  --code-grey-as: #aaaaaa;
+  --code-grey-9s: #999999;
+  --code-grey-8s: #888888;
+  --code-grey-5s: #555555;
+  --code-000080: #000080;
+  --code-990000: #990000;
+  --code-800080: #800080;
+  --code-3c5d5d: #3c5d5d;
 
   // Borders
   --border-color: #606468;

@@ -34,7 +34,7 @@
   font-style: italic;
 }
 .highlight .gr {
-  color: var(--code-red-dark);
+  color: var(--code-d14-dark);
 }
 .highlight .gh {
   color: #999999;
@@ -47,7 +47,7 @@
   color: #888888;
 }
 .highlight .gp {
-  color: #555555;
+  color: var(--code-grey-dark);
 }
 .highlight .gs {
   font-weight: bold;
@@ -56,7 +56,7 @@
   color: var(--code-grey-light);
 }
 .highlight .gt {
-  color: var(--code-red-dark);
+  color: var(--code-d14-dark);
 }
 .highlight .kc {
   color: var(--code-bold-text-color);
@@ -79,7 +79,7 @@
   font-weight: bold;
 }
 .highlight .kt {
-  color: var(--code-purple);
+  color: var(--code-445588);
   font-weight: bold;
 }
 .highlight .k, .highlight .kv {
@@ -105,37 +105,37 @@
   color: var(--code-lightblue);
 }
 .highlight .sb {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .sc {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .sd {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .s2 {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .se {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .sh {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .si {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .sx {
-  color: var(--code-red);
+  color: var(--code-d14);
 }
 .highlight .sr {
-  color: #009926;
+  color: var(--code-009926);
 }
 .highlight .s1 {
   color: #d14;
 }
 .highlight .ss {
-  color: #990073;
+  color: var(--code-990073);
 }
 .highlight .s {
   color: #d14;
@@ -150,55 +150,55 @@
   color: #0086B3;
 }
 .highlight .nc {
-  color: #445588;
+  color: var(--code-445588);
   font-weight: bold;
 }
 .highlight .no {
-  color: #008080;
+  color: var(--code-008080);
 }
 .highlight .nd {
-  color: #3c5d5d;
+  color: var(--code-3c5d5d);
   font-weight: bold;
 }
 .highlight .ni {
-  color: #800080;
+  color: var(--code-800080);
 }
 .highlight .ne {
-  color: #990000;
+  color: var(--code-990000);
   font-weight: bold;
 }
 .highlight .nf {
-  color: #990000;
+  color: var(--code-990000);
   font-weight: bold;
 }
 .highlight .nl {
-  color: #990000;
+  color: var(--code-990000);
   font-weight: bold;
 }
 .highlight .nn {
-  color: #555555;
+  color: var(--code-grey-dark);
 }
 .highlight .nt {
-  color: #000080;
+  color: var(--code-000080);
 }
 .highlight .vc {
-  color: #008080;
+  color: var(--code-darker-lightblue);
 }
 .highlight .vg {
-  color: #008080;
+  color: var(--code-darker-lightblue);
 }
 .highlight .vi {
-  color: #008080;
+  color: var(--code-darker-lightblue);
 }
 .highlight .nv {
-  color: #008080;
+  color: var(--code-darker-lightblue);
 }
 .highlight .ow {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .o {
-  color: #000000;
+  color: var(--code-bold-text-color);
   font-weight: bold;
 }
 .highlight .w {
