@@ -40,6 +40,7 @@ body {
   position: absolute;
   overflow: hidden;
   top: -10px;
+  border-radius: 0.1vh;
 
   &:focus {
     position: fixed;
@@ -47,8 +48,8 @@ body {
     left: 10px;
     height: auto;
     width: auto;
-    background: invert(var(--body-link-color));
-    outline: thick solid invert(var(--body-link-color));
+    background: var(--body-link-color);
+    outline: thick solid var(--body-link-color);
   }
 }
 
