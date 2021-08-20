@@ -2,9 +2,7 @@
 $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
-// LIGHT
-
-:root {
+@mixin light-colors {
   // Headers
   --header-heading-color: #fff;
   --header-bg-color: #159957;
@@ -15,24 +13,28 @@ $medium-breakpoint: 42em;
   --body-text-color: #606c71;
   --body-link-color: #1e6bb8;
   --blockquote-text-color: #819198;
-
+  
   // Code
   --code-bg-color: #f3f6fa;
   --code-text-color: #567482;
+  //colors
+  --code-red: #d14;
+  --code-lightblue: #009999;
+  --code-green: #009926;
+  --code-pink: #990073;
+  --code-darker-lightblue: #008080;
+  --code-grey: #999999;
 
   // Borders
   --border-color: #dce6f0;
   --table-border-color: #e9ebec;
   --hr-border-color: #eff0f1;
-
+  
   // Misilainius
   --bg-color: white;
 }
 
-// DARK
-
-@media (prefers-color-scheme: dark) {
-  :root {
+@mixin dark-colors {
   // Text
   --section-headings-color: #159957;
   --body-text-color: #ffffff;
@@ -41,7 +43,18 @@ $medium-breakpoint: 42em;
 
   // Code
   --code-bg-color: #2e2e2e;
-  --code-text-color: #91c7e0;
+  --code-text-color: #dbdbdb;
+  --code-bold-text-color: hsl(0, 0, 100%);
+  //colors
+  --code-red: #d14;
+  --code-red-dark: #aa0000;
+  --code-lightblue: #009999;
+  --code-green: #009926;
+  --code-pink: #990073;
+  --code-darker-lightblue: #008080;
+  --code-purple: #445588;
+  --code-grey: #999999;
+  --code-grey-light: #aaaaaa;
 
   // Borders
   --border-color: #606468;
@@ -50,5 +63,14 @@ $medium-breakpoint: 42em;
 
   // Misilainius
   --bg-color:hsl(0, 0%, 10%);
+}
+
+:root {
+  @include light-colors;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    @include dark-colors;
   }
 }
