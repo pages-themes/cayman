@@ -24,6 +24,9 @@
   --border-color: #dce6f0;
   --table-border-color: #e9ebec;
   --hr-border-color: #eff0f1;
+
+  // Misilainius
+  --bg-color: white;
 }
 
 // DARK
@@ -32,17 +35,20 @@
   :root {
   // Text
   --section-headings-color: #159957;
-  --body-text-color: #606c71;
+  --body-text-color: #a2b9c2;
   --body-link-color: #1e6bb8;
   --blockquote-text-color: #819198;
 
   // Code
-  --code-bg-color: #f3f6fa;
-  --code-text-color: #567482;
+  --code-bg-color: #2e2e2e;
+  --code-text-color: #91c7e0;
 
   // Borders
-  --border-color: #dce6f0;
-  --table-border-color: #e9ebec;
-  --hr-border-color: #eff0f1;
+  --border-color: #606468;
+  --table-border-color: #1b1b1b;
+  --hr-border-color: #242424;
+
+  // Misilainius
+  --bg-color:rgb(48, 48, 48);
   }
 }

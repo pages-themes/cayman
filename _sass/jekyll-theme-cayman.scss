@@ -26,6 +26,7 @@
 }
 
 body {
+  background-color: var(--bg-color);
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,7 +41,7 @@ body {
   position: absolute;
   overflow: hidden;
   top: -10px;
-  border-radius: 0.1vh;
+  border-radius: 1px;
 
   &:focus {
     position: fixed;
@@ -49,7 +50,7 @@ body {
     height: auto;
     width: auto;
     background: var(--body-link-color);
-    outline: thick solid var(--body-link-color);
+    outline: solid var(--body-link-color);
   }
 }
 
