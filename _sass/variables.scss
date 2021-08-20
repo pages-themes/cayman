@@ -1,6 +1,6 @@
 // LIGHT
 
-body {
+:root {
   // Breakpoints
   --large-breakpoint: 64em;
   --medium-breakpoint: 42em;
@@ -29,6 +29,7 @@ body {
 // DARK
 
 @media (prefers-color-scheme: dark) {
+  :root {
   // Text
   --section-headings-color: #159957;
   --body-text-color: #606c71;
@@ -43,4 +44,5 @@ body {
   --border-color: #dce6f0;
   --table-border-color: #e9ebec;
   --hr-border-color: #eff0f1;
+  }
 }
