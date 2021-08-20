@@ -2,8 +2,8 @@
 
 :root {
   // Breakpoints
-  --large-breakpoint: 64em;
-  --medium-breakpoint: 42em;
+  $large-breakpoint: 64em;
+  $medium-breakpoint: 42em;
 
   // Headers
   --header-heading-color: #fff;
