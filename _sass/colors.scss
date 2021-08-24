@@ -1,9 +1,11 @@
+@mixin header-colors {
+      --header-heading-color: #fff;
+      --header-bg-color: #159957;
+      --header-bg-color-secondary: #155799;
+}
+
 @mixin light-colors {
-    // Headers
-    --header-heading-color: #fff;
-    --header-bg-color: #159957;
-    --header-bg-color-secondary: #155799;
-  
+
     // Text
     --section-headings-color: #22cc77;
     --body-text-color: #606c71;
