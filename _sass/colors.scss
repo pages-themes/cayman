@@ -77,3 +77,40 @@
     // Misilainius
     --bg-color:hsl(0, 0%, 10%);
   }
+
+@mixin experimental-black-code-block-colors {
+      // Text
+      --section-headings-color: #159957;
+      --body-text-color: #ffffff;
+      --body-link-color: #1e6bb8;
+      --blockquote-text-color: #b4b4b4;
+    
+      // Code
+      --code-bg-color: #080808;
+      --code-text-color: #dbdbdb;
+      --code-bold-text-color: hsl(0, 0, 100%);
+      //colors
+      --code-d14: #d14;
+      --code-red-dark: #aa0000;
+      --code-lightblue: #009999;
+      --code-009926: #009926;
+      --code-990073: #990073;
+      --code-008080: #008080;
+      --code-445588: #445588;
+      --code-grey-as: #aaaaaa;
+      --code-grey-9s: #999999;
+      --code-grey-8s: #888888;
+      --code-grey-5s: #555555;
+      --code-000080: #000080;
+      --code-990000: #990000;
+      --code-800080: #800080;
+      --code-3c5d5d: #3c5d5d;
+    
+      // Borders
+      --border-color: #3c3c3c;
+      --table-border-color: #3a3a3a;
+      --hr-border-color: #242424;
+    
+      // Misilainius
+      --bg-color:hsl(0, 0%, 10%);
+}
