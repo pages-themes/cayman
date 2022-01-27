@@ -101,7 +101,7 @@ end
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
-### Definition lists can be used with HTML syntax.
+### Definition lists and collapsed sections can be used with HTML syntax.
 
 <dl>
 <dt>Name</dt>
@@ -113,6 +113,16 @@ end
 <dt>Color</dt>
 <dd>Green</dd>
 </dl>
+
+<details markdown='1'><summary>CLICK ME</summary>
+
+#### We can hide anything, even code!
+
+    ```ruby
+      puts "Hello World"
+    ```
+
+</details>
 
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
