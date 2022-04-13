@@ -27,7 +27,7 @@ With this lecture, you will get a general introduction to reproducible - or irre
 
 **Material:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/26-July/01-reproducibility-in-life-sciences)
 
-**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=US80s7W4s6o), [slides](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/01-reproducibility-in-life-sciences/01-intro-reproductibility.pdf)
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=US80s7W4s6o), [Slides](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/01-reproducibility-in-life-sciences/01-intro-reproductibility.pdf)
 
 **Self-assessment quiz**
 
@@ -53,11 +53,11 @@ You will learn how to:
 * run useful command line programs and find help (find, grep, ls, and man / documentation)
 
 **Materials**: 
-- [Github link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/26-July/02-intro-to-shell)
+- [Github Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/26-July/02-intro-to-shell)
 - you can find [the PDF slides of the in-class exercises here](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/introduction-to-shell-in-class-exercises.pdf) 
 - please download and extract into your home directory [these example files](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/shell-course.zip)
 
-**Pre-recorded lecture video**: [YouTube link](https://youtu.be/Sd10Wo5LQls), [slides](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/introduction-to-shell.pdf)
+**Pre-recorded lecture video**: [YouTube Link](https://youtu.be/Sd10Wo5LQls), [Slides](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/26-July/02-intro-to-shell/introduction-to-shell.pdf)
 
 **Self-assessment quiz**
 
@@ -86,9 +86,9 @@ Git and GitHub are key tools for doing version control in both academia and indu
 * How to track and share their own work using Git and GitHub; and
 * How to collaborate and contribute to open projects using Git and GitHub.
 
-**Materials**: [GitHub link](https://github.com/koudyk/intro_git_github)
+**Materials**: [GitHub Link](https://github.com/koudyk/intro_git_github)
 
-**Pre-recorded lecture:** [YouTube link](https://youtu.be/b0ETTTKfu2Y), [slides](https://github.com/koudyk/intro_git_github/raw/main/1-pre-recorded-material/pre-recorded_lecture_slides.pdf)
+**Pre-recorded lecture:** [YouTube Link](https://youtu.be/b0ETTTKfu2Y), [Slides](https://github.com/koudyk/intro_git_github/raw/main/1-pre-recorded-material/pre-recorded_lecture_slides.pdf)
 
 **Self-assessment questions:** 
 (to check your understanding of the pre-recorded materials)
