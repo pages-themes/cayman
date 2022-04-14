@@ -109,7 +109,7 @@ Git and GitHub are key tools for doing version control in both academia and indu
   - c) go to the repo's GitHub page and open an issue to ask for a copy
   - d) go to the repo's GitHub page and do a pull request
 
-**In-class tutorial:** [installation instructions](https://github.com/koudyk/intro_git_github/blob/main/installation_instructions.md), (content coming soon)
+**In-class tutorial:** [installation instructions](https://github.com/koudyk/intro_git_github/blob/main/2-in-class-tutorial/2_installation_instructions.md)
 
 ___
 
@@ -185,7 +185,7 @@ Students will leave with:
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/27-July/02-standards-for-project-management)
 
-**Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o)
+**Pre-recorded lecture video:** [YouTube Link](https://youtu.be/aBMc8bgSK6o), [Slides](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/27-July/02-standards-for-project-management/NDS2020_ShareableScience.pdf)
 
 **Self-assessment quiz:**
 - What is the Brain Imaging Data Structure, and how is it used in neuroimaging research?
@@ -365,7 +365,7 @@ Most of published results still rely on some statistical inference. With this le
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/02-Classical-statistics-pitfalls-and-remedies)
 
-**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ)
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ), [Slides](https://github.com/neurodatascience/course-materials-2021/blob/master/lectures/29-July/02-Classical-statistics-pitfalls-and-remedies/10-classical-statistics-issues.pdf)
 
 ___
 
@@ -407,7 +407,7 @@ ___
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/30-July/12-intro-to-machine-learning-part-2/)
 
-**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc)
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc), [Slides](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/30-July/12-intro-to-machine-learning-part-2/prerecorded-lecture-slides/presentation.pdf)
 
 **Self-assessment quiz**
 
