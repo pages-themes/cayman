@@ -365,7 +365,7 @@ Most of published results still rely on some statistical inference. With this le
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2021/tree/master/lectures/29-July/02-Classical-statistics-pitfalls-and-remedies)
 
-**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ), [Slides](https://github.com/neurodatascience/course-materials-2021/blob/master/lectures/29-July/02-Classical-statistics-pitfalls-and-remedies/10-classical-statistics-issues.pdf)
+**Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=lRLtWjkBOzQ), [Slides](https://github.com/neurodatascience/course-materials-2021/raw/master/lectures/29-July/02-Classical-statistics-pitfalls-and-remedies/10-classical-statistics-issues.pdf)
 
 ___
 
