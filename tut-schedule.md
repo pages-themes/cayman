@@ -10,21 +10,26 @@ description: The schedule and Zoom link for the live tutorial sessions
 
 | Date     | Time | Event     |
 | :---        |    :----:   |          ---: |
-| Thursday 26th of July | 09:00-10:30       | 1. Introduction to Reproducibility  |
+| Thursday 7th of July | 09:00-10:30       | 1. Introduction to Reproducibility  |
 |    | 10:45-12:30      | Installation clinic  |
 |    | 13:30-15:00      | 2. Terminal and Bash |
 |    | 15:15-16:45       | Exercises   |
-| Friday 27th of July   | 09:00-10:30       | Introduction to Python      |
-|    | 13:00-15:00      | Tools for project management and organization   |
-|    | 15:15-17:30        | Quiz #1      |
-| Monday 28th of July     | 09:00-10:30       | Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses   |
-|    | 13:00-15:00       | Introduction to virtual environments and containers     |
-|    | 15:30-17:30        | High Performance Computing (HPC)   |
-| Tuesday 29th of July     | 09:00-10:30       | Introduction to Data Visualization   |
-|    | 13:00-15:00       | Classical statistics: Statistical modeling, common pitfalls, and remedies      |
-|    | 15:30-17:30        | Introduction to Machine Learning part 1: supervised learning |
-| Wednesday 30th of July     | 09:00-10:30       | Introduction to Machine Learning part 2: dimensionality reduction techniques |
-|    | 13:00-15:00       | General Q&A      |
-|    | 15:30-17:30       | Quiz #2  |
+| Friday 8th of July | 09:00-10:30       | 3. Introduction to python  |
+|    | 10:45-12:30      | Exercises |
+|    | 13:30-15:00      | 4. Python Toolbox for Data Analysis |
+|    | 15:15-16:45       | Exercises   |
+| Monday 11th of July | 09:00-10:30       | Quiz 1 (1 hour)  |
+|    | 10:45-12:30      | 5. Git GitHub  |
+|    | 13:30-15:00      | 6. Data Preprocessing in Python |
+|    | 15:15-16:45       | Exercises   |
+| Tuesday 12th of July | 09:00-10:30       | 7. Machine Learning 1: Supervised Learning |
+|    | 10:45-12:30      | Exercises  |
+|    | 13:30-15:00      | 8. Machine Learning 2: Dimensionality Reduction Techniques |
+|    | 15:15-16:45       | Exercises   |
+| Wednesday 13th of July | 09:00-10:30       | 9. Introduction to Data Visualization  |
+|    | 10:45-12:30      | 10. Containers  |
+|    | 13:30-15:00      | 11. High Performance Computing |
+|    | 15:15-16:45       | Quiz 2   |
+|    | 17:00-19:00       | Celebratory 5 à 7 at Jeanne-Mance Park  |
 
 [back](./)
