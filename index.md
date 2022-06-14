@@ -22,25 +22,23 @@ This course — QLSC-612, [Fundamentals for Neuro Data Science](https://www.mcgi
 
 QLSC-612 is intended for researchers in the life sciences (neurologists, psychiatrists, pyschologists, neuroscientists) who wish to improve their research practices, or other researchers who want an introduction to data science with examples in neuroscience and neuroimaging. At the end of the course students will be able to analyze neuroscience and neuroimaging data in a reproducible and collaborative manner using the Python software stack (a popular and rapidly growing contender in the landscape of neuroscience data analysis).
 
-Amongst the topics, we will cover both the fundamentals of tools (bash, git, github, jupyter, docker, visualization) and analysis methods (hypothesis testing, machine learning) at the conceptual and practical levels. See objectives of each module [here.](./lectures-materials.html)
-.
+Amongst the topics, we will cover both the fundamentals of tools (bash, git, github, jupyter, docker, visualization) and analysis methods (hypothesis testing, machine learning) at the conceptual and practical levels. See objectives of each module [here](./lectures-materials.html).
 
 In terms of requirements, students will be expected to have basic programming skills (such as minimal experience in a scripting language).
 
 ## Course modules:
 
-1. Reproducibility in Life Science
-2. Introduction to the Terminal and Bash
-3. Introduction to Git and GitHub
-4. Introduction to Python
-5. Tools for project management and organization
-6. Numpy, Scipy, and Pandas: The Python Toolbox for Data Analyses
-7. Introduction to virtual environments and containers
-8. High Performance Computing (HPC)
-9. Introduction to Data Visualization
-10. Classical statistics pitfalls and remedies.
-11. Introduction to Machine Learning part 1: supervised learning
-12. Introduction to Machine Learning part 2: dimensionality reduction techniques
+1 - Introduction to Reproducibility
+2 - Terminal and Bash
+3 - Introduction to Python
+4 - Python Toolbox for Data Analysis
+5 - Git GitHub
+6 - Data Preprocessing in Python
+7 - Machine Learning 1: Supervised Learning
+8 - Machine Learning 2: Dimensionality Reduction Techniques
+9 - Introduction to Data Visualization
+10 - Containers
+11 - High Performance Computing
 
 [Link to the pre-recorded lectures and class material.](./lectures-materials.html)
 
