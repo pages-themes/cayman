@@ -28,17 +28,17 @@ In terms of requirements, students will be expected to have basic programming sk
 
 ## Course modules:
 
-1 - Introduction to Reproducibility
-2 - Terminal and Bash
-3 - Introduction to Python
-4 - Python Toolbox for Data Analysis
-5 - Git GitHub
-6 - Data Preprocessing in Python
-7 - Machine Learning 1: Supervised Learning
-8 - Machine Learning 2: Dimensionality Reduction Techniques
-9 - Introduction to Data Visualization
-10 - Containers
-11 - High Performance Computing
+1. Introduction to Reproducibility
+2. Terminal and Bash
+3. Introduction to Python
+4. Python Toolbox for Data Analysis
+5. Git GitHub
+6. Data Preprocessing in Python
+7. Machine Learning 1: Supervised Learning
+8. Machine Learning 2: Dimensionality Reduction Techniques
+9. Introduction to Data Visualization
+10. Containers
+11. High Performance Computing
 
 [Link to the pre-recorded lectures and class material.](./lectures-materials.html)
 
