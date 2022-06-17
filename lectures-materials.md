@@ -28,6 +28,7 @@ With this lecture, you will get a general introduction to reproducible - or irre
 **Material:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/01-Intro_to_Reproducibility)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=US80s7W4s6o)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/blob/main/Lectures/01-Intro_to_Reproducibility/lecture-content/01-Intro_to_Reproducibility.pdf)
 
 **Questions you will be able to answer after taking this module:**
@@ -57,6 +58,7 @@ You will learn how to:
 - [Github Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/02-Terminal_and_Bash)
 
 **Pre-recorded lecture video:** [YouTube Link](https://youtu.be/Sd10Wo5LQls)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/blob/main/Lectures/02-Terminal_and_Bash/lecture-content/02-Terminal_and_Bash.pdf)
 
 **Questions you will be able to answer after taking this module:**
@@ -85,6 +87,7 @@ ___
 **Material:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/03-Intro_to_Python)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=ml6VkmtLXpA)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/03-Intro_to_Python)
 
 **Questions you will be able to answer after taking this module:**
@@ -142,6 +145,7 @@ At the end of the lecture, participants will be able to:
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/04-Python_Toolbox_for_Data_Analysis)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/channel/UCnz2USVFlvPIi_IKQ9XOJ8g/featured)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/04-Python_Toolbox_for_Data_Analysis)
 
 **Assigned readings** 
@@ -185,6 +189,7 @@ Git and GitHub are key tools for doing version control in both academia and indu
 **Materials**: [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/05-Git_GitHub)
 
 **Pre-recorded lecture video:** [YouTube Link](https://youtu.be/b0ETTTKfu2Y)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/blob/main/Lectures/05-Git_GitHub/lecture-content/05-Git_GitHub.pdf)
 
 **Questions you will be able to answer after taking this module:** 
@@ -206,8 +211,6 @@ Git and GitHub are key tools for doing version control in both academia and indu
   - c) go to the repo's GitHub page and open an issue to ask for a copy
   - d) go to the repo's GitHub page and do a pull request
 
-**In-class tutorial:** [installation instructions](https://github.com/koudyk/intro_git_github/blob/main/2-in-class-tutorial/2_installation_instructions.md)
-
 ___
 
 ## 6. Data Preprocessing in Python
@@ -219,6 +222,7 @@ ___
 **Materials**: [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/06-Data_Preprocessing_in_Python)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/channel/UCnz2USVFlvPIi_IKQ9XOJ8g/featured)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/06-Data_Preprocessing_in_Python)
 
 **Questions you will be able to answer after taking this module:** 
@@ -239,6 +243,7 @@ ___
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/07-Machine_Learning_1)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=vsp7c-f3cvg)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/07-Machine_Learning_1)
 
 **Questions you will be able to answer after taking this module:**
@@ -264,6 +269,7 @@ ___
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/08-Machine_Learning_2)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/blob/main/Lectures/08-Machine_Learning_2/lecture-content/08-Machine_Learning_2.pdf)
 
 **Questions you will be able to answer after taking this module:**
@@ -302,6 +308,7 @@ ___
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/09-Intro_to_Data_Visualization)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/channel/UCnz2USVFlvPIi_IKQ9XOJ8g/featured)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/09-Intro_to_Data_Visualization)
 
 **Questions you will be able to answer after taking this module:**
@@ -343,6 +350,7 @@ ___
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/10-Containers)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/channel/UCnz2USVFlvPIi_IKQ9XOJ8g/featured)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/10-Containers)
 
 **Questions you will be able to answer after taking this module:** 
@@ -384,6 +392,7 @@ ___
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/11-High_Performance_Computing)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/channel/UCnz2USVFlvPIi_IKQ9XOJ8g/featured)
+
 **Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/11-High_Performance_Computing)
 
 **Questions you will be able to answer after taking this module:** 
