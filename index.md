@@ -44,9 +44,7 @@ In terms of requirements, students will be expected to have basic programming sk
 
 ## Approach to teaching
 
-This year, we will be using an "inverted classroom" approach. Students will be able to pick 8 of the modules from the list above, and will be able to access pre-recorded lecture or online material to learn the contents of the modules. There will be quizzes and online **live tutorials** to answer questions and go through exercises in order to solidify the knowledge and help prepare the students for their assessment. 
-
-<ins>If you take the course for credit</ins>: assessment will be done online with quizzes. While 12 modules (comprising of 1- a lecture or material available online before the course, and 2- some live session with exercises) have been [prepared](./lectures-materials.html), you only need to take 8 modules to pass the course. If you take more than 8 modules, only your 8 best quizzes will be used to compute your final grade.
+This year, we will be returning to in-person learning! Students taking the course for credit will have to attend lectures in room 189 (QLS Conference Room) of 550 Sherbrooke Street E. Students will be required to attend in-person lectures for all of the modules and will have access to [pre-recorded lectures and online content](https://neurodatascience.github.io/QLS612-Overview/lectures-materials.html) to better consolidate the material. Course grading will be based on the results of 2 in-person quizzes (see [schedule](https://neurodatascience.github.io/QLS612-Overview/tut-schedule.html)). The course requires that you have a laptop and instructions for installation are [here](https://neurodatascience.github.io/QLS612-Overview/setup.html). 
 
 ## Acknowledgements and funders
 We are grateful for support from HBHL NeuroHub and the NIH funded ReproNim centre.  
