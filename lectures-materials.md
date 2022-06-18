@@ -33,7 +33,6 @@ With this lecture, you will get a general introduction to reproducible - or irre
 
 **Questions you will be able to answer after taking this module:**
 
-See if you can easily answer this 
 - Is the term “replicability” generally applied to obtaining the same results with another (new) dataset ?
 - Is the root cause of irreproducibility the publication incentive ?
 - What is a similar result with the same methodology or pipeline but different data ?
@@ -41,7 +40,7 @@ See if you can easily answer this
 ___
 
 ## 2. Introduction to the Terminal and Bash
-**Instructor:** Sebastian Urchs
+**Instructor:** Jacob Sanz-Robinson
 
 **Outline** 
 
@@ -63,10 +62,6 @@ You will learn how to:
 
 **Questions you will be able to answer after taking this module:**
 
-This module is a requirement for many of the other modules so you should take it. 
-If you are looking for answers to some of the following questions, 
-then this course will be useful to you:
-
 - What is a command line shell
 - How would you copy thousands of files with file names starting with `"my_good_file..."` to a different directory on your computer?
 - Among thousands of files and directories you know there is one where you wrote down `"location of my thesis backup"`. 
@@ -76,7 +71,7 @@ then this course will be useful to you:
 ___
 
 ## 3. Introduction to Python
-**Instructor:** Jacob Sanz-Robinson 
+**Instructor:** Jacob Sanz-Robinson and Michelle Wang
 
 **Outline**
 
@@ -232,8 +227,6 @@ ___
 ## 7. Introduction to Machine Learning part 1: supervised learning
 **Instructor:** Nikhil Bhagwat
 
-**Pre-requisite modules:** (4) Intro to Python, (5) Numpy/Scipy/Pandas toolbox.
-
 **Outline**
 
 * Understand basic concepts in supervised machine-learning
@@ -257,8 +250,6 @@ ___
 
 ## 8. Introduction to Machine Learning part 2: dimensionality reduction techniques
 **Instructor:** Jérôme Dockès
-
-**Pre-requisite modules:** (4) Intro to Python, (5) Numpy/Scipy/Pandas toolbox, (11) ML part 1.
 
 **Outline**
 
@@ -295,9 +286,7 @@ ___
 ___
 
 ## 9. Introduction to Data Visualization in Python
-**Instructor:** Jacob Sanz-Robinson
-
-**Pre-requisite modules:** (4) Intro to Python
+**Instructor:** Jonathan Armoza
 
 **Outline**
 
@@ -337,9 +326,7 @@ ___
 ___
 
 ## 10. Virtualization of computing environments
-**Instructor:** Peer Herholz
-
-**Pre-requisite modules:** (2) Intro to Terminal/Bash, (4) Intro to Python
+**Instructor:** Sebastian Urchs
 
 **Outline**
 
@@ -379,9 +366,7 @@ ___
 ___
 
 ## 11. High Performance Computing (HPC)
-**Instructor:** Darcy Quesnel
-
-**Pre-requisite modules:** (2) Intro to Terminal/Bash.
+**Instructor:** Brent McPherson
 
 **Outline**
 
