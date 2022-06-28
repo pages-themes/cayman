@@ -212,7 +212,12 @@ ___
 **Instructor:** Nadia Blostein
 
 **Outline** 
-
+* Load and examine your data
+* Data reformatting
+* Data filtering
+* Data transforms
+* Data visualization
+* Examining 2D images
 
 **Materials**: [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/06-Data_Preprocessing_in_Python)
 
