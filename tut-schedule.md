@@ -24,7 +24,7 @@ description: The schedule and Zoom link for the live tutorial sessions
 |    | 15:15-16:45       | Exercises   |
 | Tuesday 12th of July | 09:00-10:30       | 7. Machine Learning 1: Supervised Learning |
 |    | 10:45-12:30      | Exercises  |
-|    | 13:30-15:00      | 8. Machine Learning 2: Dimensionality Reduction Techniques |
+|    | 13:30-15:00      | 8. Machine Learning 2: Model selection & validation |
 |    | 15:15-16:45       | Exercises   |
 | Wednesday 13th of July | 09:00-10:30       | 9. Introduction to Data Visualization  |
 |    | 10:45-12:30      | 10. Containers  |

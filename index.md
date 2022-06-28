@@ -35,7 +35,7 @@ In terms of requirements, students will be expected to have basic programming sk
 5. Git GitHub
 6. Data Preprocessing in Python
 7. Machine Learning 1: Supervised Learning
-8. Machine Learning 2: Dimensionality Reduction Techniques
+8. Machine Learning 2: Model selection & validation
 9. Introduction to Data Visualization
 10. Containers
 11. High Performance Computing

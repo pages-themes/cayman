@@ -253,42 +253,32 @@ ___
 
 ___
 
-## 8. Introduction to Machine Learning part 2: dimensionality reduction techniques
+## 8. Introduction to Machine Learning part 2: Model selection & validation; dimensionality reduction
 **Instructor:** Jérôme Dockès
 
 **Outline**
 
-* Understand the challenges of learning from high-dimensional data
-* Learn about tools to mitigate the issue: feature selection and dimensionality reduction
-* Train a machine-learning pipeline on fMRI data and evaluate its prediction performance
+* Learn how to properly select a machine-learning model, set hyperparameters, and evaluate prediction performance.
+* Understand the challenges of learning from high-dimensional data and learn about tools to mitigate the issue.
 
 **Materials:** [GitHub Link](https://github.com/neurodatascience/course-materials-2022/tree/main/Lectures/08-Machine_Learning_2)
 
 **Pre-recorded lecture video:** [YouTube Link](https://www.youtube.com/watch?v=t8D9qwTqEbc)
 
-**Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/blob/main/Lectures/08-Machine_Learning_2/lecture-content/08-Machine_Learning_2.pdf)
+**Slides:** [Slides](https://github.com/neurodatascience/course-materials-2022/blob/main/Lectures/08-Machine_Learning_2/slides/slides.pdf)
 
 **Questions you will be able to answer after taking this module:**
 
-- I am learning to classify patients who have a disease using 20,000 features
-  obtained from brain images. I have 1,000 participants in my dataset. Can I use
-  logistic regression without regularization?
-  - yes
-  - no
-- I decide to reduce the dimension of input features with Principal Component
-  Analysis. How can I choose the number of principal components of my design
-  matrix X to keep?
-  - by choosing the number of principal components that yields the lowest
-    reconstruction error of X
-  - by performing a grid search (nested cross-validation) to set this
-    hyperparameter of my learning pipeline
-- If I want to perform univariate feature selection to reduce the number of
-  input features, what criterion can I use to score individual features?
-  - correlation with the target variable
-  - ANOVA of the feature's values (comparing within-class variance to
-     across-class variance)
-
-___
+- I am predicting continuous cognitive scores of 1,000 participants using 20,000
+  brain imaging features. I use least-squares regression. What is regularization
+  and why do I need it?
+- I decide to use ridge regression (l2 regularization). How can I set the
+  regularization hyperparameter?
+- I also add a dimensionality reduction step to my model: PCA. I do 5-fold
+  cross-validation, and I perform a full grid-search, using 3 folds for the
+  inner validation loop. I use a grid of 3 options for the number of PCA
+  components and 6 options for the ridge hyperparameter. How many times (at
+  least) will I need to fit a PCA?
 
 ## 9. Introduction to Data Visualization in Python
 **Instructor:** Jonathan Armoza
