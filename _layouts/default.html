@@ -13,6 +13,9 @@
     {% include head-custom.html %}
   </head>
   <body>
+    {% if site.google_tag %}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {% endif %}
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
