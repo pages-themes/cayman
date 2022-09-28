@@ -10,31 +10,29 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Project 1 : Fraud detectetion
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+World-Leading Risk Intelligence and Device Fingerprinting Technology
 
-## Header 2
+The Global Standard for Device Identification
+The SHIELD platform is born of a revolutionary approach to device identification that empowers businesses to accurately identify every single device on their ecosystem with unparalleled persistence.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Exposing Every Malicious Tool and Technique
+Bolstered by extensive research into fraud attacks and methodologies we profile across the globe, our technology observes device attributes and running processes to identify any tools in use that are typically associated with fraud.
 
-### Header 3
+Identify the Exact Moment a Good User Turns Bad
+SHIELD Sentinel is the only technology in the world that continuously profiles risk across the user session. In doing so, it gives mobile apps the unique ability to identify the exact moment a user begins exhibiting malicious behavior.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+## project 2 : Cartoonify Image with Machine Learning
+Project Idea: Transform images into its cartoon. Yes, the objective of this machine learning project is to CARTOONIFY the images.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+Thus, you will build a python application that will transform an image into its cartoon using machine learning libraries.
+
+### Project 3 : Loan Prediction using Machine Learning
+
+Project idea – The idea behind this ML project is to build a model that will classify how much loan the user can take.
+
+It is based on the user’s marital status, education, number of dependents, and employments. You can build a linear model for this project
 ```
 
 #### Header 4
@@ -105,13 +103,13 @@ end
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<dd>KARAN SINGH BISHT</dd>
 <dt>Born</dt>
-<dd>1952</dd>
+<dd>19/04/1991</dd>
 <dt>Birthplace</dt>
-<dd>Japan</dd>
+<dd>INDIA</dd>
 <dt>Color</dt>
-<dd>Green</dd>
+<dd> BLUE</dd>
 </dl>
 
 ```
