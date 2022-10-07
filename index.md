@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Introduction/Background
+# Introduction
 
 Small businesses and restaurants are the heart of a country's economy. We will be working with Yelp’s open-source dataset to provide customized recommendations and suggestions to consumers. This will help boutique business owners in bolstering their growth.
 
@@ -17,11 +17,17 @@ As of today, recommendation systems for restaurants and small businesses aren’
 # Methods
 
 First, we can use NLP to label words and subsequently classify the sentiment of reviews based on the text content and word frequencies. NLTK (Natural Language Toolkit) is a powerful library for doing the same. Then, we can use Scikit-learn to perform Naive Bayes, Logistic Regression, or Linear Support Vector Clustering for classification.
+
 Latent Dirichlet Allocation (LDA) can be used to classify text by category (cuisine for restaurants, industry for small businesses, etc.), and then similarity scores can be obtained between different categories. Lastly, geographical data can be used to find proximity to the user’s location. A combination of all these factors - reviews, similarity scores, and location - can help find the best fit for a particular user.
 
 # Potential Results
 
 TODO Devesh
+
+# Responsibilities
+
+TODO
+
 
 # References
 
@@ -35,6 +41,3 @@ Singh, Ruchi & Woo, Jongwook. (2019). Applications of Machine Learning Models on
 
 Yelp Dataset. (n.d.). Retrieved October 6, 2022, from https://www.yelp.com/dataset/
 
-# GANTT Chart
-
-TODO

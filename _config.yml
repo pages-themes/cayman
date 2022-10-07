@@ -1,6 +1,6 @@
 title: Local Business & Restaurant Recommendation 
 description: TODO
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
 remote_theme: pages-themes/cayman@v0.2.0
