@@ -35,7 +35,7 @@ Burke, Robin. (2002). Hybrid Recommender Systems: Survey and Experiments. User M
 
 I.V., Shravan. (2016). Sentiment Analysis in Python using NLTK. OSFY - OpensourceForYou. 
 
-S., H., & Ramathmika, R. (2019). Sentiment Analysis of Yelp reviews by machine learning. 2019 International Conference on Intelligent Computing and Control Systems (ICCS). https://doi.org/10.1109/iccs45141.2019.9065812 
+S., H., & Ramathmika, R. (2019). Sentiment Analysis of Yelp reviews by machine learning. 2019 International Conference on _Intelligent Computing and Control Systems (ICCS)._ https://doi.org/10.1109/iccs45141.2019.9065812 
 
 Singh, Ruchi & Woo, Jongwook. (2019). Applications of Machine Learning Models on Yelp Data. Asia Pacific Journal of Information Systems. 29. 65-49. 10.14329/apjis.2019.29.1.35. 
 
