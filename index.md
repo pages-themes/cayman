@@ -2,122 +2,39 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Introduction/Background
 
-[Link to another page](./another-page.html).
+Small businesses and restaurants are the heart of a country's economy. We will be working with Yelp’s open-source dataset to provide customized recommendations and suggestions to consumers. This will help boutique business owners in bolstering their growth.
 
-There should be whitespace between paragraphs.
+The review data has some key useful attributes that we intend to use: the star rating, actual text review, and “useful”, “cool”, or “funny” votes on the rating. We could include the “tips” data which has text recommendations from users on lesser-known advice about a restaurant, along with its “compliment” count to keep track of how many people appreciated the tip. 
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+One of the most interesting papers on the topic is by H. S. and R. Ramathmika. The researchers used NLP to label words with their parts of speech, mapped their frequencies, and used classification algorithms to predict sentiment. They achieved 75-79% accuracy through various techniques like different types of Naive Bayes, Logistic Regression, and Linear Support Vector Clustering.
 
-# Header 1
+# Problem Definition
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+As of today, recommendation systems for restaurants and small businesses aren’t as precise. Users select their preferred cuisine and are overloaded with skewed ratings and reviews. Google Maps, Gusto, OpenTable, etc. create a lot of confusion in the minds of consumers. For instance, people aren’t able to see which restaurant has nice vegetarian food, seafood, etc. Essentially, there is an information influx to the consumer in finding the right small business for the task at hand. With so many options, reviews, and ratings, finding the right match is so difficult and requires a lot of sorting and filtering.
 
-## Header 2
+# Methods
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+First, we can use NLP to label words and subsequently classify the sentiment of reviews based on the text content and word frequencies. NLTK (Natural Language Toolkit) is a powerful library for doing the same. Then, we can use Scikit-learn to perform Naive Bayes, Logistic Regression, or Linear Support Vector Clustering for classification.
+Latent Dirichlet Allocation (LDA) can be used to classify text by category (cuisine for restaurants, industry for small businesses, etc.), and then similarity scores can be obtained between different categories. Lastly, geographical data can be used to find proximity to the user’s location. A combination of all these factors - reviews, similarity scores, and location - can help find the best fit for a particular user.
 
-### Header 3
+# Potential Results
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+TODO Devesh
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+# References
 
-#### Header 4
+Burke, Robin. (2002). Hybrid Recommender Systems: Survey and Experiments. User Modeling and User-Adapted Interaction. 12. 10.1023/A:1021240730564. 
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+I.V., Shravan. (2016). Sentiment Analysis in Python using NLTK. OSFY - OpensourceForYou. 
 
-##### Header 5
+S., H., & Ramathmika, R. (2019). Sentiment Analysis of Yelp reviews by machine learning. 2019 International Conference on Intelligent Computing and Control Systems (ICCS). https://doi.org/10.1109/iccs45141.2019.9065812 
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+Singh, Ruchi & Woo, Jongwook. (2019). Applications of Machine Learning Models on Yelp Data. Asia Pacific Journal of Information Systems. 29. 65-49. 10.14329/apjis.2019.29.1.35. 
 
-###### Header 6
+Yelp Dataset. (n.d.). Retrieved October 6, 2022, from https://www.yelp.com/dataset/
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+# GANTT Chart
 
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+TODO
