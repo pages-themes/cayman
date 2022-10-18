@@ -2,122 +2,26 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# ZoKratesPlus
+ZoKratesPlus is a publicly funded project for exploring new application contexts, nurturing the zero knowledge community, and advancing the adoption of zero knowledge based technologies.
 
-[Link to another page](./another-page.html).
+# ZoKrates
+ZoKrates allows you to extend your DApp through privacy-preserving and [scalable off-chain computations](https://www.ise.tu-berlin.de/fileadmin/fg308/publications/2018/2018_eberhardt_ZoKrates.pdf) without compromising key properties of blockchains. Thereby, you can reduces transaction costs and balance between privacy and transparency. 
 
-There should be whitespace between paragraphs.
+![ZoKrates in KYC](https://raw.githubusercontent.com/ZoKratesPlus/zokratesplus.github.io/customize_template/zokrates.png)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+A [ZoKrates](https://github.com/Zokrates/ZoKrates) program written in a [domain specific language](https://zokrates.github.io/language/variables.html) is compiled into an abstraction (flattened code), which is compattible with zkSNARK proof systems. Proving and verification keys are generated in the setup phase. Subsequently, a prover runs the program and applies the proving key to generate a proof that is later verified with the verification key.
 
 
-### Definition lists can be used with HTML syntax.
+## Application Contexts
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+|                                      | Candidate         | Prototype | Pilot  | Deployment |
+|:-------------------------------------|:------------------|:----------|:-------|:-----------|
+| **Transaction Aggregation**          | zkRollups / Tezos |           |        | [Polygon](https://zokratesplus.github.io/transaction_aggregation.html)    |
+| **Credential Verification / KYC**    |                   | [zkMe](https://zokratesplus.github.io/anonymous_credentials.html)      |        |            |
+| **Accounting in Energy Grids**       |                   |           | [BloGPV](https://zokratesplus.github.io/accounting_energy_grids.html) |            |
+| **Business Process management**      |                   |           |        | Baseline   |
+| **Federated Learning**               |                   | [zkFL](https://zokratesplus.github.io/federated_learning.html)         |        |            |
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
-```
-The final element.
-```
+Your project is missing? Feel free to [reach out](./contact.html) and share your practical zero knowledge experience or needs.
