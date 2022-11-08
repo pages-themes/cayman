@@ -21,10 +21,10 @@ A [ZoKrates](https://github.com/Zokrates/ZoKrates) program written in a [domain 
 
 |                                      | Candidate         | Prototype | Pilot  | Deployment |
 |:-------------------------------------|:------------------|:----------|:-------|:-----------|
-| **Transaction Aggregation**          | zkRollups / Tezos |           |        | [Polygon](https://zokratesplus.github.io/transaction_aggregation.html)    |
+| **Transaction Aggregation**          | zkRollups / Tezos |           |        | [Polygon Nightfall](https://zokratesplus.github.io/transaction_aggregation.html)    |
 | **Credential Verification / KYC**    |                   | [zkMe](https://zokratesplus.github.io/anonymous_credentials.html)      |        |            |
 | **Accounting in Energy Grids**       |                   |           | [BloGPV](https://zokratesplus.github.io/accounting_energy_grids.html) |            |
-| **Business Process management**      |                   |           |        | Baseline   |
+| **Business Process Management**      |                   |           |        | [Baseline](https://zokratesplus.github.io/baseline_protocol.html)   |
 | **Federated Learning**               |                   | [zkFL](https://zokratesplus.github.io/federated_learning.html)         |        |            |
 
 
