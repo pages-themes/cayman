@@ -2,7 +2,6 @@
 layout: default
 ---
 
-# ZoKratesPlus
 ZoKratesPlus is a publicly funded project for exploring new application contexts, nurturing the zero knowledge community, and advancing the adoption of zero knowledge based technologies.
 
 # ZoKrates
