@@ -1,15 +1,3 @@
----
-layout: default
----
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
 # Introduction
 ![image](https://user-images.githubusercontent.com/130385028/235597546-e7e111f2-886e-46c9-be6f-f6eb81a2c015.png)
 
