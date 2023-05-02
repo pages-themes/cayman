@@ -16,9 +16,11 @@ Farm stressors are one of the main causes of farm injuries. Identifying stressfu
 
 # Research Questions
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+*   Does the death or disabling injury stressful or not stressful?
+*   Does the death of a spouse stressful or not stressful?
+*   Does injury of a family stressful or not stressful?
+*   Does injury to yourself stressful or not stressful?
+*   Does the death of a child stressful or not stressful?
 
 # Analysis
 
