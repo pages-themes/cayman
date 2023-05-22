@@ -3,4 +3,4 @@ _site
 Gemfile.lock
 *.gem
 .jekyll-cache
-.jekyll-cache
+.vscode
