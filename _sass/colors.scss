@@ -5,7 +5,6 @@
 }
 
 @mixin light-colors {
-
     // Text
     --section-headings-color: #22cc77;
     --body-text-color: #606c71;
@@ -37,7 +36,7 @@
     --table-border-color: #e9ebec;
     --hr-border-color: #eff0f1;
     
-    // Misilainius
+    // Miscellaneous
     --bg-color: white;
   }
   
@@ -74,7 +73,7 @@
     --table-border-color: #3a3a3a;
     --hr-border-color: #242424;
   
-    // Misilainius
+    // Miscellaneous
     --bg-color:hsl(0, 0%, 10%);
   }
 
@@ -111,6 +110,6 @@
       --table-border-color: #3a3a3a;
       --hr-border-color: #242424;
     
-      // Misilainius
+      // Miscellaneous
       --bg-color:hsl(0, 0%, 10%);
 }
