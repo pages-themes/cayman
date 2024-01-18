@@ -40,6 +40,7 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
+google_tag: [Your Google Tag Manager ID]
 ```
 
 ### Stylesheet
@@ -71,6 +72,8 @@ If you'd like to change the theme's HTML layout:
 ### Customizing Google Analytics code
 
 Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
+
+You may now also use the [Google Tag Manager](https://tagmanager.google.com/) to install and configure the latest analytics code.
 
 ### Overriding GitHub-generated URLs
 
