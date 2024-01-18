@@ -1,20 +1,23 @@
----
-layout: default
----
+# Introduction
+![image](https://user-images.githubusercontent.com/130385028/235597546-e7e111f2-886e-46c9-be6f-f6eb81a2c015.png)
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Farm stressors are one of the main causes of farm injuries. Identifying stressful events helps to understand and find the best procedure to reduce the chance of injury. Later, the farmers can consult with health and safety specialists, and they will help give them some recommendations to diminish the risk of an injury and stay healthy. One of the most stressful events was when a farmer lost a beloved person, child, or spouse. The study aims to identify if a child or spouse's death, injury, or death is stressful. A survey with 62 life activities or events was sent to the farmers in 2004. Farmers rated them from 1 (less stressful) to 100 (more stressful). The marriage event was set as the baseline (50). In this case, marriage was considered to be neither stressful nor stress-free. If one event is more stressful than marriage, the farmer should input (51 to 100). On the other hand, if it is less stressful than marriage, the farmer could choose between 1 to 49.
 
-[Link to another page](./another-page.html).
+# Research Questions
 
-There should be whitespace between paragraphs.
+*   Does the **death or disabling injury** stressful or not stressful?
+*   Does the **death of a spouse** stressful or not stressful?
+*   Does the **injury of a family** stressful or not stressful?
+*   Does the **injury to yourself** stressful or not stressful?
+*   Does the **death of a child** stressful or not stressful?
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+# Analysis
 
-# Header 1
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
+# Discussion
 
 > This is a blockquote following a header.
 >
