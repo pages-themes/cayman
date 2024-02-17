@@ -98,7 +98,7 @@ end
 
 ### Large image
 
-![Branching](https://docs.github.com/assets/cb-36155/mw-1440/images/help/repository/file-tree-view-branch-dropdown-expanded.webp)
+![Branching](https://docs.github.com/assets/cb-23923/images/help/repository/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
