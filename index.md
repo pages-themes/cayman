@@ -2,9 +2,9 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Hi this is Ezequiel Gwilliam
 
-[Link to another page](./another-page.html).
+[Link to another page](https://weber.edu).
 
 There should be whitespace between paragraphs.
 
