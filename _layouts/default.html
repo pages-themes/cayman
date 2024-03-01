@@ -11,6 +11,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+    {% unless page.light_mode %}
+    <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.31/darkreader.min.js"></script>
+    <script>
+        DarkReader.enable();
+    </script>
+    {% endunless %}
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
