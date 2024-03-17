@@ -18,6 +18,8 @@ My College:
 ![Gaming](https://www.avadirect.com/blog/wp-content/uploads/2023/04/building-a-mini-gaming-pc.png)
 
 ![Ender3](https://www.cnet.com/a/img/resize/743440ccfdec25dda93319ad4f362ae162bfffd0/hub/2022/09/06/f166bd01-ea0b-499f-bdc9-7d156e8e5cce/img-2138.jpg?auto=webp&width=1200)
+
+![cooking](https://www.harryanddavid.com/blog/wp-content/uploads/2022/07/cooking-therapy-hero.jpeg)
 ## Why Computer Engineering?
 
 ### I Joined the engineering program because I love to build computers and I want to Learn how to build parts for electronics. 
@@ -44,9 +46,7 @@ My College:
 |:-------------|:-
 | Steaks | Simple but Delicious    
 | Asian Food | Depth of flavor   
-| Argentine Food | My mom  
-
-### 
+| Argentine Food | My mom   
 
 * * *
 
