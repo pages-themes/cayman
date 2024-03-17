@@ -2,122 +2,56 @@
 layout: default
 ---
 
-Hi this is Ezequiel Gwilliam
+# Hi i'm Ezequiel Gwilliam
+Job History:
 
-[Link to another page](https://weber.edu).
+[LinkedIn](https://www.linkedin.com/in/ezequiel-gwilliam-52a0a716b/)
 
-There should be whitespace between paragraphs.
+My College:
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+[Weber State University Website](https://weber.edu).
 
-# Header 1
+# About Me
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+### I was born in Utah and grew up in Farmington. My Hobbies Include Gaming, 3D Printing, Art and Cooking.
 
-## Header 2
+![Gaming](https://www.avadirect.com/blog/wp-content/uploads/2023/04/building-a-mini-gaming-pc.png)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+![Ender3](https://www.cnet.com/a/img/resize/743440ccfdec25dda93319ad4f362ae162bfffd0/hub/2022/09/06/f166bd01-ea0b-499f-bdc9-7d156e8e5cce/img-2138.jpg?auto=webp&width=1200)
+## Why Computer Engineering?
 
-### Header 3
+### I Joined the engineering program because I love to build computers and I want to Learn how to build parts for electronics. 
+* * *
+### What are my Favorite Games to play right now?
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
+|Favorite Games|     Why?     | Hours played|
 |:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| Rocket League | Great Gameplay    | 356
+| Helldivers 2 | good and plenty   | 14.4 (New Game)  |
+| League of Legends | Great game with friends      | 1200   |
 
-### There's a horizontal rule below this.
+### What are my Favorite Things to Print?
+
+|Type of Print|     Why?     | Use Case|
+|:-------------|:------------------|:------|
+| Minifigs | Small Detailed prints are challenging    | Tabletop Games
+| Tools | Cheap Calibration tools and parts  | Whatever you need  |
+| Customs For Friends | Its a great challenge when you have a new print      | Friends & Family   |
+
+### What are my Favorite Foods to Cook?
+
+|Favorite Foods|     Why?     |     
+|:-------------|:-
+| Steaks | Simple but Delicious    
+| Asian Food | Depth of flavor   
+| Argentine Food | My mom  
+
+### 
 
 * * *
 
-### Here is an unordered list:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec enim eget metus aliquet congue vel ut lacus. In in finibus dui, id bibendum quam. Ut at turpis sem. Duis id arcu nec est placerat placerat quis a odio. Aenean ultricies blandit finibus. Nulla ullamcorper lacinia quam, sed hendrerit nisi euismod a. Sed sollicitudin lacus quis elit consectetur ultricies. In dignissim porta mi quis varius.
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+Mauris porta, odio at venenatis blandit, risus sapien mollis turpis, vel semper lectus sem vitae dolor. Maecenas sed pulvinar diam. Suspendisse id lectus pretium, tincidunt urna quis, laoreet ex. In dignissim tortor a pretium vehicula. Morbi consequat fringilla enim vitae congue. Sed aliquet nisl nec lobortis sodales. Fusce sed consequat velit, interdum maximus diam. Maecenas congue enim sit amet sapien volutpat dapibus. Nulla facilisi. Aenean in urna feugiat, vehicula nunc nec, pharetra magna. Phasellus a tincidunt justo, sit amet ultricies nisl. Quisque tempus pretium quam vel feugiat. Nullam pulvinar neque nec urna egestas, non efficitur mi sagittis.
 
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Ut vel felis in metus dictum lobortis. Nam at diam lorem. Morbi maximus fermentum ligula, semper volutpat diam sollicitudin at. Phasellus quam massa, commodo vel ipsum ac, sollicitudin tristique odio. Vivamus eros risus, dignissim et fermentum eget, elementum vitae lectus. Nullam viverra, risus non rutrum dapibus, dui nisi ultrices purus, sed lobortis libero eros vel neque. Quisque pulvinar dolor non ornare suscipit. Morbi non ligula nisi. Duis sed consequat odio. 
