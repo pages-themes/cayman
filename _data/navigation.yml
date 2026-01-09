@@ -1,0 +1,36 @@
+main:
+  - title: "Inicio"
+    url: /
+  - title: "Tutoriales"
+    url: /tutorials/
+  - title: "Cloud"
+    url: /cloud/
+    children:
+      - title: "Azure"
+        url: /categories/#azure
+      - title: "AWS"
+        url: /categories/#aws
+      - title: "GCP"
+        url: /categories/#gcp
+  - title: "DevOps"
+    url: /devops/
+    children:
+      - title: "CI/CD"
+        url: /categories/#cicd
+      - title: "IaC"
+        url: /categories/#infrastructure-as-code
+      - title: "Containers"
+        url: /categories/#containers
+  - title: "Recursos"
+    url: /resources/
+    children:
+      - title: "Cheat Sheets"
+        url: /cheatsheets/
+      - title: "Plantillas"
+        url: /templates/
+      - title: "Herramientas"
+        url: /tools/
+  - title: "Blog"
+    url: /blog/
+  - title: "Sobre Mí"
+    url: /about/

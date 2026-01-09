@@ -1,0 +1,520 @@
+---
+layout: default
+title: "Blog - DevOps y Cloud Computing"
+permalink: /blog/
+classes: wide
+---
+
+<div class="blog-header">
+  <h1>Blog de TheCloudvops</h1>
+  <p>Tutoriales, guías y mejores prácticas sobre DevOps, Cloud Computing y Automatización</p>
+</div>
+
+<div class="blog-container">
+  <aside class="blog-sidebar">
+    <div class="sidebar-widget">
+      <h3>Categorías</h3>
+      <ul class="category-list">
+        {% for category in site.categories %}
+          <li>
+            <a href="#category-{{ category[0] | slugify }}" class="category-filter" data-category="{{ category[0] | slugify }}">
+              {{ category[0] }} <span class="count">({{ category[1].size }})</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>Etiquetas Populares</h3>
+      <div class="tags-cloud">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+          <a href="#tag-{{ tag[0] | slugify }}" class="tag-filter" data-tag="{{ tag[0] | slugify }}">
+            {{ tag[0] }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>Posts Recientes</h3>
+      <ul class="recent-posts">
+        {% for post in site.posts limit:5 %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: "%d %b" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="sidebar-widget newsletter-promo">
+      <h3>¿Quieres más?</h3>
+      <p>Suscríbete para recibir los mejores artículos en tu correo.</p>
+      <a href="#newsletter-cta" class="btn btn--small">Suscribirse</a>
+    </div>
+  </aside>
+
+  <main class="blog-main">
+    <div class="blog-grid">
+      {% for post in site.posts %}
+        <article class="blog-card">
+          <div class="blog-card-image">
+            <div class="blog-card-category">{{ post.categories[0] }}</div>
+            <svg class="blog-card-placeholder" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="grad{{ forloop.index }}" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect width="400" height="250" fill="url(#grad{{ forloop.index }})" opacity="0.8"/>
+              <text x="200" y="125" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">
+                {{ post.title | truncate: 30 }}
+              </text>
+            </svg>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%d %b %Y" }}</time>
+              {% if post.tags %}
+                <span class="tags-list">
+                  {% for tag in post.tags limit:2 %}
+                    <span class="tag-badge">{{ tag }}</span>
+                  {% endfor %}
+                </span>
+              {% endif %}
+            </div>
+            <h2 class="blog-card-title">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <p class="blog-card-excerpt">
+              {% if post.excerpt %}
+                {{ post.excerpt | strip_html | truncatewords: 25 }}
+              {% else %}
+                {{ post.content | strip_html | truncatewords: 25 }}
+              {% endif %}
+            </p>
+            <a href="{{ post.url }}" class="read-more-link">Leer más →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if paginator.total_pages > 1 %}
+      <nav class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="pagination-prev">← Anteriores</a>
+        {% endif %}
+        
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span class="pagination-current">{{ page }}</span>
+          {% else %}
+            <a href="{% if page == 1 %}/blog/{% else %}{{ site.paginate_path | replace: ':num', page }}{% endif %}" class="pagination-link">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="pagination-next">Siguientes →</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  </main>
+</div>
+
+<section class="blog-newsletter" id="newsletter-cta">
+  {% include newsletter.html %}
+</section>
+
+<style>
+/* Blog Page Styles */
+.blog-header {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.blog-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Sidebar */
+.blog-sidebar {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.sidebar-widget {
+  background: white;
+  border: 1px solid #ecf0f1;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-widget h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  margin-bottom: 0.75rem;
+}
+
+.category-filter {
+  color: #7f8c8d;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-filter:hover {
+  color: #3498db;
+  padding-left: 0.5rem;
+}
+
+.count {
+  color: #bdc3c7;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-filter {
+  background: #ecf0f1;
+  color: #7f8c8d;
+  padding: 0.35rem 0.75rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.tag-filter:hover {
+  background: #3498db;
+  color: white;
+}
+
+.recent-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-posts li {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.recent-posts a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.recent-posts a:hover {
+  color: #3498db;
+}
+
+.recent-posts .date {
+  color: #bdc3c7;
+  font-size: 0.85rem;
+}
+
+.newsletter-promo {
+  background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+  color: white;
+  border: none;
+}
+
+.newsletter-promo h3,
+.newsletter-promo p {
+  color: white;
+}
+
+.newsletter-promo h3 {
+  border-bottom-color: rgba(255,255,255,0.3);
+}
+
+.btn--small {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: white;
+  color: #3498db;
+  padding: 0.65rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn--small:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Blog Main Content */
+.blog-main {
+  min-height: 400px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.blog-card {
+  background: white;
+  border: 1px solid #ecf0f1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  border-color: #3498db;
+}
+
+.blog-card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.blog-card-placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-card-category {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #e74c3c;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.blog-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.blog-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.blog-card-meta time {
+  font-weight: 600;
+}
+
+.tags-list {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.tag-badge {
+  background: #ecf0f1;
+  color: #7f8c8d;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.blog-card-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.blog-card-title a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-card-title a:hover {
+  color: #3498db;
+}
+
+.blog-card-excerpt {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.read-more-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  align-self: flex-start;
+}
+
+.read-more-link:hover {
+  color: #2ecc71;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.pagination-link,
+.pagination-prev,
+.pagination-next,
+.pagination-current {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pagination-link {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.pagination-link:hover {
+  background: #3498db;
+  color: white;
+}
+
+.pagination-current {
+  background: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.pagination-prev,
+.pagination-next {
+  background: white;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.pagination-prev:hover,
+.pagination-next:hover {
+  background: #3498db;
+  color: white;
+}
+
+.blog-newsletter {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+  margin-top: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-sidebar {
+    position: static;
+  }
+
+  .sidebar-widget {
+    display: inline-block;
+    width: calc(33.333% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-widget:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-widget {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .blog-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-header p {
+    font-size: 1rem;
+  }
+}
+</style>

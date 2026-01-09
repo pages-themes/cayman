@@ -1,0 +1,47 @@
+name: Auto Publish Posts
+
+on:
+  schedule:
+    # Ejecutar cada día a las 00:01 UTC
+    - cron: '1 0 * * *'
+  workflow_dispatch:  # Permite ejecutar manualmente
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          gem install jekyll bundler
+          bundle install
+          pip install python-frontmatter pyyaml
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Process scheduled posts
+        run: python .github/scripts/publish_posts.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        run: |
+          git add _posts/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: Publish scheduled posts" && git push)

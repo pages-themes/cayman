@@ -1,0 +1,206 @@
+/* Custom Theme - TheCloudvops 2026 */
+
+/* Variables */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #0ea5e9;
+  --accent-color: #7c3aed;
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+  --text-light: #64748b;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --code-bg: #1e293b;
+  --code-color: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -2px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0f172a;
+    --text-color: #e2e8f0;
+    --text-light: #94a3b8;
+    --border-color: #334155;
+    --card-bg: #1e293b;
+    --code-bg: #0f172a;
+    --code-color: #e2e8f0;
+  }
+}
+
+/* Base Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+.masthead {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.greedy-nav {
+  background: transparent;
+  a {
+    color: var(--text-color);
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  .visible-links a:before {
+    background: var(--primary-color);
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* Cards */
+.archive__item {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  }
+
+  &-title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  &-excerpt {
+    color: var(--text-light);
+    margin: 1rem;
+  }
+}
+
+/* Code Blocks */
+div.highlighter-rouge {
+  background: var(--code-bg);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+
+  pre.highlight {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--code-color);
+  }
+}
+
+/* Search Box */
+.search-content {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+
+  #search {
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+  }
+}
+
+/* Tags & Categories */
+.taxonomy__index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+
+  .archive__item {
+    padding: 1rem;
+    text-align: center;
+    
+    h2 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/* Author Profile */
+.author__avatar {
+  img {
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+  }
+}
+
+.author__content {
+  .author__name {
+    color: var(--text-color);
+  }
+  .author__bio {
+    color: var(--text-light);
+  }
+}
+
+/* Footer */
+.page__footer {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  margin-top: 3rem;
+  padding: 2rem 0;
+
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .archive__item {
+    margin: 1rem;
+  }
+}

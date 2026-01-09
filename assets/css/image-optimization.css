@@ -1,0 +1,55 @@
+/* Estilos para imágenes optimizadas */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.post-content img[data-src] {
+    opacity: 0;
+}
+
+.post-content img.loaded {
+    opacity: 1;
+}
+
+/* Contenedor de figura para imágenes con leyenda */
+.post-content figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.post-content figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Estilos responsivos para imágenes */
+@media (max-width: 600px) {
+    .post-content img {
+        margin: 1.5rem auto;
+    }
+}
+
+/* Estilos para imágenes en modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .post-content img {
+        box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+    }
+}
+
+/* Animación de carga para imágenes */
+@keyframes imageFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.post-content img.loaded {
+    animation: imageFadeIn 0.5s ease-in-out;
+}

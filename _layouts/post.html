@@ -1,0 +1,182 @@
+---
+layout: default
+---
+
+{% assign post = page %}
+{% assign related_posts = site.posts | where_exp: "post", "post.tags contains page.tags.first" | where_exp: "post", "post.url != page.url" | limit: 3 %}
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+      <ol>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        {% if page.categories %}
+          <li><a href="{{ site.baseurl }}/categories/#{{ page.categories.first | slugify }}">{{ page.categories.first }}</a></li>
+        {% endif %}
+        <li>{{ page.title }}</li>
+      </ol>
+    </nav>
+
+    <!-- Metadatos del post -->
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.author %}
+        • <span class="post-author">{{ page.author }}</span>
+      {% endif %}
+      {% if page.tags.size > 0 %}
+        <div class="post-tags">
+          {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="post-tag">#{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <!-- Sección de artículos relacionados -->
+  {% if related_posts.size > 0 %}
+    <div class="related-posts">
+      <h2>Artículos Relacionados</h2>
+      <div class="related-posts-grid">
+        {% for related_post in related_posts %}
+          <article class="related-post">
+            {% if related_post.header.image %}
+              <img src="{{ related_post.header.image | relative_url }}" alt="{{ related_post.title }}" class="related-post-image">
+            {% endif %}
+            <h3><a href="{{ related_post.url | relative_url }}">{{ related_post.title }}</a></h3>
+            <p>{{ related_post.excerpt | strip_html | truncatewords: 30 }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Navegación entre posts -->
+  <nav class="post-navigation">
+    <div class="nav-links">
+      {% if page.previous.url %}
+        <div class="nav-previous">
+          <a href="{{ page.previous.url | relative_url }}" rel="prev">
+            <span class="nav-subtitle">Anterior</span>
+            <span class="nav-title">{{ page.previous.title }}</span>
+          </a>
+        </div>
+      {% endif %}
+      
+      {% if page.next.url %}
+        <div class="nav-next">
+          <a href="{{ page.next.url | relative_url }}" rel="next">
+            <span class="nav-subtitle">Siguiente</span>
+            <span class="nav-title">{{ page.next.title }}</span>
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </nav>
+</article>
+
+<!-- Estilos para la nueva estructura -->
+<style>
+  .breadcrumbs {
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+  }
+  
+  .breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .breadcrumbs li {
+    display: inline;
+  }
+  
+  .breadcrumbs li:not(:last-child)::after {
+    content: ">";
+    margin: 0 0.5rem;
+    color: #666;
+  }
+  
+  .post-meta {
+    margin: 1rem 0;
+    color: #666;
+  }
+  
+  .post-tags {
+    margin-top: 0.5rem;
+  }
+  
+  .post-tag {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem;
+    background: #f0f0f0;
+    border-radius: 3px;
+    font-size: 0.8em;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .related-post {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .related-post-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+  }
+  
+  .post-navigation {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-previous,
+  .nav-next {
+    max-width: 45%;
+  }
+  
+  .nav-subtitle {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .nav-title {
+    font-weight: bold;
+  }
+</style>

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Permitir rastreo de todo el contenido
+Disallow: /admin/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /tmp/
+
+# Sitemap
+Sitemap: https://thecloudvops.com/sitemap.xml

@@ -1,0 +1,375 @@
+<div class="newsletter-container">
+  <div class="newsletter-content">
+    <div class="newsletter-text">
+      <h2>Mantente Actualizado</h2>
+      <p>Suscríbete a nuestro newsletter y recibe las últimas noticias, tutoriales y mejores prácticas de DevOps y Cloud Computing directamente en tu correo.</p>
+      <div class="newsletter-benefits">
+        <div class="benefit-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Artículos exclusivos</span>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Actualizaciones semanales</span>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Recursos y herramientas</span>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Sin spam, 100% valor</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter-form-wrapper">
+      <!-- Mailchimp Form Integration -->
+      <div id="mc_embed_signup">
+        <form action="https://thecloudvops.us21.list-manage.com/subscribe/post?u=YOUR_MAILCHIMP_ID&id=YOUR_LIST_ID" 
+              method="post" 
+              id="mc-embedded-subscribe-form" 
+              name="mc-embedded-subscribe-form" 
+              class="validate newsletter-form" 
+              target="_blank" 
+              novalidate>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL" class="form-label">Tu correo electrónico</label>
+            <input type="email" value="" name="EMAIL" class="required email form-input" id="mce-EMAIL" placeholder="tu@correo.com" required>
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-FNAME" class="form-label">Nombre (opcional)</label>
+            <input type="text" value="" name="FNAME" class="form-input" id="mce-FNAME" placeholder="Tu nombre">
+          </div>
+          
+          <!-- Real Cookies Box for GDPR Compliance -->
+          <div class="mc-field-group">
+            <input type="checkbox" value="1" name="CONSENT" class="checkbox" id="mce-CONSENT" checked>
+            <label for="mce-CONSENT" class="checkbox-label">
+              Acepto recibir correos informativos y promocionales. 
+              <a href="#" target="_blank" class="privacy-link">Política de privacidad</a>
+            </label>
+          </div>
+
+          <!-- honeypot div -->
+          <div id="mce-responses" class="clear foot">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_YOUR_MAILCHIMP_ID_YOUR_LIST_ID" tabindex="-1" value="">
+          </div>
+          <div class="clear foot">
+            <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="button newsletter-btn">
+          </div>
+        </form>
+      </div>
+
+      <!-- Alternative: EmailJS Form (if not using Mailchimp) -->
+      <form class="newsletter-form-alt" id="newsletter-form" style="display: none;">
+        <div class="mc-field-group">
+          <label for="user_email" class="form-label">Tu correo electrónico</label>
+          <input type="email" name="user_email" class="required email form-input" id="user_email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="mc-field-group">
+          <label for="user_name" class="form-label">Nombre (opcional)</label>
+          <input type="text" name="user_name" class="form-input" id="user_name" placeholder="Tu nombre">
+        </div>
+        <div class="mc-field-group">
+          <input type="checkbox" value="1" name="consent" class="checkbox" id="consent_check" checked>
+          <label for="consent_check" class="checkbox-label">
+            Acepto recibir correos informativos y promocionales. 
+            <a href="#" target="_blank" class="privacy-link">Política de privacidad</a>
+          </label>
+        </div>
+        <div id="newsletter-message" class="newsletter-message" style="display: none;"></div>
+        <button type="submit" class="button newsletter-btn">Suscribirse</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Newsletter Section Styles */
+.newsletter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.newsletter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.newsletter-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.newsletter-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.newsletter-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.benefit-item i {
+  font-size: 1.2rem;
+  color: #2ecc71;
+}
+
+/* Newsletter Form Styles */
+.newsletter-form-wrapper {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.newsletter-form,
+.newsletter-form-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ecf0f1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #f9f9f9;
+}
+
+.form-input::placeholder {
+  color: #bdc3c7;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.privacy-link {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.privacy-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.newsletter-btn {
+  background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+  color: white;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.newsletter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.4);
+}
+
+.newsletter-btn:active {
+  transform: translateY(0);
+}
+
+.newsletter-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#mce-error-response {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  background-color: #fadbd8;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#mce-success-response {
+  color: #27ae60;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  background-color: #d5f4e6;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-message {
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-message.success {
+  color: #27ae60;
+  background-color: #d5f4e6;
+}
+
+.newsletter-message.error {
+  color: #e74c3c;
+  background-color: #fadbd8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .newsletter-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .newsletter-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+/* Loading state */
+.newsletter-btn.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.newsletter-btn.loading::after {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+</style>
+
+<script>
+// Mailchimp Integration Script
+#mc_embed_signup{background:#fff; false}
+#mc_embed_signup .button {background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%); color:white;}
+
+// Load Mailchimp script if not already loaded
+if (!window.MailchimpForm) {
+  var script = document.createElement('script');
+  script.src = 'https://chimpstatic.com/mcjs-connected/js/users/YOUR_MAILCHIMP_ID/YOUR_LIST_ID/FORM_ID.js';
+  document.head.appendChild(script);
+}
+
+// Alternative: EmailJS Integration (uncomment to use)
+/*
+(function(){
+  emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+})();
+
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const btn = this.querySelector('.newsletter-btn');
+  const messageDiv = document.getElementById('newsletter-message');
+  const originalText = btn.textContent;
+  
+  btn.classList.add('loading');
+  btn.disabled = true;
+  
+  const templateParams = {
+    user_email: document.getElementById('user_email').value,
+    user_name: document.getElementById('user_name').value,
+    to_email: 'contact@thecloudvops.com'
+  };
+  
+  emailjs.send('SERVICE_ID', 'TEMPLATE_ID', templateParams)
+    .then(function(response) {
+      btn.classList.remove('loading');
+      btn.disabled = false;
+      messageDiv.textContent = '¡Gracias por suscribirte! Revisa tu correo.';
+      messageDiv.classList.add('success');
+      messageDiv.style.display = 'block';
+      document.getElementById('newsletter-form').reset();
+      
+      setTimeout(() => {
+        messageDiv.style.display = 'none';
+        btn.textContent = originalText;
+      }, 5000);
+    }, function(error) {
+      btn.classList.remove('loading');
+      btn.disabled = false;
+      messageDiv.textContent = 'Error al suscribirse. Intenta de nuevo.';
+      messageDiv.classList.add('error');
+      messageDiv.style.display = 'block';
+      
+      setTimeout(() => {
+        messageDiv.style.display = 'none';
+      }, 5000);
+    });
+});
+*/
+</script>
