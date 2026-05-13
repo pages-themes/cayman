@@ -1,5 +1,16 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Gabriela Barrera
+description: AI Systems | Decision Intelligence | Strategic Technology
+show_downloads: false
+
+#remote_theme: pages-themes/cayman@v0.2.0
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-remote-theme
+
+header_pages:
+  - index.md
+  - projects.md
+  - writing.md
+  - about.md
+
+markdown: kramdown
